@@ -1,0 +1,60 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\geometry{a4paper,tmargin=1in,bmargin=1in,lmargin=0.6in,rmargin=0.8in} 
+
+
+% Símbolos de las unidades, sobre todo es para que en una ecuacion no queden en cursiva
+
+\newcommand{\volt}{\mbox{V}}
+\newcommand{\mvolt}{\mbox{mV}}
+\newcommand{\hertz}{\mbox{Hz}}
+\newcommand{\khertz}{\mbox{kHz}}
+\newcommand{\Mhertz}{\mbox{MHz}}
+\newcommand{\farad}{\mbox{F}}
+\newcommand{\nfarad}{\mbox{nF}}
+\newcommand{\pfarad}{\mbox{pF}}
+\newcommand{\ohm}{\Omega}
+\newcommand{\kohm}{\mbox{k}\Omega}
+\newcommand{\Mohm}{\mbox{M}\Omega}
+\newcommand{\amper}{\mbox{A}}
+\newcommand{\mamper}{\mbox{mA}}
+\newcommand{\segundo}{\mbox{s}}
+\newcommand{\msec}{\mbox{ms}}
+\newcommand{\usec}{\mu\mbox{s}}
+\newcommand{\nsec}{\mbox{ns}}
+\newcommand{\kwatt}{\mbox{kW}}
+
+\providecommand{\E}[1]{\ensuremath{\times 10^{#1}}}
+%para que al ir escribiendo se pueda poner \E{potencia} y quede:" x 10^potencia "
+
+%------------------------- Inicio del documento ---------------------------
+
+\begin{document}
+
+\include{caratula}
+
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+
+%estilo de pie y encabezado de pagina
+\pagestyle{fancy}
+\lhead{66.10 Circuitos Electrónicos 2}
+%\rhead{Exploración preeliminar de circuitos amplificadores}
+%\lfoot{Albani - González Zerbo - Piccinini}
+\rfoot{1\sptext{er} cuatrimestre 2012}
+
+
+%\input{cada parte del tp}
+
+
+\end{document}
+
