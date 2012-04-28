@@ -1,0 +1,125 @@
+(ExpressProject "Amplificador clase G"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (Sort User)
+      (File ".\amplificador clase g.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\amplificador clase g.olb")))
+    (NoModify)
+    (File ".\amplificador clase g.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\amplificador clase g-schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\amplificador clase g-schematic1-simu4.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\amplificador clase g-schematic1-simu1.sim"
+        (DisplayName "SCHEMATIC1-simu1")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\amplificador clase g-schematic1-simu3.sim"
+        (DisplayName "SCHEMATIC1-simu3")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\amplificador clase g-schematic1-simu4.sim"
+        (DisplayName "SCHEMATIC1-simu4")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\amplificador clase g.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\amplificador clase g.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (0
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (QbreakP
+      (FullPartName "QbreakP.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (QbreakN
+      (FullPartName "QbreakN.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (BC557B
+      (FullPartName "BC557B.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\TRANSISTOR.OLB")
+      (DeviceIndex "0"))
+    (D1N5819
+      (FullPartName "D1N5819.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\DIODE.OLB")
+      (DeviceIndex "0"))
+    (2N3226
+      (FullPartName "2N3226.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\OLDLIBS\POWER.OLB")
+      (DeviceIndex "0"))
+    (BC547B
+      (FullPartName "BC547B.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\TRANSISTOR.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (D1N4148
+      (FullPartName "D1N4148.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\DIODE.OLB")
+      (DeviceIndex "0"))
+    (DbreakZ
+      (FullPartName "DbreakZ.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\Program Files\Orcad\Capture\Library")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\usuario\Desktop\Simulaciones\amplificador clase g.dsn")
+      (Path "Design Resources"
+         "C:\Users\usuario\Desktop\Simulaciones\amplificador clase g.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\usuario\Desktop\Simulaciones\amplificador clase g.dsn"
+         "SCHEMATIC1" "ampli"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -9 -36 0 200 0 553"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 0 806 -9 -36 0 1010 0 568")
+        (Scroll "1356 548")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "C:\USERS\USUARIO\DESKTOP\SIMULACIONES\AMPLIFICADOR CLASE G.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "ampli"))))
