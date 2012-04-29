@@ -1,74 +1,89 @@
 * source AMPLIFICADOR CLASE G
-R_R12         0 N01924  10k  
+R_R12         N30823 N01924  10k  
 V_Vin         N00224 0  
 +SIN 0 1 1k 0 0 0
+Q_Q21         V-- 6 N20654 MJE34
 C_C3         N03066 N03017  10n  
+Q_Q10         N03017 N03017 N03066 MPSA06
 V_V2         V++ 0 50Vdc
-R_R24         V-- 4  82k  
-R_R26         VOUT N20284  0.22  
-Q_Q25         N01924 N09650 V++ QbreakP 
+Q_Q13         N047380 4 7 MPSA56
+R_R24         V-- 4  56k  
+R_R35         7 VOUT  10  
+C_C8         0 N03285  330p  
+Q_Q4         N01180 N01180 N09194 MPSA06
+R_R26         7 N20284  0.22  
 R_R22         0 VOUT  8  
 V_V3         0 V-- 50Vdc
-R_R18         V-- V--  10k  
-R_R31         N20926 VOUT  0.22  
+R_R18         N03285 N03285  10k  
+C_C11         V++ 0  220p  
+R_R31         N20926 7  0.22  
 R_R20         N03017 2  100  
-R_R2         0 IN  1k  
-Q_Q2         N011050 N01924 N01875 QbreakP 
-Q_Q30         N04579 N01924 N02344 QbreakP 
-Q_Q39         V-- N20654 N20396 QbreakP 
+R_R2         0 IN  22k  
+Q_Q14         V++ 1 N20504 MJE340
+Q_Q12         N08463 3 7 MPSA06
+Q_Q9         N04579 N01924 N02344 MPSA56
 R_R21         N03066 5  100  
-Q_Q37         V-- 5 N20472 QbreakP 
-R_R28         3 N20284  1.5k  
+Q_Q5         N011050 N01924 N01875 MPSA56
+Q_Q3         N01253 N01180 N09051 MPSA06
+R_R28         3 N20284  100  
 C_C6         N01654 N145391  1  
-R_R30         N20472 VOUT  100  
+C_C13         N30823 V++  220p  
+R_R30         N20472 7  100  
 D_D1         N02928 N04579 Dbreak 
-R_R29         4 N20926  1k  
-Q_Q7         N01253 IN N00909 QbreakP 
+Q_Q1         N01253 IN N00909 MPSA56
+R_R29         4 N20926  100  
 D_D2         N04333 N03066 Dbreak 
-R_R6         V-- N09051  100  
+R_R6         N03285 N09051  100  
 R_R4         N00909 N01211  100  
-C_C4         N01253 N04333  33p  
-Q_Q26         N01253 N09455 V-- QbreakN 
+C_C4         N01253 N04333  150p  
 V_V4         N20400 0 20Vdc
+C_C7         0 N03285  100p  
 R_R16         N145391 0  1k  
-Q_Q28         N04333 V-- N03862 QbreakN 
-R_R7         V-- N09194  100  
-R_R27         VOUT N20288  100  
-Q_Q33         V++ 1 N20504 QbreakN 
+Q_Q16         V++ 2 N20288 MJE340
+R_R7         N03285 N09194  100  
+R_R27         7 N20288  100  
 D_D5         2 N08463 D1N4148 
 R_R9         N01875 V++  330  
+Q_Q11         N04333 N03285 N03862 MPSA06
 D_D9         N20396 N20334 D1N5819 
 R_R5         N00912 N01211  100  
-Q_Q20         N01180 N01180 N09194 QbreakN 
 R_R8         N01211 N011050  1k  
-Q_Q35         V++ 2 N20288 QbreakN 
+Q_Q17         N20510 N20288 N20284 Q2SC3281 
+Q_Q2         N01180 N01654 N00912 MPSA56
 C_C5         VOUT N01654  1p  
-R_R13         N03017 N02928  10  
-Q_Q13         N01180 N01654 N00912 QbreakP 
+R_R13         N03017 N02928  16  
+R_R34         N319671 7  10  
 R_R1         N00224 N00259  50  
 D_D6         N047380 5 D1N4148 
-R_R19         V-- N03862  10  
+R_R19         N03285 N03862  10  
+Q_Q19         V-- 5 N20472 MJE34
 D_D3         N04579 1 D1N5819 
+C_C14         0 N20400  220p  
+Q_Q18         N20396 N20472 N20926 Q2SA1302 
 R_R3         VOUT N01654  22k  
-Q_Q40         V-- 6 N20654 QbreakP 
-Q_Q23         N01253 N01180 N09051 QbreakN 
+R_R33         N03285 V--  10  
+Q_Q8         N01924 N09650 V++ MPSA56
 D_D8         N20400 N20510 D1N5819 
+L_L1         7 VOUT  100u  
 C_C1         N00259 IN  1  
-Q_Q31         N047380 4 VOUT QbreakP 
+R_R36         0 N30823  10k  
 R_R25         N20510 N20504  100  
+C_C9         0 V--  100n  
 R_R10         N02344 V++  39  
 D_D4         6 N04333 D1N5819 
-R_R14         N03017 N02928  1k  
+R_R14         N03017 N02928  3.3k  
+Q_Q6         N01253 N09455 N03285 MPSA06
+Q_Q7         0 N01253 N03285 MPSA06
+Q_Q20         V-- N20654 N20396 Q2SA1302 
 V_V5         0 N20334 20Vdc
+C_C16         0 N319671  100n  
 C_C2         N01924 V++  1p  
-R_R11         N02344 N09650  1k  
-R_R15         N03066 N03017  1k  
-Q_Q34         V++ N20504 N20510 QbreakN 
-Q_Q27         0 N01253 V-- QbreakN 
-R_R17         N09455 N03862  220k  
-Q_Q32         N08463 3 VOUT QbreakN 
-Q_Q29         N03017 N03017 N03066 QbreakN 
-R_R23         3 V++  220k  
-Q_Q38         N20396 N20472 N20926 QbreakP 
+R_R11         N02344 N09650  2.2k  
+R_R15         N03066 N03017  1.15k  
+C_C15         0 N20334  220p  
+C_C12         V++ 0  100n  
+R_R17         N09455 N03862  82k  
+Q_Q15         V++ N20504 N20510 Q2SC3281 
+R_R23         3 V++  150k  
 R_R32         N20654 N20396  100  
-Q_Q36         N20510 N20288 N20284 QbreakN 
+C_C10         0 V--  220p  

@@ -18,7 +18,7 @@
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
-      (ActiveProfile ".\amplificador clase g-schematic1-simu4.sim")
+      (ActiveProfile ".\amplificador clase g-schematic1-try1.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\amplificador clase g-schematic1-simu1.sim"
         (DisplayName "SCHEMATIC1-simu1")
@@ -30,6 +30,10 @@
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\amplificador clase g-schematic1-simu4.sim"
         (DisplayName "SCHEMATIC1-simu4")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\amplificador clase g-schematic1-try1.sim"
+        (DisplayName "SCHEMATIC1-try1")
         (Type "PSpice Profile")))
     (Folder "Model Libraries"
       (Sort User)
@@ -42,16 +46,44 @@
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
-    (0
-      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
     (R
       (FullPartName "R.Normal")
       (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
     (C
       (FullPartName "C.Normal")
       (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (MPSA56
+      (FullPartName "MPSA56.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
+      (DeviceIndex "0"))
+    (MPSA06
+      (FullPartName "MPSA06.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
+      (DeviceIndex "0"))
+    (MJE34
+      (FullPartName "MJE34.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\PWRBJT.OLB")
+      (DeviceIndex "0"))
+    (MJE340
+      (FullPartName "MJE340.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\PWRBJT.OLB")
+      (DeviceIndex "0"))
+    (2SA1302
+      (FullPartName "2SA1302.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\JPWRBJT.OLB")
+      (DeviceIndex "0"))
+    (2SC3281
+      (FullPartName "2SC3281.Normal")
+      (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\JPWRBJT.OLB")
       (DeviceIndex "0"))
     (QbreakP
       (FullPartName "QbreakP.Normal")
@@ -93,19 +125,20 @@
       (FullPartName "VSIN.Normal")
       (LibraryName "C:\PROGRAM FILES\ORCAD\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0")))
-  (LastUsedLibraryBrowseDirectory "C:\Program Files\Orcad\Capture\Library")
+  (LastUsedLibraryBrowseDirectory
+     "C:\Program Files\Orcad\Capture\Library\PSpice")
   (GlobalState
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\usuario\Desktop\Simulaciones\amplificador clase g.dsn")
+         "C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\Simulaciones\Orcad\amplificador clase g.dsn")
       (Path "Design Resources"
-         "C:\Users\usuario\Desktop\Simulaciones\amplificador clase g.dsn"
+         "C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\Simulaciones\Orcad\amplificador clase g.dsn"
          "SCHEMATIC1")
       (Path "Design Resources" "Library")
       (Path "Outputs")
       (Select "Design Resources"
-         "C:\Users\usuario\Desktop\Simulaciones\amplificador clase g.dsn"
+         "C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\Simulaciones\Orcad\amplificador clase g.dsn"
          "SCHEMATIC1" "ampli"))
     (HierarchyView)
     (Doc
@@ -116,10 +149,11 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 0 806 -9 -36 0 1010 0 568")
-        (Scroll "1356 548")
-        (Zoom "200")
+        (Placement "44 2 3 -1 -1 -9 -36 150 1156 150 714")
+        (Scroll "0 0")
+        (Zoom "100")
         (Occurrence "/"))
-      (Path "C:\USERS\USUARIO\DESKTOP\SIMULACIONES\AMPLIFICADOR CLASE G.DSN")
+      (Path
+         "C:\USERS\USUARIO\DESKTOP\CIRCUITOS ELECTRONICOS II\SVN\SVN_TRUNK\SIMULACIONES\ORCAD\AMPLIFICADOR CLASE G.DSN")
       (Schematic "SCHEMATIC1")
       (Page "ampli"))))
