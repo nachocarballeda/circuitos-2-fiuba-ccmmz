@@ -1,4 +1,4 @@
-update=dom 29 abr 2012 21:24:00 ART
+update=dom 29 abr 2012 23:08:20 ART
 version=1
 last_client=cvpcb
 [pcbnew]
@@ -68,7 +68,9 @@ LibName9=led
 LibName10=dip_sockets
 LibName11=w_to
 LibName12=w_capacitors
-LibDir=modelos
+LibName13=w_misc_comp
+LibName14=w_pth_diodes
+LibDir=modelos;modelos/misc_comp
 [general]
 version=1
 [eeschema]
