@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date dom 29 abr 2012 23:23:30 ART
+EESchema Schematic File Version 2  date mar 01 may 2012 15:43:02 ART
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,7 +36,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "30 apr 2012"
+Date "1 may 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,14 +45,26 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONNECTOR entrada1
-U 1 1 4F9DF78B
-P 1150 5100
-F 0 "entrada1" V 1450 5350 70  0000 C CNN
-F 1 "CONNECTOR" V 1700 5100 70  0000 C CNN
-	1    1150 5100
-	0    -1   -1   0   
+L R R34
+U 1 1 4FA02EAA
+P 1700 6650
+F 0 "R34" H 1600 6700 50  0000 C CNN
+F 1 "R" H 1600 6600 50  0000 C CNN
+	1    1700 6650
+	1    0    0    -1  
 $EndComp
+$Comp
+L R R35
+U 1 1 4FA02EA8
+P 2350 6650
+F 0 "R35" H 2250 6700 50  0000 C CNN
+F 1 "R" H 2250 6600 50  0000 C CNN
+	1    2350 6650
+	1    0    0    -1  
+$EndComp
+Connection ~ 800  5100
+Wire Wire Line
+	800  5100 650  5100
 Connection ~ 8150 3550
 Wire Wire Line
 	8150 3550 8150 3350
@@ -203,10 +215,6 @@ Wire Wire Line
 Connection ~ 3600 6050
 Wire Wire Line
 	3600 6350 3600 5950
-Wire Wire Line
-	1700 6400 1700 6900
-Wire Wire Line
-	2350 6400 2350 6900
 Connection ~ 2000 3700
 Wire Wire Line
 	2350 3700 1700 3700
@@ -216,8 +224,6 @@ Wire Wire Line
 	2350 3700 2350 3800
 Wire Wire Line
 	1700 3700 1700 3800
-Wire Wire Line
-	1400 5100 1000 5100
 Wire Wire Line
 	2000 1650 2000 1750
 Wire Wire Line
@@ -378,6 +384,26 @@ Wire Wire Line
 Connection ~ 2350 4700
 Connection ~ 3100 4900
 Connection ~ 8300 3350
+Wire Wire Line
+	1400 5100 1200 5100
+$Comp
+L C C14
+U 1 1 4FA02E29
+P 1000 5100
+F 0 "C14" V 1050 5200 50  0000 L CNN
+F 1 "C" V 1050 5000 50  0000 L CNN
+	1    1000 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONNECTOR entrada1
+U 1 1 4F9DF78B
+P 800 5100
+F 0 "entrada1" V 1250 5050 70  0000 C CNN
+F 1 "CONNECTOR" V 1350 5100 70  0000 C CNN
+	1    800  5100
+	0    -1   -1   0   
+$EndComp
 $Comp
 L CONNECTOR salida1
 U 1 1 4F9DF765
@@ -1137,8 +1163,8 @@ $Comp
 L C C1
 U 1 1 4F981666
 P 3850 5300
-F 0 "C1" H 3900 5400 50  0000 L CNN
-F 1 "C" H 3900 5200 50  0000 L CNN
+F 0 "C1" V 3900 5400 50  0000 L CNN
+F 1 "C" V 3900 5200 50  0000 L CNN
 	1    3850 5300
 	0    -1   -1   0   
 $EndComp
@@ -1286,7 +1312,7 @@ F 1 "MPSA56" H 1600 5250 60  0000 R CNN
 	1    1600 5100
 	1    0    0    1   
 $EndComp
-Text GLabel 1000 5100 0    60   Input ~ 0
+Text GLabel 650  5100 0    60   Input ~ 0
 Entrada
 $Comp
 L R R1
