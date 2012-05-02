@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date 01/05/2012 11:02:26 p.m.
+PCBNEW-BOARD Version 1 date 01/05/2012 11:24:00 p.m.
 
 # Created by Pcbnew(2012-01-19 BZR 3256)-stable
 
@@ -8,10 +8,10 @@ LayerCount 2
 Ly 1FFF8001
 EnabledLayers 1FFF8001
 Links 114
-NoConn 91
+NoConn 90
 Di 3163 4263 113837 76888
 Ndraw 4
-Ntrack 50
+Ntrack 52
 Nzone 0
 BoardThickness 630
 Nmodule 88
@@ -59,7 +59,7 @@ PadSize 600 600
 PadDrill 320
 Pad2MaskClearance 100
 AuxiliaryAxisOrg 0 0
-PcbPlotParams (pcbplotparams (layerselection 3178497) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 2) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ""))
+PcbPlotParams (pcbplotparams (layerselection 3178497) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ""))
 $EndSETUP
 
 $EQUIPOT
@@ -1413,15 +1413,15 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SOT223
 $MODULE R6
-Po 97500 48000 900 15 00200000 4FA04D3F ~~
+Po 83000 44000 2700 15 00200000 4FA04D3F ~~
 Li R6
 Cd Resistance 6 pas
 Kw R
 Sc 4FA04D3F
 AR /4F981D0B
 Op 0 A 0
-T0 0 0 550 500 900 80 N V 21 N "R18"
-T1 100 0 550 500 900 80 N I 21 N "R"
+T0 0 0 550 500 2700 80 N V 21 N "R18"
+T1 100 0 550 500 2700 80 N I 21 N "R"
 DS -2500 -500 2500 -500 120 21
 DS 2500 -500 2500 500 120 21
 DS 2500 500 -2500 500 120 21
@@ -1430,14 +1430,14 @@ DS -3000 0 -2500 0 120 21
 DS -2500 -200 -2200 -500 120 21
 DS -2500 -500 -2500 500 120 21
 $PAD
-Sh "1" C 700 700 0 0 900
+Sh "1" C 700 700 0 0 2700
 Dr 450 0 0
 At STD N 00E0FFFF
 Ne 54 "realim"
 Po -3000 0
 $EndPAD
 $PAD
-Sh "2" C 700 700 0 0 900
+Sh "2" C 700 700 0 0 2700
 Dr 450 0 0
 At STD N 00E0FFFF
 Ne 40 "N-000040"
@@ -1451,15 +1451,15 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  R6
 $MODULE R6
-Po 81500 43500 900 15 00200000 4FA04D41 ~~
+Po 83000 34500 2700 15 4FA09A67 4FA04D41 ~~
 Li R6
 Cd Resistance 6 pas
 Kw R
 Sc 4FA04D41
 AR /4F982273
 Op 0 A 0
-T0 0 0 550 500 900 80 N V 21 N "R17"
-T1 100 0 550 500 900 80 N I 21 N "R"
+T0 0 0 550 500 3600 80 N V 21 N "R17"
+T1 100 0 550 500 2700 80 N I 21 N "R"
 DS -2500 -500 2500 -500 120 21
 DS 2500 -500 2500 500 120 21
 DS 2500 500 -2500 500 120 21
@@ -1468,14 +1468,14 @@ DS -3000 0 -2500 0 120 21
 DS -2500 -200 -2200 -500 120 21
 DS -2500 -500 -2500 500 120 21
 $PAD
-Sh "1" C 700 700 0 0 900
+Sh "1" C 700 700 0 0 2700
 Dr 450 0 0
 At STD N 00E0FFFF
 Ne 30 "N-000029"
 Po -3000 0
 $EndPAD
 $PAD
-Sh "2" C 700 700 0 0 900
+Sh "2" C 700 700 0 0 2700
 Dr 450 0 0
 At STD N 00E0FFFF
 Ne 54 "realim"
@@ -3771,22 +3771,22 @@ Po 0 71000 72500 70000 71500 709 -1
 De 0 0 2 0 800000
 Po 0 11500 75000 44500 75500 709 -1
 De 0 0 2 0 C00000
-Po 0 65000 69500 70000 69500 709 -1
-De 0 0 5 0 C00000
-Po 0 70000 69500 86150 69500 709 -1
-De 0 0 5 0 400000
-Po 0 86150 69500 89500 66150 709 -1
+Po 0 98150 66150 102500 70500 709 -1
 De 0 0 5 0 800000
 Po 0 104000 69000 102500 70500 709 -1
 De 0 0 5 0 800000
+Po 0 86150 69500 89500 66150 709 -1
+De 0 0 5 0 800000
+Po 0 65000 69500 70000 69500 709 -1
+De 0 0 5 0 C00000
 Po 0 70000 69500 70500 69000 709 -1
 De 0 0 5 0 400000
-Po 0 89500 66150 98150 66150 709 -1
+Po 0 70000 69500 86150 69500 709 -1
 De 0 0 5 0 400000
 Po 0 109000 69000 104000 69000 709 -1
 De 0 0 5 0 400000
-Po 0 98150 66150 102500 70500 709 -1
-De 0 0 5 0 800000
+Po 0 89500 66150 98150 66150 709 -1
+De 0 0 5 0 400000
 Po 0 103000 62500 108500 62500 709 -1
 De 0 0 9 0 400000
 Po 0 108500 62500 109000 62000 709 -1
@@ -3811,18 +3811,18 @@ Po 0 25500 32000 22500 29000 709 -1
 De 0 0 21 0 C00000
 Po 0 51000 34500 51000 37000 709 -1
 De 0 0 37 0 C00000
-Po 0 18000 68500 17500 68500 709 -1
-De 0 0 49 0 400000
 Po 0 17500 68500 25500 68500 709 -1
-De 0 0 49 0 0
-Po 0 17500 68500 16000 68500 709 -1
 De 0 0 49 0 0
 Po 0 16000 68500 11500 73000 709 -1
 De 0 0 49 0 800000
+Po 0 17500 68500 16000 68500 709 -1
+De 0 0 49 0 0
 Po 0 11500 73000 44000 73000 709 -1
 De 0 0 49 0 400000
 Po 0 44000 73000 58500 73000 709 -1
 De 0 0 49 0 0
+Po 0 18000 68500 17500 68500 709 -1
+De 0 0 49 0 400000
 Po 0 58500 73000 62000 69500 709 -1
 De 0 0 49 0 800000
 Po 0 53000 32500 51000 32500 709 -1
@@ -3837,13 +3837,17 @@ Po 0 49500 32500 42000 40000 709 -1
 De 0 0 53 0 0
 Po 0 42000 40000 30500 40000 709 -1
 De 0 0 53 0 0
+Po 0 83000 39500 63000 39500 709 -1
+De 0 0 54 0 0
+Po 0 63000 39500 56000 32500 709 -1
+De 0 0 54 0 800000
+Po 0 83000 37500 83000 39500 709 -1
+De 0 0 54 0 400000
+Po 0 83000 39500 83000 41000 709 -1
+De 0 0 54 0 800000
 Po 0 55500 30000 55500 32000 709 -1
 De 0 0 54 0 400000
 Po 0 55500 32000 56000 32500 709 -1
-De 0 0 54 0 800000
-Po 0 56000 32500 64000 40500 709 -1
-De 0 0 54 0 400000
-Po 0 64000 40500 81500 40500 709 -1
 De 0 0 54 0 800000
 $EndTRACK
 $ZONE
