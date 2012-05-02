@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = mié 02 may 2012 01:23:04 ART
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = mié 02 may 2012 14:55:54 ART
 
 BeginCmp
 TimeStamp = /4F9DDDCD;
@@ -180,6 +180,13 @@ TimeStamp = /4F984D81;
 Reference = D8;
 ValeurCmp = 1N5819;
 IdModule  = DO-41;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FA17506;
+Reference = entrada-1;
+ValeurCmp = CONNECTOR;
+IdModule  = 1pin;
 EndCmp
 
 BeginCmp

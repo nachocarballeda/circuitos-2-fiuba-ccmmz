@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 02/05/2012 02:48:05 p.m.
+EESchema Schematic File Version 2  date mié 02 may 2012 15:04:55 ART
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,6 +44,16 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 1050 4050
+$Comp
+L CONNECTOR entrada-1
+U 1 1 4FA17506
+P 1050 4050
+F 0 "entrada-1" V 1500 4000 70  0000 C CNN
+F 1 "CONNECTOR" V 1600 4050 70  0000 C CNN
+	1    1050 4050
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
 	7000 4500 7400 4500
 Wire Wire Line
