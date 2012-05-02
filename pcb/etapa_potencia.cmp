@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 01/05/2012 05:51:07 p.m.
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = mié 02 may 2012 01:23:04 ART
 
 BeginCmp
 TimeStamp = /4F9DDDCD;
@@ -207,77 +207,77 @@ BeginCmp
 TimeStamp = /4F980C04;
 Reference = Q1;
 ValeurCmp = MPSA56;
-IdModule  = TO92-CBE;
+IdModule  = TO92-123;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F980EC1;
 Reference = Q2;
 ValeurCmp = MPSA06;
-IdModule  = SOT223;
+IdModule  = TO92-123;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F980D90;
 Reference = Q3;
 ValeurCmp = MPSA56;
-IdModule  = TO92-CBE;
+IdModule  = TO92-123;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F980EAF;
 Reference = Q4;
 ValeurCmp = MPSA06;
-IdModule  = SOT223;
+IdModule  = TO92-123;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F980C91;
 Reference = Q5;
 ValeurCmp = MPSA56;
-IdModule  = TO92-CBE;
+IdModule  = TO92-123;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F98157D;
 Reference = Q6;
 ValeurCmp = MPSA06;
-IdModule  = SOT223;
+IdModule  = TO92-123;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F981DDE;
 Reference = Q7;
 ValeurCmp = MPSA56;
-IdModule  = TO92-CBE;
+IdModule  = TO92-123;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F9810E0;
 Reference = Q8;
 ValeurCmp = MPSA06;
-IdModule  = SOT223;
+IdModule  = TO92-123;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F981DF9;
 Reference = Q9;
 ValeurCmp = MPSA56;
-IdModule  = TO92-CBE;
+IdModule  = TO92-123;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F98114B;
 Reference = Q10;
 ValeurCmp = MPSA06;
-IdModule  = SOT223;
+IdModule  = TO92-123;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F9821A4;
 Reference = Q11;
 ValeurCmp = MPSA06;
-IdModule  = SOT223;
+IdModule  = TO92-123;
 EndCmp
 
 BeginCmp
@@ -298,7 +298,7 @@ BeginCmp
 TimeStamp = /4F985897;
 Reference = Q14;
 ValeurCmp = MPSA56;
-IdModule  = TO92-CBE;
+IdModule  = TO92-123;
 EndCmp
 
 BeginCmp
@@ -354,14 +354,14 @@ BeginCmp
 TimeStamp = /4F9DF6A0;
 Reference = Q22;
 ValeurCmp = MPSA56;
-IdModule  = TO92-CBE;
+IdModule  = TO92-123;
 EndCmp
 
 BeginCmp
 TimeStamp = /4F9DF6ED;
 Reference = Q23;
 ValeurCmp = MPSA56;
-IdModule  = TO92-CBE;
+IdModule  = TO92-123;
 EndCmp
 
 BeginCmp
