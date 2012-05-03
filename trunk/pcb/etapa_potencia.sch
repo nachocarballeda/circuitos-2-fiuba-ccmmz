@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date mié 02 may 2012 15:04:55 ART
+EESchema Schematic File Version 2  date jue 03 may 2012 00:42:47 ART
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,7 +36,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "2 may 2012"
+Date "3 may 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -397,7 +397,7 @@ Wire Wire Line
 	5550 5100 5550 6900
 Connection ~ 5550 6900
 Text GLabel 650  4050 0    60   Input ~ 0
-Entrada-
+GND
 Text GLabel 650  5100 0    60   Input ~ 0
 Entrada+
 Text GLabel 7050 3100 2    60   Output ~ 0
