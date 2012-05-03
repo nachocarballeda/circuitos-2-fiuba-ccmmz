@@ -1,7 +1,7 @@
-# EESchema Netlist Version 1.1 created  mié 02 may 2012 15:05:15 ART
+# EESchema Netlist Version 1.1 created  jue 03 may 2012 00:42:53 ART
 (
  ( /4FA17506 $noname  entrada-1 CONNECTOR {Lib=CONNECTOR}
-  (    1 Entrada- )
+  (    1 GND )
  )
  ( /4FA02EAA $noname  R34 R {Lib=R}
   (    1 N-000027 )
@@ -32,7 +32,7 @@
   (    3 N-000052 )
  )
  ( /4F9DDDE7 $noname  GND1 CONNECTOR {Lib=CONNECTOR}
-  (    1 Entrada- )
+  (    1 GND )
  )
  ( /4F9DDDDF $noname  -50V1 CONNECTOR {Lib=CONNECTOR}
   (    1 N-000018 )
@@ -48,11 +48,11 @@
  )
  ( /4F9DB2FA $noname  C5 C {Lib=C}
   (    1 N-000010 )
-  (    2 Entrada- )
+  (    2 GND )
  )
  ( /4F9DB2CE $noname  R11 R {Lib=R}
   (    1 N-000010 )
-  (    2 Entrada- )
+  (    2 GND )
  )
  ( /4F9DB1D7 $noname  R30 R {Lib=R}
   (    1 N-000007 )
@@ -68,7 +68,7 @@
  )
  ( /4F9DAE03 $noname  R26 R {Lib=R}
   (    1 N-000009 )
-  (    2 Entrada- )
+  (    2 GND )
  )
  ( /4F9DADDA $noname  C8 C {Lib=C}
   (    1 N-000024 )
@@ -79,7 +79,7 @@
   (    2 N-000038 )
  )
  ( /4F9DAC47 $noname  C6 C {Lib=C}
-  (    1 Entrada- )
+  (    1 GND )
   (    2 N-000037 )
  )
  ( /4F9DABD7 $noname  R28 R {Lib=R}
@@ -92,15 +92,15 @@
  )
  ( /4F9DAAFC $noname  C7 C {Lib=C}
   (    1 N-000051 )
-  (    2 Entrada- )
+  (    2 GND )
  )
  ( /4F9DAAF4 $noname  C11 C {Lib=C}
   (    1 N-000018 )
-  (    2 Entrada- )
+  (    2 GND )
  )
  ( /4F9DAABE $noname  C10 C {Lib=C}
   (    1 N-000051 )
-  (    2 Entrada- )
+  (    2 GND )
  )
  ( /4F9DAA7F $noname  R31 R {Lib=R}
   (    1 N-000051 )
@@ -108,7 +108,7 @@
  )
  ( /4F9DAA52 $noname  C12 C {Lib=C}
   (    1 N-000018 )
-  (    2 Entrada- )
+  (    2 GND )
  )
  ( /4F9DA9FF $noname  R33 R {Lib=R}
   (    1 realim )
@@ -119,7 +119,7 @@
   (    2 Salida )
  )
  ( /4F9DA8F4 $noname  C13 C {Lib=C}
-  (    1 Entrada- )
+  (    1 GND )
   (    2 N-000001 )
  )
  ( /4F9DA8F2 $noname  R32 R {Lib=R}
@@ -187,7 +187,7 @@
   (    2 N-000034 )
  )
  ( /4F9823B4 $noname  R19 R {Lib=R}
-  (    1 Entrada- )
+  (    1 GND )
   (    2 N-000034 )
  )
  ( /4F9823AB $noname  R20 R {Lib=R}
@@ -324,7 +324,7 @@
  ( /4F9810E0 $noname  Q8 MPSA06 {Lib=NPN}
   (    1 N-000054 )
   (    2 N-000052 )
-  (    3 Entrada- )
+  (    3 GND )
  )
  ( /4F980EC1 $noname  Q2 MPSA06 {Lib=NPN}
   (    1 N-000027 )
@@ -918,7 +918,7 @@ Net 46 "" ""
  C2 2
  R12 1
  R28 1
-Net 47 "Entrada-" "Entrada-"
+Net 47 "GND" "GND"
  R19 1
  R11 2
  C5 2
