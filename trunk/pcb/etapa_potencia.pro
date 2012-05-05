@@ -1,6 +1,6 @@
-update=dom 29 abr 2012 23:08:20 ART
+update=sáb 05 may 2012 12:38:18 ART
 version=1
-last_client=cvpcb
+last_client=kicad
 [pcbnew]
 version=1
 PadDrlX=320
@@ -71,8 +71,6 @@ LibName12=w_capacitors
 LibName13=w_misc_comp
 LibName14=w_pth_diodes
 LibDir=modelos;modelos/misc_comp
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -140,3 +138,5 @@ version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
+[general]
+version=1
