@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date mié 02 may 2012 15:04:55 ART
+EESchema Schematic File Version 2  date vie 04 may 2012 19:17:57 ART
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,7 +36,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "2 may 2012"
+Date "4 may 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -44,16 +44,26 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Connection ~ 1050 4050
+Connection ~ 4550 4750
+Connection ~ 4550 4250
 $Comp
-L CONNECTOR entrada-1
-U 1 1 4FA17506
-P 1050 4050
-F 0 "entrada-1" V 1500 4000 70  0000 C CNN
-F 1 "CONNECTOR" V 1600 4050 70  0000 C CNN
-	1    1050 4050
-	0    -1   -1   0   
+L RVAR R?
+U 1 1 4FA4557E
+P 4550 4500
+F 0 "R?" V 4630 4450 50  0000 C CNN
+F 1 "RVAR" V 4470 4560 50  0000 C CNN
+	1    4550 4500
+	1    0    0    -1  
 $EndComp
+Connection ~ 4550 4200
+Connection ~ 4550 4150
+Connection ~ 4550 4900
+Connection ~ 4550 4750
+Wire Wire Line
+	4550 4200 4550 4250
+Wire Wire Line
+	4550 4900 4550 4750
+Connection ~ 1050 4050
 Wire Wire Line
 	7000 4500 7400 4500
 Wire Wire Line
@@ -99,8 +109,6 @@ Wire Wire Line
 	2050 4900 2050 5200
 Wire Wire Line
 	1400 5950 1100 5950
-Wire Wire Line
-	4850 3800 4850 4200
 Connection ~ 4550 2700
 Wire Wire Line
 	4750 2700 4100 2700
@@ -314,8 +322,6 @@ Connection ~ 6250 2650
 Wire Wire Line
 	6250 4100 6250 4500
 Wire Wire Line
-	4550 4200 4550 4900
-Wire Wire Line
 	5050 4500 5050 4000
 Wire Wire Line
 	6250 4500 5500 4500
@@ -356,11 +362,9 @@ Wire Wire Line
 	4750 2200 5050 2200
 Wire Wire Line
 	5050 2200 5050 2250
-Wire Wire Line
-	4550 4200 4850 4200
 Connection ~ 4850 4200
 Wire Wire Line
-	4550 4900 4100 4900
+	4100 4900 4550 4900
 Wire Wire Line
 	3800 1950 3000 1950
 Connection ~ 1400 5950
@@ -396,8 +400,21 @@ Wire Wire Line
 Wire Wire Line
 	5550 5100 5550 6900
 Connection ~ 5550 6900
+Wire Wire Line
+	4850 3800 4850 4750
+Wire Wire Line
+	4850 4750 4550 4750
+$Comp
+L CONNECTOR entrada-1
+U 1 1 4FA17506
+P 1050 4050
+F 0 "entrada-1" V 1500 4000 70  0000 C CNN
+F 1 "CONNECTOR" V 1600 4050 70  0000 C CNN
+	1    1050 4050
+	0    -1   -1   0   
+$EndComp
 Text GLabel 650  4050 0    60   Input ~ 0
-Entrada-
+GND
 Text GLabel 650  5100 0    60   Input ~ 0
 Entrada+
 Text GLabel 7050 3100 2    60   Output ~ 0
