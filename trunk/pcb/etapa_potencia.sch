@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date lun 07 may 2012 22:41:11 ART
+EESchema Schematic File Version 2  date lun 07 may 2012 23:04:28 ART
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,6 +44,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L GND #PWR03
+U 1 1 4FA871C8
+P 7000 2450
+F 0 "#PWR03" H 7000 2450 30  0001 C CNN
+F 1 "GND" H 7000 2380 30  0001 C CNN
+	1    7000 2450
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	4550 3400 4400 3400
 Wire Wire Line
@@ -471,15 +480,6 @@ F 0 "C15" H 6700 1450 50  0000 L CNN
 F 1 "C" H 6700 1250 50  0000 L CNN
 	1    6650 1350
 	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR03
-U 1 1 4FA871C8
-P 7000 2450
-F 0 "#PWR03" H 7000 2450 30  0001 C CNN
-F 1 "GND" H 7000 2380 30  0001 C CNN
-	1    7000 2450
-	1    0    0    -1  
 $EndComp
 $Comp
 L C C16
