@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = lun 07 may 2012 22:16:26 ART
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = lun 14 may 2012 20:52:47 ART
 
 BeginCmp
 TimeStamp = /4F9DDDCD;
@@ -368,7 +368,7 @@ BeginCmp
 TimeStamp = /4F983CB8;
 Reference = Q20;
 ValeurCmp = MPSA06;
-IdModule  = to225;
+IdModule  = TO92-123;
 EndCmp
 
 BeginCmp
