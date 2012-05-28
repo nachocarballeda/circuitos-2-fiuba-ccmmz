@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date lun 07 may 2012 23:04:28 ART
+EESchema Schematic File Version 2  date lun 28 may 2012 20:37:49 ART
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,7 +36,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "8 may 2012"
+Date "28 may 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -44,6 +44,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 6250 5250
 $Comp
 L GND #PWR03
 U 1 1 4FA871C8
