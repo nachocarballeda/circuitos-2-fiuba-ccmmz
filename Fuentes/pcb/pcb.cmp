@@ -1,31 +1,31 @@
-Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = jue 31 may 2012 14:59:28 ART
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = jue 31 may 2012 15:14:44 ART
 
 BeginCmp
 TimeStamp = /4FC6E03B;
 Reference = C1;
 ValeurCmp = C;
-IdModule  = C2;
+IdModule  = cnp_13x4mm;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FC6E03A;
 Reference = C2;
 ValeurCmp = C;
-IdModule  = C2;
+IdModule  = cnp_13x4mm;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FC6E033;
 Reference = C3;
 ValeurCmp = C;
-IdModule  = C2;
+IdModule  = cnp_13x4mm;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FC6E037;
 Reference = C4;
 ValeurCmp = C;
-IdModule  = C2;
+IdModule  = cnp_13x4mm;
 EndCmp
 
 BeginCmp
