@@ -1,0 +1,150 @@
+# EESchema Netlist Version 1.1 created  jue 31 may 2012 11:54:34 ART
+(
+ ( /4FC785F8 $noname  C8 C {Lib=C}
+  (    1 N-000001 )
+  (    2 N-000002 )
+ )
+ ( /4FC785F7 $noname  C7 C {Lib=C}
+  (    1 N-000001 )
+  (    2 N-000002 )
+ )
+ ( /4FC78069 $noname  C6 C {Lib=C}
+  (    1 N-000001 )
+  (    2 N-000002 )
+ )
+ ( /4FC6E52B $noname  C5 C {Lib=C}
+  (    1 N-000001 )
+  (    2 N-000002 )
+ )
+ ( /4FC6E03B $noname  C1 C {Lib=C}
+  (    1 N-000001 )
+  (    2 N-000004 )
+ )
+ ( /4FC6E03A $noname  C2 C {Lib=C}
+  (    1 N-000004 )
+  (    2 N-000002 )
+ )
+ ( /4FC6E037 $noname  C4 C {Lib=C}
+  (    1 N-000003 )
+  (    2 N-000002 )
+ )
+ ( /4FC6E033 $noname  C3 C {Lib=C}
+  (    1 N-000001 )
+  (    2 N-000003 )
+ )
+ ( /4FC6E02A $noname  P1 entrada1 {Lib=CONNECTOR}
+  (    1 N-000004 )
+ )
+ ( /4FC6E026 $noname  P2 entrada_2 {Lib=CONNECTOR}
+  (    1 N-000003 )
+ )
+ ( /4FC6DEF5 $noname  D4 DIODE {Lib=DIODE}
+  (    1 N-000003 )
+  (    2 N-000002 )
+ )
+ ( /4FC6DEAE $noname  D2 DIODE {Lib=DIODE}
+  (    1 N-000004 )
+  (    2 N-000002 )
+ )
+ ( /4FC6DEA6 $noname  D1 DIODE {Lib=DIODE}
+  (    1 N-000004 )
+  (    2 N-000001 )
+ )
+ ( /4FC6DE9B $noname  D3 DIODE {Lib=DIODE}
+  (    1 N-000003 )
+  (    2 N-000001 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C8
+ SM*
+ C?
+ C1-1
+$endlist
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component D4
+ D?
+ S*
+$endlist
+$component D2
+ D?
+ S*
+$endlist
+$component D1
+ D?
+ S*
+$endlist
+$component D3
+ D?
+ S*
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "" ""
+ D3 2
+ D1 2
+ C3 1
+ C8 1
+ C7 1
+ C6 1
+ C5 1
+ C1 1
+Net 2 "" ""
+ C2 2
+ C8 2
+ C7 2
+ C4 2
+ C6 2
+ C5 2
+ D2 2
+ D4 2
+Net 3 "" ""
+ C4 1
+ D3 1
+ D4 1
+ P2 1
+ C3 2
+Net 4 "" ""
+ C1 2
+ C2 1
+ D1 1
+ D2 1
+ P1 1
+}
+#End
