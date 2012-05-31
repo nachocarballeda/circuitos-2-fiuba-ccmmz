@@ -1,16 +1,6 @@
-update=mié 30 may 2012 23:59:25 ART
+update=jue 31 may 2012 13:27:27 ART
 version=1
-last_client=kicad
-[cvpcb]
-version=1
-NetITyp=0
-NetIExt=.net
-PkgIExt=.pkg
-NetDir=
-LibDir=
-NetType=0
-[cvpcb/libraries]
-EquName1=devcms
+last_client=cvpcb
 [pcbnew]
 version=1
 PadDrlX=320
@@ -66,7 +56,6 @@ MaxLnkS=3
 ShowRat=0
 ShowMRa=1
 [pcbnew/libraries]
-LibDir=
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -77,6 +66,11 @@ LibName7=display
 LibName8=valves
 LibName9=led
 LibName10=dip_sockets
+LibName11=modelos/w_capacitors
+LibName12=modelos/w_misc_comp
+LibName13=modelos/w_pth_diodes
+LibName14=modelos/w_to
+LibDir=
 [eeschema]
 version=1
 LibDir=
@@ -143,3 +137,8 @@ LibName29=contrib
 LibName30=valves
 [general]
 version=1
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
