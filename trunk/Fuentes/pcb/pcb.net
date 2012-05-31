@@ -1,64 +1,83 @@
-# EESchema Netlist Version 1.1 created  jue 31 may 2012 13:29:24 ART
+# EESchema Netlist Version 1.1 created  jue 31 may 2012 14:40:18 ART
 (
  ( /4FC6E03B C2 C1 C
-  ( 1 N-000003 )
-  ( 2 N-000002 )
+  ( 1 N-000001 )
+  ( 2 N-000005 )
  )
  ( /4FC6E03A C2 C2 C
-  ( 1 N-000002 )
-  ( 2 N-000001 )
+  ( 1 N-000005 )
+  ( 2 N-000002 )
  )
  ( /4FC6E033 C2 C3 C
-  ( 1 N-000003 )
+  ( 1 N-000001 )
   ( 2 N-000004 )
  )
  ( /4FC6E037 C2 C4 C
   ( 1 N-000004 )
-  ( 2 N-000001 )
+  ( 2 N-000002 )
  )
- ( /4FC6E52B CP_26x45mm C5 C
+ ( /4FC6E52B CP_16x25mm C5 C
   ( 1 N-000003 )
   ( 2 N-000001 )
  )
- ( /4FC78069 CP_26x45mm C6 C
+ ( /4FC78069 CP_16x25mm C6 C
   ( 1 N-000003 )
   ( 2 N-000001 )
  )
- ( /4FC785F7 CP_26x45mm C7 C
+ ( /4FC785F7 CP_16x25mm C7 C
   ( 1 N-000003 )
   ( 2 N-000001 )
  )
- ( /4FC785F8 CP_26x45mm C8 C
+ ( /4FC785F8 CP_16x25mm C8 C
   ( 1 N-000003 )
   ( 2 N-000001 )
  )
- ( /4FC6DEA6 D3 D1 DIODE
+ ( /4FC7AB35 CP_16x25mm C9 C
   ( 1 N-000002 )
   ( 2 N-000003 )
  )
- ( /4FC6DEAE D3 D2 DIODE
+ ( /4FC7AB34 CP_16x25mm C10 C
   ( 1 N-000002 )
+  ( 2 N-000003 )
+ )
+ ( /4FC7AB33 CP_16x25mm C11 C
+  ( 1 N-000002 )
+  ( 2 N-000003 )
+ )
+ ( /4FC7AB32 CP_16x25mm C12 C
+  ( 1 N-000002 )
+  ( 2 N-000003 )
+ )
+ ( /4FC6DEA6 D3 D1 DIODE
+  ( 1 N-000005 )
   ( 2 N-000001 )
+ )
+ ( /4FC6DEAE D3 D2 DIODE
+  ( 1 N-000005 )
+  ( 2 N-000002 )
  )
  ( /4FC6DE9B D3 D3 DIODE
   ( 1 N-000004 )
-  ( 2 N-000003 )
+  ( 2 N-000001 )
  )
  ( /4FC6DEF5 D3 D4 DIODE
   ( 1 N-000004 )
-  ( 2 N-000001 )
+  ( 2 N-000002 )
  )
  ( /4FC6E02A 1pin P1 entrada1
-  ( 1 N-000002 )
+  ( 1 N-000005 )
  )
  ( /4FC6E026 1pin P2 entrada_2
   ( 1 N-000004 )
  )
  ( /4FC79AEF 1pin P3 +50V
-  ( 1 N-000003 )
+  ( 1 N-000001 )
  )
  ( /4FC79AE7 1pin P4 -50V
-  ( 1 N-000001 )
+  ( 1 N-000002 )
+ )
+ ( /4FC7AB52 1pin P5 GND
+  ( 1 N-000003 )
  )
 )
 *
@@ -99,6 +118,26 @@ $component C7
  C1-1
 $endlist
 $component C8
+ SM*
+ C?
+ C1-1
+$endlist
+$component C9
+ SM*
+ C?
+ C1-1
+$endlist
+$component C10
+ SM*
+ C?
+ C1-1
+$endlist
+$component C11
+ SM*
+ C?
+ C1-1
+$endlist
+$component C12
  SM*
  C?
  C1-1
