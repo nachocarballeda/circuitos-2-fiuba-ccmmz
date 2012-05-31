@@ -1,18 +1,18 @@
-# EESchema Netlist Version 1.1 created  jue 31 may 2012 14:59:28 ART
+# EESchema Netlist Version 1.1 created  jue 31 may 2012 15:14:44 ART
 (
- ( /4FC6E03B C2 C1 C
+ ( /4FC6E03B cnp_13x4mm C1 C
   ( 1 N-000001 )
   ( 2 N-000005 )
  )
- ( /4FC6E03A C2 C2 C
+ ( /4FC6E03A cnp_13x4mm C2 C
   ( 1 N-000005 )
   ( 2 N-000002 )
  )
- ( /4FC6E033 C2 C3 C
+ ( /4FC6E033 cnp_13x4mm C3 C
   ( 1 N-000001 )
   ( 2 N-000004 )
  )
- ( /4FC6E037 C2 C4 C
+ ( /4FC6E037 cnp_13x4mm C4 C
   ( 1 N-000004 )
   ( 2 N-000002 )
  )
