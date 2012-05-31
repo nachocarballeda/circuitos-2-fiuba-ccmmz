@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date jue 31 may 2012 11:54:14 ART
+EESchema Schematic File Version 2  date jue 31 may 2012 13:24:02 ART
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,6 +44,26 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 4700 1200
+Connection ~ 4700 2300
+$Comp
+L CONNECTOR P3
+U 1 1 4FC79AEF
+P 4700 1200
+F 0 "P3" H 5050 1300 70  0000 C CNN
+F 1 "+50V" H 5050 1100 70  0000 C CNN
+	1    4700 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONNECTOR P4
+U 1 1 4FC79AE7
+P 4700 2300
+F 0 "P4" H 5050 2400 70  0000 C CNN
+F 1 "-50V" H 5050 2200 70  0000 C CNN
+	1    4700 2300
+	1    0    0    -1  
+$EndComp
 Connection ~ 3650 1200
 Wire Wire Line
 	3650 1500 3650 1200

@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = jue 31 may 2012 02:06:31 ART
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = jue 31 may 2012 13:29:24 ART
 
 BeginCmp
 TimeStamp = /4FC6E03B;
@@ -32,7 +32,28 @@ BeginCmp
 TimeStamp = /4FC6E52B;
 Reference = C5;
 ValeurCmp = C;
-IdModule  = C2;
+IdModule  = CP_26x45mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FC78069;
+Reference = C6;
+ValeurCmp = C;
+IdModule  = CP_26x45mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FC785F7;
+Reference = C7;
+ValeurCmp = C;
+IdModule  = CP_26x45mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FC785F8;
+Reference = C8;
+ValeurCmp = C;
+IdModule  = CP_26x45mm;
 EndCmp
 
 BeginCmp
@@ -74,6 +95,20 @@ BeginCmp
 TimeStamp = /4FC6E026;
 Reference = P2;
 ValeurCmp = entrada_2;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FC79AEF;
+Reference = P3;
+ValeurCmp = +50V;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FC79AE7;
+Reference = P4;
+ValeurCmp = -50V;
 IdModule  = 1pin;
 EndCmp
 
