@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date jue 31 may 2012 14:34:31 ART
+EESchema Schematic File Version 2  date jue 31 may 2012 23:57:30 ART
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,7 +36,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "31 may 2012"
+Date "1 jun 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -276,7 +276,7 @@ P 1900 2100
 F 0 "D4" H 1900 2200 40  0000 C CNN
 F 1 "DIODE" H 1900 2000 40  0000 C CNN
 	1    1900 2100
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L DIODE D2
@@ -285,7 +285,7 @@ P 1450 2100
 F 0 "D2" H 1450 2200 40  0000 C CNN
 F 1 "DIODE" H 1450 2000 40  0000 C CNN
 	1    1450 2100
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L DIODE D1
