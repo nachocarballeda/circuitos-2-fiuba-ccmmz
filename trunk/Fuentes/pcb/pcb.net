@@ -1,127 +1,87 @@
-# EESchema Netlist Version 1.1 created  jue 31 may 2012 15:14:44 ART
+# EESchema Netlist Version 1.1 created  jue 31 may 2012 23:57:34 ART
 (
- ( /4FC6E03B cnp_13x4mm C1 C
-  ( 1 N-000001 )
-  ( 2 N-000005 )
+ ( /4FC7AB52 $noname  P5 GND {Lib=CONNECTOR}
+  (    1 N-000003 )
  )
- ( /4FC6E03A cnp_13x4mm C2 C
-  ( 1 N-000005 )
-  ( 2 N-000002 )
+ ( /4FC7AB35 $noname  C9 C {Lib=C}
+  (    1 N-000003 )
+  (    2 N-000002 )
  )
- ( /4FC6E033 cnp_13x4mm C3 C
-  ( 1 N-000001 )
-  ( 2 N-000004 )
+ ( /4FC7AB34 $noname  C10 C {Lib=C}
+  (    1 N-000003 )
+  (    2 N-000002 )
  )
- ( /4FC6E037 cnp_13x4mm C4 C
-  ( 1 N-000004 )
-  ( 2 N-000002 )
+ ( /4FC7AB33 $noname  C11 C {Lib=C}
+  (    1 N-000003 )
+  (    2 N-000002 )
  )
- ( /4FC6E52B CP_16x25mm C5 C
-  ( 1 N-000003 )
-  ( 2 N-000001 )
+ ( /4FC7AB32 $noname  C12 C {Lib=C}
+  (    1 N-000003 )
+  (    2 N-000002 )
  )
- ( /4FC78069 CP_16x25mm C6 C
-  ( 1 N-000003 )
-  ( 2 N-000001 )
+ ( /4FC79AEF $noname  P3 +50V {Lib=CONNECTOR}
+  (    1 N-000001 )
  )
- ( /4FC785F7 CP_16x25mm C7 C
-  ( 1 N-000003 )
-  ( 2 N-000001 )
+ ( /4FC79AE7 $noname  P4 -50V {Lib=CONNECTOR}
+  (    1 N-000002 )
  )
- ( /4FC785F8 CP_16x25mm C8 C
-  ( 1 N-000003 )
-  ( 2 N-000001 )
+ ( /4FC785F8 $noname  C8 C {Lib=C}
+  (    1 N-000001 )
+  (    2 N-000003 )
  )
- ( /4FC7AB35 CP_16x25mm C9 C
-  ( 1 N-000002 )
-  ( 2 N-000003 )
+ ( /4FC785F7 $noname  C7 C {Lib=C}
+  (    1 N-000001 )
+  (    2 N-000003 )
  )
- ( /4FC7AB34 CP_16x25mm C10 C
-  ( 1 N-000002 )
-  ( 2 N-000003 )
+ ( /4FC78069 $noname  C6 C {Lib=C}
+  (    1 N-000001 )
+  (    2 N-000003 )
  )
- ( /4FC7AB33 CP_16x25mm C11 C
-  ( 1 N-000002 )
-  ( 2 N-000003 )
+ ( /4FC6E52B $noname  C5 C {Lib=C}
+  (    1 N-000001 )
+  (    2 N-000003 )
  )
- ( /4FC7AB32 CP_16x25mm C12 C
-  ( 1 N-000002 )
-  ( 2 N-000003 )
+ ( /4FC6E03B $noname  C1 C {Lib=C}
+  (    1 N-000001 )
+  (    2 N-000005 )
  )
- ( /4FC6DEA6 D6 D1 DIODE
-  ( 1 N-000005 )
-  ( 2 N-000001 )
+ ( /4FC6E03A $noname  C2 C {Lib=C}
+  (    1 N-000005 )
+  (    2 N-000002 )
  )
- ( /4FC6DEAE D6 D2 DIODE
-  ( 1 N-000005 )
-  ( 2 N-000002 )
+ ( /4FC6E037 $noname  C4 C {Lib=C}
+  (    1 N-000004 )
+  (    2 N-000002 )
  )
- ( /4FC6DE9B D6 D3 DIODE
-  ( 1 N-000004 )
-  ( 2 N-000001 )
+ ( /4FC6E033 $noname  C3 C {Lib=C}
+  (    1 N-000001 )
+  (    2 N-000004 )
  )
- ( /4FC6DEF5 D6 D4 DIODE
-  ( 1 N-000004 )
-  ( 2 N-000002 )
+ ( /4FC6E02A $noname  P1 entrada1 {Lib=CONNECTOR}
+  (    1 N-000005 )
  )
- ( /4FC6E02A 1pin P1 entrada1
-  ( 1 N-000005 )
+ ( /4FC6E026 $noname  P2 entrada_2 {Lib=CONNECTOR}
+  (    1 N-000004 )
  )
- ( /4FC6E026 1pin P2 entrada_2
-  ( 1 N-000004 )
+ ( /4FC6DEF5 $noname  D4 DIODE {Lib=DIODE}
+  (    1 N-000002 )
+  (    2 N-000004 )
  )
- ( /4FC79AEF 1pin P3 +50V
-  ( 1 N-000001 )
+ ( /4FC6DEAE $noname  D2 DIODE {Lib=DIODE}
+  (    1 N-000002 )
+  (    2 N-000005 )
  )
- ( /4FC79AE7 1pin P4 -50V
-  ( 1 N-000002 )
+ ( /4FC6DEA6 $noname  D1 DIODE {Lib=DIODE}
+  (    1 N-000005 )
+  (    2 N-000001 )
  )
- ( /4FC7AB52 1pin P5 GND
-  ( 1 N-000003 )
+ ( /4FC6DE9B $noname  D3 DIODE {Lib=DIODE}
+  (    1 N-000004 )
+  (    2 N-000001 )
  )
 )
 *
 { Allowed footprints by component:
-$component C1
- SM*
- C?
- C1-1
-$endlist
-$component C2
- SM*
- C?
- C1-1
-$endlist
-$component C3
- SM*
- C?
- C1-1
-$endlist
-$component C4
- SM*
- C?
- C1-1
-$endlist
-$component C5
- SM*
- C?
- C1-1
-$endlist
-$component C6
- SM*
- C?
- C1-1
-$endlist
-$component C7
- SM*
- C?
- C1-1
-$endlist
-$component C8
- SM*
- C?
- C1-1
-$endlist
 $component C9
  SM*
  C?
@@ -142,7 +102,47 @@ $component C12
  C?
  C1-1
 $endlist
-$component D1
+$component C8
+ SM*
+ C?
+ C1-1
+$endlist
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component D4
  D?
  S*
 $endlist
@@ -150,13 +150,58 @@ $component D2
  D?
  S*
 $endlist
-$component D3
+$component D1
  D?
  S*
 $endlist
-$component D4
+$component D3
  D?
  S*
 $endlist
 $endfootprintlist
 }
+{ Pin List by Nets
+Net 1 "" ""
+ D3 2
+ D1 2
+ C3 1
+ C1 1
+ C5 1
+ P3 1
+ C8 1
+ C7 1
+ C6 1
+Net 2 "" ""
+ P4 1
+ C12 2
+ C9 2
+ D2 1
+ C10 2
+ D4 1
+ C11 2
+ C4 2
+ C2 2
+Net 3 "" ""
+ C7 2
+ P5 1
+ C9 1
+ C10 1
+ C8 2
+ C12 1
+ C5 2
+ C11 1
+ C6 2
+Net 4 "" ""
+ D3 1
+ D4 2
+ P2 1
+ C3 2
+ C4 1
+Net 5 "" ""
+ C1 2
+ C2 1
+ P1 1
+ D2 2
+ D1 1
+}
+#End

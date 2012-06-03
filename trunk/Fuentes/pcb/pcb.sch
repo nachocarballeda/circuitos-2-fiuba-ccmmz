@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date jue 31 may 2012 14:37:13 ART
+EESchema Schematic File Version 2  date vie 01 jun 2012 00:05:45 ART
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,7 +36,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "31 may 2012"
+Date "1 jun 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -132,7 +132,7 @@ P 3200 2000
 F 0 "C9" H 3250 2100 50  0000 L CNN
 F 1 "C" H 3250 1900 50  0000 L CNN
 	1    3200 2000
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L C C10
@@ -141,7 +141,7 @@ P 3650 2000
 F 0 "C10" H 3700 2100 50  0000 L CNN
 F 1 "C" H 3700 1900 50  0000 L CNN
 	1    3650 2000
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L C C11
@@ -150,7 +150,7 @@ P 4150 2000
 F 0 "C11" H 4200 2100 50  0000 L CNN
 F 1 "C" H 4200 1900 50  0000 L CNN
 	1    4150 2000
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L C C12
@@ -159,7 +159,7 @@ P 4700 2000
 F 0 "C12" H 4750 2100 50  0000 L CNN
 F 1 "C" H 4750 1900 50  0000 L CNN
 	1    4700 2000
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L CONNECTOR P3
@@ -186,7 +186,7 @@ P 4700 1450
 F 0 "C8" H 4750 1550 50  0000 L CNN
 F 1 "C" H 4750 1350 50  0000 L CNN
 	1    4700 1450
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L C C7
@@ -195,7 +195,7 @@ P 4150 1450
 F 0 "C7" H 4200 1550 50  0000 L CNN
 F 1 "C" H 4200 1350 50  0000 L CNN
 	1    4150 1450
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L C C6
@@ -204,7 +204,7 @@ P 3650 1450
 F 0 "C6" H 3700 1550 50  0000 L CNN
 F 1 "C" H 3700 1350 50  0000 L CNN
 	1    3650 1450
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L C C5
@@ -213,7 +213,7 @@ P 3200 1450
 F 0 "C5" H 3250 1550 50  0000 L CNN
 F 1 "C" H 3250 1350 50  0000 L CNN
 	1    3200 1450
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L C C1
@@ -276,7 +276,7 @@ P 1900 2100
 F 0 "D4" H 1900 2200 40  0000 C CNN
 F 1 "DIODE" H 1900 2000 40  0000 C CNN
 	1    1900 2100
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L DIODE D2
@@ -285,7 +285,7 @@ P 1450 2100
 F 0 "D2" H 1450 2200 40  0000 C CNN
 F 1 "DIODE" H 1450 2000 40  0000 C CNN
 	1    1450 2100
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L DIODE D1
