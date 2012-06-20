@@ -28,13 +28,15 @@ realizacion del Circuito impreso
 	Criterios de diseño
 	Disipadores
 	Circuito implementado
-	lista de componentes
 	Fuente Lineal
 	Fuente Conmutada
+	lista de componentes
 mediciones
 	Polarizacion
 	Respuesta en Frecuencia
 	Estabilidad
 	Distorsion
+Comparativa Mediciones-Simulaciones
+Errores y modificaciones al diseño original
 
 
