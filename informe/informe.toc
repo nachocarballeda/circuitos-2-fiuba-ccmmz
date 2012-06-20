@@ -8,8 +8,10 @@
 \contentsline {subsection}{\numberline {3.3}Simulaciones}{3}
 \contentsline {subsection}{\numberline {3.4}Realizaci\IeC {\'o}n del Circuito Impreso}{3}
 \contentsline {subsubsection}{\numberline {3.4.1}Criterios de Dise\IeC {\~n}o}{3}
-\contentsline {subsubsection}{\numberline {3.4.2}Circuito Implementado}{4}
-\contentsline {subsection}{\numberline {3.5}Mediciones}{4}
-\contentsline {subsection}{\numberline {3.6}Comparativa Mediciones-Simulaciones}{4}
+\contentsline {subsubsection}{\numberline {3.4.2}Circuito Implementado}{3}
+\contentsline {subsubsection}{\numberline {3.4.3}Fuente Lineal}{3}
+\contentsline {subsection}{\numberline {3.5}Mediciones}{3}
+\contentsline {subsection}{\numberline {3.6}Comparativa Mediciones-Simulaciones}{3}
+\contentsline {subsection}{\numberline {3.7}Errores y Modificaciones al Dise\IeC {\~n}o Original}{3}
 \contentsline {section}{\numberline {4}Conclusiones}{5}
 \contentsline {section}{\numberline {5}Anexos}{6}
