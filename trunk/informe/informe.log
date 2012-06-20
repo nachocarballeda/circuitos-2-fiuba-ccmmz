@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.5.5)  20 JUN 2012 13:19
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.5.5)  20 JUN 2012 16:50
 entering extended mode
  %&-line parsing enabled.
 **informe.tex
@@ -386,18 +386,18 @@ Package ifvtex Info: VTeX not detected.
 (./caratula.aux))
 \openout1 = `informe.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
  (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count106
@@ -478,31 +478,38 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 
 [2
 
-] (./realizacion_del_circuito_impreso.tex)
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
+ Make it at least 15.71667pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[1] (./informe.aux (./caratula.aux)) ) 
+[1] (./objetivos.tex) [2] (./realizacion_del_circuito_impreso.tex
+<img/circuito_impreso.png, id=23, 573.14125pt x 428.60126pt>
+File: img/circuito_impreso.png Graphic file (type png)
+
+<use img/circuito_impreso.png> [3]) [4 <./img/circuito_impreso.png (PNG copy)>]
+[5] [6] (./informe.aux (./caratula.aux)) ) 
 Here is how much of TeX's memory you used:
- 3194 strings out of 494999
- 38065 string characters out of 1180817
- 99507 words of memory out of 3000000
- 6338 multiletter control sequences out of 15000+50000
+ 3205 strings out of 494999
+ 38264 string characters out of 1180817
+ 100507 words of memory out of 3000000
+ 6344 multiletter control sequences out of 15000+50000
  13055 words of font info for 50 fonts, out of 3000000 for 9000
  54 hyphenation exceptions out of 8191
- 30i,11n,43p,290b,371s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
-s/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.p
-fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmsl12.pfb>
-Output written on informe.pdf (3 pages, 226981 bytes).
+ 32i,11n,43p,290b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb>
+Output written on informe.pdf (8 pages, 286216 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
+ 63 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

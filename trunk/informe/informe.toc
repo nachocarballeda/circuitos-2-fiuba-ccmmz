@@ -1,13 +1,15 @@
 \select@language {spanish}
 \contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{1}
-\contentsline {section}{\numberline {2}Objetivos}{1}
-\contentsline {section}{\numberline {3}Desarrollo}{1}
-\contentsline {subsection}{\numberline {3.1}C\IeC {\'a}lculos del Amplificador de Audio}{1}
-\contentsline {subsection}{\numberline {3.2}C\IeC {\'a}lculos de las Fuentes de Alimentaci\IeC {\'o}n}{1}
-\contentsline {subsection}{\numberline {3.3}Simulaciones}{1}
-\contentsline {subsection}{\numberline {3.4}Realizaci\IeC {\'o}n del Circuito Impreso}{1}
-\contentsline {subsubsection}{\numberline {3.4.1}Criterios de Dise\IeC {\~n}o}{1}
-\contentsline {subsection}{\numberline {3.5}Mediciones}{1}
-\contentsline {subsection}{\numberline {3.6}Comparativa Mediciones-Simulaciones}{1}
-\contentsline {section}{\numberline {4}Conclusiones}{1}
-\contentsline {section}{\numberline {5}Anexos}{1}
+\contentsline {section}{\numberline {2}Objetivos}{2}
+\contentsline {paragraph}{Especificaciones iniciales (t\IeC {\'\i }picas) de dise\IeC {\~n}o:}{2}
+\contentsline {section}{\numberline {3}Desarrollo}{3}
+\contentsline {subsection}{\numberline {3.1}C\IeC {\'a}lculos del Amplificador de Audio}{3}
+\contentsline {subsection}{\numberline {3.2}C\IeC {\'a}lculos de las Fuentes de Alimentaci\IeC {\'o}n}{3}
+\contentsline {subsection}{\numberline {3.3}Simulaciones}{3}
+\contentsline {subsection}{\numberline {3.4}Realizaci\IeC {\'o}n del Circuito Impreso}{3}
+\contentsline {subsubsection}{\numberline {3.4.1}Criterios de Dise\IeC {\~n}o}{3}
+\contentsline {subsubsection}{\numberline {3.4.2}Circuito Implementado}{4}
+\contentsline {subsection}{\numberline {3.5}Mediciones}{4}
+\contentsline {subsection}{\numberline {3.6}Comparativa Mediciones-Simulaciones}{4}
+\contentsline {section}{\numberline {4}Conclusiones}{5}
+\contentsline {section}{\numberline {5}Anexos}{6}

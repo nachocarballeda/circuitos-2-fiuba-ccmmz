@@ -1,0 +1,40 @@
+Cosas que pidieron:
+diagramas y esquematicos
+calculo y seleccion de c/u de los componentes
+simulaciones
+pcb criterios de diseño
+liastado de componentes mediciones
+comparacion parametros calculados vs simulaciones
+
+Indice de Desarrollo:
+
+Calculos de Etapas Amplificador de audio
+	par diferencial
+	vas
+	salida clase G	
+	realimentacion
+	compensacion y slew rate
+	proteccion contra cortos
+	componentes adicionales para disminuir la distorsion
+	diagrama generaldel amplificador de audio
+Calculos de fuentes de Alimentacion
+	Fuente Lineal
+	Fuente Conmutada
+simulaciones
+	simulacion por etapas
+	simulacion general
+	estabilidad
+realizacion del Circuito impreso
+	Criterios de diseño
+	Disipadores
+	Circuito implementado
+	lista de componentes
+	Fuente Lineal
+	Fuente Conmutada
+mediciones
+	Polarizacion
+	Respuesta en Frecuencia
+	Estabilidad
+	Distorsion
+
+

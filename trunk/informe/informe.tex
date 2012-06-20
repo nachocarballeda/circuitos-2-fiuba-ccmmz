@@ -8,8 +8,9 @@
 \usepackage{fancyhdr}
 \usepackage{geometry}
 \geometry{a4paper,tmargin=1in,bmargin=1in,lmargin=0.6in,rmargin=0.8in} 
-
-
+%Para que no recorte las palabras con guiones
+\tolerance=1000
+\pretolerance=1000
 % Símbolos de las unidades, sobre todo es para que en una ecuacion no queden en cursiva
 
 \newcommand{\volt}{\mbox{V}}
@@ -57,9 +58,10 @@
 %\input{cada parte del tp}
 
 \section{Introducción}
+\newpage
 \section{Objetivos}
-
-
+\input{objetivos.tex}
+\newpage
 \section{Desarrollo}
 
 \subsection{Cálculos del Amplificador de Audio}
@@ -75,8 +77,9 @@
 
 \subsection{Comparativa Mediciones-Simulaciones}
 
+\newpage
 \section{Conclusiones}
-
+\newpage
 \section{Anexos}
 
 
