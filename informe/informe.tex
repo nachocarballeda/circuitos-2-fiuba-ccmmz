@@ -59,32 +59,31 @@
 
 %Seciones y subseciones del tp
 
-\section{Introducción}
 \input{introduccion.tex}
 \newpage
-\section{Objetivos}
 \input{objetivos.tex}
 \newpage
+
 \section{Desarrollo}
+{
+	\input{calculos_ampl_audio.tex}
 
-\subsection{Cálculos del Amplificador de Audio}
-\input{calculos_ampl_audio.tex}
-\subsection{Cálculos de las Fuentes de Alimentación}
-\input{calculo_fuentes_alimentacion.tex}
-\subsection{Simulaciones}
+	\input{calculo_fuentes_alimentacion.tex}
 
-\subsection{Realización del Circuito Impreso}
-\input{realizacion_del_circuito_impreso.tex}
+	\input{simulaciones.tex}
 
-\subsection{Mediciones}
+	\input{realizacion_del_circuito_impreso.tex}
 
-\subsection{Comparativa Mediciones-Simulaciones}
-\subsection{Errores y Modificaciones al Diseño Original}
+	\input{mediciones.tex}
 
+	\input{comp_med_sim.tex}
+
+	\input{error_y_modif.tex}
+}
 \newpage
-\section{Conclusiones}
+\input{conclusiones.tex}
 \newpage
-\section{Anexos}
+\input{anexos}
 
 \end{document}
 
