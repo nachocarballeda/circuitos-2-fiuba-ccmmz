@@ -1,4 +1,5 @@
 \documentclass[12pt,a4paper]{article}
+\setlength{\headheight}{16pt}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
@@ -6,8 +7,9 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
+\usepackage{float}
 \usepackage{geometry}
-\geometry{a4paper,tmargin=1in,bmargin=1in,lmargin=0.6in,rmargin=0.8in} 
+\geometry{a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm} 
 %Para que no recorte las palabras con guiones
 \tolerance=1000
 \pretolerance=1000
@@ -65,7 +67,7 @@
 \section{Desarrollo}
 
 \subsection{Cálculos del Amplificador de Audio}
-
+\input{calculos_ampl_audio.tex}
 \subsection{Cálculos de las Fuentes de Alimentación}
 \input{calculo_fuentes_alimentacion.tex}
 \subsection{Simulaciones}
