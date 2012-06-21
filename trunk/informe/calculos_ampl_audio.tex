@@ -1,9 +1,18 @@
+\subsection{Cálculos del Amplificador de Audio}
 \bigskip
-\subsubsection{Realimentación}
+\subsubsection{Etapa de Entrada}
+Debido a que se piensa utilizar realimentación para mejorar las características del circuito, se implementa una entrada diferencial, cuya implementación más simple es un par diferencial. En parte porque se puede mejorar fácilmente utilizando:
 
-
+\begin{itemize}
+\item Fuente de corriente para su polarización, aumentando su relación de rechazo en modo común
+\item Realimentaciones locales para disminuir distorsiones debido a alinealidades.
+\item Un par de transistores en paralelo para mejorar la relación señal-ruido.
+\item Una fuente de corriente espejo como carga para aumentar la ganancia de corriente a la salida de esta etapa y cancelar el $2^{do}$ armónico 
+\end{itemize}
 
 \bigskip
 \subsubsection{Compensación y Slew Rate}
 
 El principal inconveniente al compensar el circuito por polo dominantes es que al agregar un capacitor, este modifica el ancho de banda de potencia. Esto se debe al tiempo que le toma a la etapa anterior cargar el capacitor. Debido a esto la elección del valor de este capacitor debe tener en cuenta ambos efectos y buscar una relación de compromiso entre ambos.
+\bigskip
+\subsubsection{Protección Contra Cortocircuitos}\label{contra_cortos} 

@@ -1,3 +1,5 @@
+\subsection{Realización del Circuito Impreso}
+\bigskip 
 \subsubsection{Criterios de Diseño}
 
 \begin{itemize}
@@ -20,6 +22,17 @@
 \item Disipadores en el borde de la placa para facilitar instalación y optimizar su disipación.
 
 \end{itemize}
+\subsubsection{Disipadores}
+\bigskip
+Para el calculo de los disipadores se utilizo la ley experimental:
+$$
+   \theta_{ja}=\dfrac{T_jm-T_a}{P_D}
+$$
+$$
+	\theta_{ja}=\theta_{jc}+\theta_{cs}+\theta_{sa}
+$$
+
+En la cual $\theta_{ja}$ es la resistencia térmica juntura-ambiente. Para cada transistor que maneje altas corrientes se calcula el valor del disipador requerido teniendo en cuenta la potencia disipada y su resistencia térmica. En el caso del transistor del multiplicador Vbe, que requiere estar a la misma temperatura que los de la salida clase B, se ubicará en el mismo disipador para disminuir la diferencia de temperaturas entre ellos.
 
 \subsubsection{Circuito Implementado}
 \begin{figure}[H]
