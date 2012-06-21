@@ -1,21 +1,21 @@
-# EESchema Netlist Version 1.1 created  jue 31 may 2012 23:57:34 ART
+# EESchema Netlist Version 1.1 created  mié 20 jun 2012 17:24:03 ART
 (
  ( /4FC7AB52 $noname  P5 GND {Lib=CONNECTOR}
   (    1 N-000003 )
  )
- ( /4FC7AB35 $noname  C9 C {Lib=C}
+ ( /4FC7AB35 $noname  C9 2200u {Lib=C}
   (    1 N-000003 )
   (    2 N-000002 )
  )
- ( /4FC7AB34 $noname  C10 C {Lib=C}
+ ( /4FC7AB34 $noname  C10 2200u {Lib=C}
   (    1 N-000003 )
   (    2 N-000002 )
  )
- ( /4FC7AB33 $noname  C11 C {Lib=C}
+ ( /4FC7AB33 $noname  C11 2200u {Lib=C}
   (    1 N-000003 )
   (    2 N-000002 )
  )
- ( /4FC7AB32 $noname  C12 C {Lib=C}
+ ( /4FC7AB32 $noname  C12 2200u {Lib=C}
   (    1 N-000003 )
   (    2 N-000002 )
  )
@@ -25,35 +25,35 @@
  ( /4FC79AE7 $noname  P4 -50V {Lib=CONNECTOR}
   (    1 N-000002 )
  )
- ( /4FC785F8 $noname  C8 C {Lib=C}
+ ( /4FC785F8 $noname  C8 2200u {Lib=C}
   (    1 N-000001 )
   (    2 N-000003 )
  )
- ( /4FC785F7 $noname  C7 C {Lib=C}
+ ( /4FC785F7 $noname  C7 2200u {Lib=C}
   (    1 N-000001 )
   (    2 N-000003 )
  )
- ( /4FC78069 $noname  C6 C {Lib=C}
+ ( /4FC78069 $noname  C6 2200u {Lib=C}
   (    1 N-000001 )
   (    2 N-000003 )
  )
- ( /4FC6E52B $noname  C5 C {Lib=C}
+ ( /4FC6E52B $noname  C5 2200u {Lib=C}
   (    1 N-000001 )
   (    2 N-000003 )
  )
- ( /4FC6E03B $noname  C1 C {Lib=C}
+ ( /4FC6E03B $noname  C1 100n {Lib=C}
   (    1 N-000001 )
   (    2 N-000005 )
  )
- ( /4FC6E03A $noname  C2 C {Lib=C}
+ ( /4FC6E03A $noname  C2 100n {Lib=C}
   (    1 N-000005 )
   (    2 N-000002 )
  )
- ( /4FC6E037 $noname  C4 C {Lib=C}
+ ( /4FC6E037 $noname  C4 100n {Lib=C}
   (    1 N-000004 )
   (    2 N-000002 )
  )
- ( /4FC6E033 $noname  C3 C {Lib=C}
+ ( /4FC6E033 $noname  C3 100n {Lib=C}
   (    1 N-000001 )
   (    2 N-000004 )
  )
@@ -63,19 +63,19 @@
  ( /4FC6E026 $noname  P2 entrada_2 {Lib=CONNECTOR}
   (    1 N-000004 )
  )
- ( /4FC6DEF5 $noname  D4 DIODE {Lib=DIODE}
+ ( /4FC6DEF5 $noname  D4 6A10 {Lib=DIODE}
   (    1 N-000002 )
   (    2 N-000004 )
  )
- ( /4FC6DEAE $noname  D2 DIODE {Lib=DIODE}
+ ( /4FC6DEAE $noname  D2 6A10 {Lib=DIODE}
   (    1 N-000002 )
   (    2 N-000005 )
  )
- ( /4FC6DEA6 $noname  D1 DIODE {Lib=DIODE}
+ ( /4FC6DEA6 $noname  D1 6A10 {Lib=DIODE}
   (    1 N-000005 )
   (    2 N-000001 )
  )
- ( /4FC6DE9B $noname  D3 DIODE {Lib=DIODE}
+ ( /4FC6DE9B $noname  D3 6A10 {Lib=DIODE}
   (    1 N-000004 )
   (    2 N-000001 )
  )
@@ -162,34 +162,34 @@ $endfootprintlist
 }
 { Pin List by Nets
 Net 1 "" ""
- D3 2
- D1 2
  C3 1
  C1 1
  C5 1
- P3 1
- C8 1
- C7 1
+ D1 2
+ D3 2
  C6 1
+ C7 1
+ C8 1
+ P3 1
 Net 2 "" ""
  P4 1
  C12 2
+ C11 2
+ C10 2
  C9 2
  D2 1
- C10 2
  D4 1
- C11 2
- C4 2
  C2 2
+ C4 2
 Net 3 "" ""
  C7 2
- P5 1
- C9 1
- C10 1
  C8 2
  C12 1
- C5 2
  C11 1
+ C5 2
+ C10 1
+ C9 1
+ P5 1
  C6 2
 Net 4 "" ""
  D3 1

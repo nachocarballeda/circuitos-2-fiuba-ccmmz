@@ -15,7 +15,7 @@ Calculos de Etapas Amplificador de audio
 	realimentacion
 	compensacion y slew rate
 	proteccion contra cortos
-	componentes adicionales para disminuir la distorsion
+	componentes adicionales
 	diagrama generaldel amplificador de audio
 Calculos de fuentes de Alimentacion
 	Fuente Lineal
