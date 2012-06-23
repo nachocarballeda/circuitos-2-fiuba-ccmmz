@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.3  Date: sáb 23 jun 2012 13:23:19 ART
+#encoding utf-8
+#
+# NUCLEO
+#
+DEF NUCLEO nucleo 0 40 Y Y 1 F N
+F0 "nucleo" 0 600 60 H V C CNN
+F1 "NUCLEO" 0 -700 60 H V C CNN
+DRAW
+S -400 550 400 -650 0 1 0 N
+X V+Primario 1 -700 300 300 R 50 50 1 1 I
+X V-Primario 2 -700 -450 300 R 50 50 1 1 I
+X V+Secundario 3 700 450 300 L 50 50 1 1 I
+X GND_Secundario 4 700 -50 300 L 50 50 1 1 I
+X V-Secundario 5 700 -550 300 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
