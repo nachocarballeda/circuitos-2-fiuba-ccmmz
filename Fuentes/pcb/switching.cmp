@@ -1,0 +1,178 @@
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = mar 26 jun 2012 23:00:08 ART
+
+BeginCmp
+TimeStamp = /4FE60B02;
+Reference = C1;
+ValeurCmp = C;
+IdModule  = C1V5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE609A0;
+Reference = C2;
+ValeurCmp = C;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE5EDAC;
+Reference = C3;
+ValeurCmp = C;
+IdModule  = CP_8x21mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE5ED92;
+Reference = C4;
+ValeurCmp = C;
+IdModule  = CP_8x21mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE60C5A;
+Reference = C5;
+ValeurCmp = C;
+IdModule  = cnp_13x4mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE5EDC2;
+Reference = D1;
+ValeurCmp = DIODE;
+IdModule  = D6;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE5EDC6;
+Reference = D2;
+ValeurCmp = DIODE;
+IdModule  = D6;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE5D585;
+Reference = lm4941;
+ValeurCmp = LM494;
+IdModule  = DIP-16__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE5D58D;
+Reference = nucleo1;
+ValeurCmp = NUCLEO;
+IdModule  = nucleo;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE5EE82;
+Reference = P1;
+ValeurCmp = Vcc;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE5EDFA;
+Reference = P2;
+ValeurCmp = V-switching;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE5EDF6;
+Reference = P3;
+ValeurCmp = V+switching;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE5ECF6;
+Reference = P4;
+ValeurCmp = gnd_switching;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE62FD1;
+Reference = P5;
+ValeurCmp = Gnd_primario;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE5EFEB;
+Reference = Q1;
+ValeurCmp = MOS_N;
+IdModule  = to247;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE60AF1;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = R3-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE60917;
+Reference = R2;
+ValeurCmp = R;
+IdModule  = R3-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE60AEC;
+Reference = R3;
+ValeurCmp = R;
+IdModule  = R3-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE60B67;
+Reference = R4;
+ValeurCmp = R;
+IdModule  = R3-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE60998;
+Reference = R5;
+ValeurCmp = R;
+IdModule  = R3-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE5EE76;
+Reference = R6;
+ValeurCmp = R;
+IdModule  = R7;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE609CB;
+Reference = R7;
+ValeurCmp = R;
+IdModule  = R7;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE5EE22;
+Reference = R8;
+ValeurCmp = R;
+IdModule  = R3-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE5EE3C;
+Reference = R9;
+ValeurCmp = R;
+IdModule  = R3-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FE60C75;
+Reference = R10;
+ValeurCmp = R;
+IdModule  = R7;
+EndCmp
+
+EndListe

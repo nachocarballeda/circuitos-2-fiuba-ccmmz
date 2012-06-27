@@ -1,0 +1,309 @@
+# EESchema Netlist Version 1.1 created  mar 26 jun 2012 23:31:12 ART
+(
+ ( /4FE62FD1 $noname  P5 Gnd_primario {Lib=CONNECTOR}
+  (    1 GND )
+ )
+ ( /4FE5D58D $noname  nucleo1 NUCLEO {Lib=NUCLEO}
+  (    1 N-000004 )
+  (    2 N-000007 )
+  (    3 N-000008 )
+  (    4 N-000018 )
+  (    5 N-000018 )
+  (    6 N-000009 )
+ )
+ ( /4FE60C75 $noname  R10 R {Lib=R}
+  (    1 N-000010 )
+  (    2 N-000007 )
+ )
+ ( /4FE60C5A $noname  C5 C {Lib=C}
+  (    1 GND )
+  (    2 N-000010 )
+ )
+ ( /4FE60B67 $noname  R4 R {Lib=R}
+  (    1 N-000015 )
+  (    2 N-000011 )
+ )
+ ( /4FE60B02 $noname  C1 C {Lib=C}
+  (    1 /Vref )
+  (    2 N-000001 )
+ )
+ ( /4FE60AF1 $noname  R1 R {Lib=R}
+  (    1 N-000001 )
+  (    2 /Vref )
+ )
+ ( /4FE60AEC $noname  R3 R {Lib=R}
+  (    1 GND )
+  (    2 N-000001 )
+ )
+ ( /4FE609CB $noname  R7 R {Lib=R}
+  (    1 N-000004 )
+  (    2 N-000012 )
+ )
+ ( /4FE609A0 $noname  C2 C {Lib=C}
+  (    1 GND )
+  (    2 N-000005 )
+ )
+ ( /4FE60998 $noname  R5 R {Lib=R}
+  (    1 GND )
+  (    2 N-000006 )
+ )
+ ( /4FE60917 $noname  R2 R {Lib=R}
+  (    1 /Vref )
+  (    2 N-000015 )
+ )
+ ( /4FE5EFEB $noname  Q1 MOS_N {Lib=MOS_N}
+  (    1 GND )
+  (    2 N-000007 )
+  (    3 N-000012 )
+ )
+ ( /4FE5EE82 $noname  P1 Vcc {Lib=CONNECTOR}
+  (    1 N-000004 )
+ )
+ ( /4FE5EE76 $noname  R6 R {Lib=R}
+  (    1 N-000014 )
+  (    2 N-000004 )
+ )
+ ( /4FE5EE3C $noname  R9 R {Lib=R}
+  (    1 N-000013 )
+  (    2 N-000018 )
+ )
+ ( /4FE5EE22 $noname  R8 R {Lib=R}
+  (    1 N-000017 )
+  (    2 N-000013 )
+ )
+ ( /4FE5EDFA $noname  P2 V-switching {Lib=CONNECTOR}
+  (    1 N-000016 )
+ )
+ ( /4FE5EDF6 $noname  P3 V+switching {Lib=CONNECTOR}
+  (    1 N-000017 )
+ )
+ ( /4FE5EDC6 $noname  D2 DIODE {Lib=DIODE}
+  (    1 N-000016 )
+  (    2 N-000009 )
+ )
+ ( /4FE5EDC2 $noname  D1 DIODE {Lib=DIODE}
+  (    1 N-000008 )
+  (    2 N-000017 )
+ )
+ ( /4FE5EDAC $noname  C3 C {Lib=C}
+  (    1 N-000017 )
+  (    2 N-000018 )
+ )
+ ( /4FE5ED92 $noname  C4 C {Lib=C}
+  (    1 N-000018 )
+  (    2 N-000016 )
+ )
+ ( /4FE5ECF6 $noname  P4 gnd_switching {Lib=CONNECTOR}
+  (    1 N-000018 )
+ )
+ ( /4FE5D585 $noname  lm4941 LM494 {Lib=LM494}
+  (    1 N-000013 )
+  (    2 N-000015 )
+  (    3 N-000011 )
+  (    4 N-000001 )
+  (    5 N-000005 )
+  (    6 N-000006 )
+  (    7 GND )
+  (    8 N-000012 )
+  (    9 GND )
+  (   10 GND )
+  (   11 N-000012 )
+  (   12 N-000014 )
+  (   13 GND )
+  (   14 /Vref )
+  (   15 N-000015 )
+  (   16 N-000013 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R10
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R9
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D2
+ D?
+ S*
+$endlist
+$component D1
+ D?
+ S*
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "" ""
+ lm4941 4
+ C1 2
+ R1 1
+ R3 2
+Net 2 "/Vref" "Vref"
+ C1 1
+ R1 2
+ lm4941 14
+ R2 1
+Net 3 "GND" "GND"
+ R3 1
+ lm4941 7
+ lm4941 9
+ lm4941 10
+ lm4941 13
+ C2 1
+ R5 1
+ Q1 1
+ P5 1
+ C5 1
+Net 4 "" ""
+ R7 1
+ P1 1
+ R6 2
+ nucleo1 1
+Net 5 "" ""
+ C2 2
+ lm4941 5
+Net 6 "" ""
+ R5 2
+ lm4941 6
+Net 7 "" ""
+ R10 2
+ Q1 2
+ nucleo1 2
+Net 8 "" ""
+ nucleo1 3
+ D1 1
+Net 9 "" ""
+ D2 2
+ nucleo1 6
+Net 10 "" ""
+ C5 2
+ R10 1
+Net 11 "" ""
+ R4 2
+ lm4941 3
+Net 12 "" ""
+ lm4941 11
+ lm4941 8
+ Q1 3
+ R7 2
+Net 13 "" ""
+ lm4941 1
+ R9 1
+ R8 2
+ lm4941 16
+Net 14 "" ""
+ lm4941 12
+ R6 1
+Net 15 "" ""
+ R2 2
+ lm4941 15
+ lm4941 2
+ R4 1
+Net 16 "" ""
+ P2 1
+ D2 1
+ C4 2
+Net 17 "" ""
+ R8 1
+ P3 1
+ D1 2
+ C3 1
+Net 18 "" ""
+ C4 1
+ C3 2
+ nucleo1 4
+ P4 1
+ nucleo1 5
+ R9 2
+}
+#End
