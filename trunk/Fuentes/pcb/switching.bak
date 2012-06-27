@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date mar 26 jun 2012 23:30:51 ART
+EESchema Schematic File Version 2  date mar 26 jun 2012 23:06:01 ART
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -46,7 +46,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Connection ~ 5400 4650
 Connection ~ 6950 2400
 Wire Wire Line
 	6950 2450 6950 2300

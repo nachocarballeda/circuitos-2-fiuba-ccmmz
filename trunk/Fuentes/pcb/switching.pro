@@ -1,16 +1,6 @@
-update=sáb 23 jun 2012 11:42:29 ART
+update=mar 26 jun 2012 22:58:08 ART
 version=1
-last_client=eeschema
-[cvpcb]
-version=1
-NetITyp=0
-NetIExt=.net
-PkgIExt=.pkg
-NetDir=
-LibDir=
-NetType=0
-[cvpcb/libraries]
-EquName1=devcms
+last_client=cvpcb
 [pcbnew]
 version=1
 PadDrlX=320
@@ -66,7 +56,6 @@ MaxLnkS=3
 ShowRat=0
 ShowMRa=1
 [pcbnew/libraries]
-LibDir=
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -77,6 +66,10 @@ LibName7=display
 LibName8=valves
 LibName9=led
 LibName10=dip_sockets
+LibName11=nucleo
+LibName12=modelos/w_capacitors
+LibName13=modelos/w_to
+LibDir=
 [general]
 version=1
 [eeschema]
@@ -143,3 +136,8 @@ LibName29=contrib
 LibName30=valves
 LibName31=nucleo
 LibName32=lm494
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
