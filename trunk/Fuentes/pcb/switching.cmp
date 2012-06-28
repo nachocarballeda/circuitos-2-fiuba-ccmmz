@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = mar 26 jun 2012 23:00:08 ART
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = jue 28 jun 2012 01:01:01 ART
 
 BeginCmp
 TimeStamp = /4FE60B02;
@@ -67,35 +67,35 @@ BeginCmp
 TimeStamp = /4FE5EE82;
 Reference = P1;
 ValeurCmp = Vcc;
-IdModule  = 1pin;
+IdModule  = bornier2;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FE5EDFA;
 Reference = P2;
 ValeurCmp = V-switching;
-IdModule  = 1pin;
+IdModule  = bornier2;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FE5EDF6;
 Reference = P3;
 ValeurCmp = V+switching;
-IdModule  = 1pin;
+IdModule  = bornier2;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FE5ECF6;
 Reference = P4;
 ValeurCmp = gnd_switching;
-IdModule  = 1pin;
+IdModule  = bornier2;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FE62FD1;
 Reference = P5;
 ValeurCmp = Gnd_primario;
-IdModule  = 1pin;
+IdModule  = bornier2;
 EndCmp
 
 BeginCmp
