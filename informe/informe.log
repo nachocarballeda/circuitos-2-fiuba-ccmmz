@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.5.3)  29 JUN 2012 01:25
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2012.5.3)  29 JUN 2012 02:04
 entering extended mode
 **informe.tex
 
@@ -497,7 +497,19 @@ rme.toc")
 
 ]
 ("C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\informe\intr
-oduccion.tex") [1]
+oduccion.tex" <img/esquema_bloques.png, id=14, 462.72874pt x 227.85126pt>
+File: img/esquema_bloques.png Graphic file (type png)
+
+<use img/esquema_bloques.png> [1 <C:/Users/usuario/Desktop/Circuitos Electronic
+os II/svn/svn_trunk/informe/img/esquema_bloques.png (PNG copy)>]
+<img/ampliA.png, id=19, 506.89375pt x 333.245pt>
+File: img/ampliA.png Graphic file (type png)
+ <use img/ampliA.png>
+<img/ampliB.png, id=20, 301.125pt x 279.0425pt>
+File: img/ampliB.png Graphic file (type png)
+ <use img/ampliB.png> [2 <C:/Users/usuario/Desktop/Circuitos Electronicos II/sv
+n/svn_trunk/informe/img/ampliA.png (PNG copy)>]) [3 <C:/Users/usuario/Desktop/C
+ircuitos Electronicos II/svn/svn_trunk/informe/img/ampliB.png>]
 ("C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\informe\obje
 tivos.tex"
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 24.
@@ -507,36 +519,71 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
 )
-[2]
+[4]
 ("C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\informe\calc
 ulos_ampl_audio.tex")
 ("C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\informe\calc
 ulo_fuentes_alimentacion.tex"
-<img/esquema_fuente_lineal.png, id=24, 1227.58624pt x 353.32pt>
+<img/esquema_fuente_lineal.png, id=34, 1227.58624pt x 353.32pt>
 File: img/esquema_fuente_lineal.png Graphic file (type png)
 
-<use img/esquema_fuente_lineal.png>)
+<use img/esquema_fuente_lineal.png>) [5]
+("C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\informe\simu
+laciones.tex" <img/10hz-30khz.png, id=41, 770.88pt x 508.299pt>
+File: img/10hz-30khz.png Graphic file (type png)
 
-! LaTeX Error: File `simulaciones.tex' not found.
+<use img/10hz-30khz.png> [6 <C:/Users/usuario/Desktop/Circuitos Electronicos II
+/svn/svn_trunk/informe/img/esquema_fuente_lineal.png (PNG copy)> <C:/Users/usua
+rio/Desktop/Circuitos Electronicos II/svn/svn_trunk/informe/img/10hz-30khz.png 
+(PNG copy)>])
+("C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\informe\real
+izacion_del_circuito_impreso.tex"
+<img/circuito_implementado_todo.png, id=45, 815.045pt x 566.115pt>
+File: img/circuito_implementado_todo.png Graphic file (type png)
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
+<use img/circuito_implementado_todo.png> [7]
+<img/circuito_impreso_fuente_lineal.png, id=49, 734.745pt x 284.06125pt>
+File: img/circuito_impreso_fuente_lineal.png Graphic file (type png)
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.75 	\input{simulaciones.tex}
-                              
-*** (cannot \read from terminal in nonstop modes)
-
- 
+<use img/circuito_impreso_fuente_lineal.png>)
+("C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\informe\medi
+ciones.tex" [8 <C:/Users/usuario/Desktop/Circuitos Electronicos II/svn/svn_trun
+k/informe/img/circuito_implementado_todo.png (PNG copy)> <C:/Users/usuario/Desk
+top/Circuitos Electronicos II/svn/svn_trunk/informe/img/circuito_impreso_fuente
+_lineal.png (PNG copy)>])
+("C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\informe\comp
+_med_sim.tex")
+("C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\informe\erro
+r_y_modif.tex") [9]
+("C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\informe\conc
+lusiones.tex") [10]
+("C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\informe\anex
+os.tex") [11]
+("C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\informe\info
+rme.aux"
+("C:\Users\usuario\Desktop\Circuitos Electronicos II\svn\svn_trunk\informe\cara
+tula.aux")) ) 
 Here is how much of TeX's memory you used:
- 3362 strings out of 495285
- 42566 string characters out of 3179873
- 107346 words of memory out of 3000000
- 6501 multiletter control sequences out of 15000+200000
- 13402 words of font info for 51 fonts, out of 3000000 for 9000
+ 3427 strings out of 495285
+ 45213 string characters out of 3179873
+ 108406 words of memory out of 3000000
+ 6537 multiletter control sequences out of 15000+200000
+ 13055 words of font info for 50 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,11n,43p,420b,383s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 31i,11n,43p,713b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cm
+ex10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi
+12.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi8.
+pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb
+><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
+:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program
+ Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on informe.pdf (13 pages, 474962 bytes).
+PDF statistics:
+ 95 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,26 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{1}
+\contentsline {section}{\numberline {2}Objetivos}{4}
+\contentsline {paragraph}{Especificaciones iniciales (t\IeC {\'\i }picas) de dise\IeC {\~n}o:}{4}
+\contentsline {section}{\numberline {3}Desarrollo}{5}
+\contentsline {subsection}{\numberline {3.1}C\IeC {\'a}lculos del Amplificador de Audio}{5}
+\contentsline {subsubsection}{\numberline {3.1.1}Etapa de Entrada}{5}
+\contentsline {subsubsection}{\numberline {3.1.2}Slew Rate}{5}
+\contentsline {subsubsection}{\numberline {3.1.3}Protecci\IeC {\'o}n Contra Cortocircuitos}{6}
+\contentsline {subsection}{\numberline {3.2}C\IeC {\'a}lculos de las Fuentes de Alimentaci\IeC {\'o}n}{6}
+\contentsline {subsection}{\numberline {3.3}Simulaciones}{6}
+\contentsline {subsubsection}{\numberline {3.3.1}Polarizaci\IeC {\'o}n}{6}
+\contentsline {subsubsection}{\numberline {3.3.2}Respuesta en Frecuencia}{6}
+\contentsline {subsubsection}{\numberline {3.3.3}Distorsi\IeC {\'o}n Arm\IeC {\'o}nica Total}{7}
+\contentsline {subsection}{\numberline {3.4}Realizaci\IeC {\'o}n del Circuito Impreso}{7}
+\contentsline {subsubsection}{\numberline {3.4.1}Criterios de Dise\IeC {\~n}o}{7}
+\contentsline {subsubsection}{\numberline {3.4.2}Disipadores}{7}
+\contentsline {subsubsection}{\numberline {3.4.3}Circuito Implementado}{8}
+\contentsline {subsubsection}{\numberline {3.4.4}Fuente Lineal}{8}
+\contentsline {subsection}{\numberline {3.5}Mediciones}{9}
+\contentsline {subsubsection}{\numberline {3.5.1}Respuesta en Frecuencia}{9}
+\contentsline {subsection}{\numberline {3.6}Comparativa Mediciones-Simulaciones}{9}
+\contentsline {subsection}{\numberline {3.7}Errores y Modificaciones al Dise\IeC {\~n}o Original}{9}
+\contentsline {subsubsection}{\numberline {3.7.1}Protecciones contra cortocircuitos}{9}
+\contentsline {section}{\numberline {4}Conclusiones}{10}
+\contentsline {section}{\numberline {5}Anexos}{11}
