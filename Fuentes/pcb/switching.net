@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  jue 28 jun 2012 01:18:06 ART
+# EESchema Netlist Version 1.1 created  28/06/2012 03:58:26 p.m.
 (
  ( /4FE62FD1 $noname  P5 Gnd_primario {Lib=CONNECTOR}
   (    1 GND )
@@ -52,52 +52,52 @@
   (    2 N-000016 )
  )
  ( /4FE5EFEB $noname  Q1 MOS_N {Lib=MOS_N}
-  (    1 GND )
-  (    2 N-000005 )
-  (    3 N-000015 )
+  (    D N-000005 )
+  (    G N-000015 )
+  (    S GND )
  )
  ( /4FE5EE82 $noname  P1 Vcc {Lib=CONNECTOR}
   (    1 N-000014 )
  )
  ( /4FE5EE76 $noname  R6 R {Lib=R}
-  (    1 N-000010 )
+  (    1 N-000011 )
   (    2 N-000014 )
  )
  ( /4FE5EE3C $noname  R9 R {Lib=R}
-  (    1 N-000011 )
+  (    1 N-000012 )
   (    2 GND )
  )
  ( /4FE5EE22 $noname  R8 R {Lib=R}
-  (    1 N-000012 )
-  (    2 N-000011 )
+  (    1 N-000013 )
+  (    2 N-000012 )
  )
  ( /4FE5EDFA $noname  P2 V-switching {Lib=CONNECTOR}
-  (    1 N-000013 )
+  (    1 N-000010 )
  )
  ( /4FE5EDF6 $noname  P3 V+switching {Lib=CONNECTOR}
-  (    1 N-000012 )
+  (    1 N-000013 )
  )
  ( /4FE5EDC6 $noname  D2 DIODE {Lib=DIODE}
-  (    1 N-000013 )
+  (    1 N-000010 )
   (    2 N-000007 )
  )
  ( /4FE5EDC2 $noname  D1 DIODE {Lib=DIODE}
   (    1 N-000006 )
-  (    2 N-000012 )
+  (    2 N-000013 )
  )
  ( /4FE5EDAC $noname  C3 C {Lib=C}
-  (    1 N-000012 )
+  (    1 N-000013 )
   (    2 GND )
  )
  ( /4FE5ED92 $noname  C4 C {Lib=C}
   (    1 GND )
-  (    2 N-000013 )
+  (    2 N-000010 )
  )
  ( /4FE5ECF6 $noname  P4 gnd_switching {Lib=CONNECTOR}
   (    1 GND )
  )
  ( /4FE5D585 $noname  lm4941 LM494 {Lib=LM494}
-  (    1 N-000011 )
+  (    1 N-000012 )
   (    2 N-000016 )
   (    3 N-000009 )
   (    4 N-000017 )
@@ -108,11 +108,11 @@
   (    9 GND )
   (   10 GND )
   (   11 N-000015 )
-  (   12 N-000010 )
+  (   12 N-000011 )
   (   13 GND )
   (   14 /Vref )
   (   15 N-000016 )
-  (   16 N-000011 )
+  (   16 N-000012 )
  )
 )
 *
@@ -225,39 +225,39 @@ $endfootprintlist
 { Pin List by Nets
 Net 1 "/Vref" "Vref"
  R2 1
+ C1 1
  lm4941 14
  R1 2
- C1 1
 Net 2 "GND" "GND"
- lm4941 7
+ R9 2
  C4 1
  C3 2
- R9 2
- lm4941 9
- lm4941 10
  lm4941 13
+ lm4941 10
+ lm4941 9
+ C2 1
+ R3 1
+ R5 1
+ P5 1
+ Q1 S
  nucleo1 4
  nucleo1 5
- P5 1
- Q1 1
  C5 1
- R5 1
- C2 1
+ lm4941 7
  P4 1
- R3 1
 Net 3 "" ""
- C2 2
  lm4941 5
+ C2 2
 Net 4 "" ""
  lm4941 6
  R5 2
 Net 5 "" ""
- Q1 2
- nucleo1 2
  R10 2
+ Q1 D
+ nucleo1 2
 Net 6 "" ""
- D1 1
  nucleo1 3
+ D1 1
 Net 7 "" ""
  D2 2
  nucleo1 6
@@ -268,41 +268,41 @@ Net 9 "" ""
  lm4941 3
  R4 2
 Net 10 "" ""
- lm4941 12
- R6 1
-Net 11 "" ""
- lm4941 16
- lm4941 1
- R8 2
- R9 1
-Net 12 "" ""
- R8 1
- P3 1
- C3 1
- D1 2
-Net 13 "" ""
  P2 1
  D2 1
  C4 2
+Net 11 "" ""
+ lm4941 12
+ R6 1
+Net 12 "" ""
+ lm4941 16
+ lm4941 1
+ R9 1
+ R8 2
+Net 13 "" ""
+ R8 1
+ P3 1
+ D1 2
+ C3 1
 Net 14 "" ""
- P1 1
  R6 2
  nucleo1 1
  R7 1
+ P1 1
 Net 15 "" ""
- R7 2
- lm4941 8
  lm4941 11
- Q1 3
+ Q1 G
+ lm4941 8
+ R7 2
 Net 16 "" ""
- R2 2
- R4 1
  lm4941 2
  lm4941 15
+ R2 2
+ R4 1
 Net 17 "" ""
- C1 2
  R1 1
- R3 2
+ C1 2
  lm4941 4
+ R3 2
 }
 #End
