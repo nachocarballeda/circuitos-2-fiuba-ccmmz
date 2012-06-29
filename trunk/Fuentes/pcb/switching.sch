@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date jue 28 jun 2012 01:18:07 ART
+EESchema Schematic File Version 2  date 28/06/2012 03:58:31 p.m.
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,7 +31,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:nucleo
 LIBS:lm494
-LIBS:switching-cache
+LIBS:sonic
 EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
@@ -46,6 +46,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L LOGO #G1
+U 1 1 4FECA926
+P 6250 5100
+F 0 "#G1" H 6250 4837 60  0001 C CNN
+F 1 "LOGO" H 6250 5363 60  0001 C CNN
+	1    6250 5100
+	1    0    0    -1  
+$EndComp
 Connection ~ 8850 2400
 Connection ~ 5600 4650
 Wire Wire Line
