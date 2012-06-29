@@ -11,8 +11,24 @@ Debido a que se piensa utilizar realimentación para mejorar las característica
 \end{itemize}
 
 \bigskip
-\subsubsection{Compensación y Slew Rate}
+\subsubsection{Slew Rate}
 
-El principal inconveniente al compensar el circuito por polo dominantes es que al agregar un capacitor, este modifica el ancho de banda de potencia. Esto se debe al tiempo que le toma a la etapa anterior cargar el capacitor. Debido a esto la elección del valor de este capacitor debe tener en cuenta ambos efectos y buscar una relación de compromiso entre ambos.
+El capacitor de compensación C conectado alrededor del par Darlinghton hace que esta etapa actúe como un integrador, y la corriente que carga el punto de compensación es justamente I\_x. 
+Se puede observar que la corriente máxima disponible para cargar C es 2I\_1, donde I\_1 es la corriente en reposo por cada dispositivo en la etapa de entrada. Es decir, a grandes valores de Vi las corrientes del par diferencial se desequilibran, I1 crece hasta su valor máximo 2I\_1 y la corriente por la otra rama del par se anula, por ende es fácil ver que por la carga activa deja de circular corriente y toda la corriente de la primer rama del par se transforma en I\_x.
+El circuito por lo tanto opera en forma no lineal. Si la etapa de entrada actuara de forma lineal produciría una corriente I\_x muy grande y el slew rate no produciría ninguna limitación.
+
+\[
+	V_o= \dfrac{1}{C} \int 2I_1\,\mathrm{d}t    
+\]
+$$
+	SR=\dfrac{dVo}{dt}=\dfrac{2I_1}{C}
+$$
+
+Por lo tanto realizando la cuenta para nuestro circuito, siendo I\_1 =2.2mA y C=120pF. Obtenemos:
+$$ SR=36\dfrac{V}{\usec} $$
+
+
+%El principal inconveniente al compensar el circuito por polo dominantes es que al agregar un capacitor, este modifica el ancho de banda de potencia. Esto se debe al tiempo que le toma a la etapa anterior cargar el capacitor. Debido a esto la elección del valor de este capacitor debe tener en cuenta ambos efectos y buscar una relación de compromiso entre ambos.
+
 \bigskip
 \subsubsection{Protección Contra Cortocircuitos}\label{contra_cortos} 
