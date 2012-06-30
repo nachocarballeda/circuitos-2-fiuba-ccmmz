@@ -1,0 +1,23 @@
+EESchema-DOCLIB  Version 2.0  29/6/2012-23:50:33
+#
+$CMP C
+D Condensateur non polarise
+$ENDCMP
+#
+$CMP LM358
+D Dual Op amp (low power)
+K ampliop
+F ns/lm158.pdf
+$ENDCMP
+#
+$CMP POT
+D Potentionmetre
+K R
+$ENDCMP
+#
+$CMP R
+D Resistance
+K R DEV
+$ENDCMP
+#
+#End Doc Library
