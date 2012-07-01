@@ -10,11 +10,50 @@ Como se puede observar en la Figura~\ref{resp_frec} el ancho de banda supera los
 \begin{figure}[H]
 \centering
 \centerline{
-\includegraphics[scale=0.6]{img/10hz-30khz.png}}
+\includegraphics[width=1\textwidth]{img/10hz-30khz.png}}
 \caption{Respuesta en frecuencia.}
 \label{resp_frec} 
 \end{figure}
 
 \bigskip
-\subsubsection{Distorsión Armónica Total}
+\subsubsection{Slew Rate}
+
+Para esta simulación se utilizo el circuito de la Figura~\ref{cir_simul_slew_rate}, en el cual la entrada al amplificador es una señal escalón. Se simuló y se tomaron las tensiones en dos puntos, luego se aproxima el slew rate como la pendiente entre estos puntos. Como se ve en la Figura~\ref{simul_slew_rate} con los puntos elegidos se obtuvo un slew rate de $20.2~ \frac{\volt}{\usec}$.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{img/slew_rate_cir.png}
+\caption{Circuito utilizado para obtener slew rate.}
+\label{cir_simul_slew_rate}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\centerline{\includegraphics[width=1\textwidth]{img/slew_rate.png}}
+\caption{Simulación del slew rate.}
+\label{simul_slew_rate}
+\end{figure}
+
+\medskip
+\subsubsection{Estabilidad}
+
+Para obtener el margen de ganancia y fase del circuito se tuvo que simular la respuesta en frecuencia a lazo abierto, para eso se modifico la topologia del circuito como se ve en la Figura~\ref{cir_simul_estab}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{img/margen_fase_ganancia_cir.png}
+\caption{Circuito utilizado en análisis de estabilidad.}
+\label{cir_simul_estab}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{img/margen_fase_ganancia.png}
+\caption{Respuesta en frecuencia de T.}
+\label{simul_estab}
+\end{figure}
+
+
+
 \medskip
