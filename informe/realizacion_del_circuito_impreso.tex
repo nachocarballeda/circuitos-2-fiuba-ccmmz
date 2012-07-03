@@ -26,11 +26,11 @@ Para obtener un circuito impreso que tenga un buen rechazo de ruido y distorsió
 
 Ahora vamos a mostrar como fue dibujado el PCB. Son indicadas las entradas y la salida de señal y los bornes de la alimentación. Aca se puede ver el esquema entero.\\
 
-%\begin{figure}[H]
-%\centering
-%\includegraphics[scale=0.8]{img/eschema1.png}
-%\caption{Circuito impreso del amplificador.}
-%\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/PCB1.png}
+\caption{Circuito impreso del amplificador.}
+\end{figure}
 
 \subsubsection*{Reglas generales de dibujo}
 El circuito tiene una área efectiva lo más pequeña posible con pistas tal que se minimizan las capacidades parásitas entre masa y las pistas de señal.
@@ -41,12 +41,12 @@ Para disminuir el ruido hemos intentado evitar los puentes en la medida de lo po
 \subsubsection*{Repartición general}
 La geometria del circuito respeta lo mejor posible las etapas originales del amplificador de potencia.  Esta disposición permite progeter la señal de entrada la cual es una de las mas débiles en tensión. De hecho, cuidamos que la entrada no sea mezclada con otras pistas de mayor corriente como por ejemplo la alimentacion, para evitar la inducción de ruido. Para eso tambien separamos las masas del circuito en dos lazos que se juntan en un punto unico, separando asi el camino de la corriente de alimentación del camino de la señal.
 Este dibujo le permite tambien a juntar los transistores que calentan lo que permite de compartir los disipadores.
-%
-%\begin{figure}[H]
-%\centering
-%\includegraphics[scale=0.8]{img/eschema2.png}
-%\caption{Circuito impreso del amplificador.}
-%\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/PCB2.png}
+\caption{Circuito impreso del amplificador.}
+\end{figure}
 
 \subsubsection*{Alimentación}
 Caminos de los conductores de alimentación suficientemente anchos y  dispuestos uno próximo al otro, con el objetivo de disminuir el área efectiva y por lo tanto la impedancia. Además, al estar cerca los caminos positivos y los negativos y no atravesar el circuitos, su campo eléctrico no afecta al resto.
@@ -56,15 +56,21 @@ También hicimos un plano de masa en estrella, para no concatenar ruido, con una
 \subsubsection*{Los resistencias en el emisor de salida}
 Estas dos resistencias son de baja R y es importante que no se vean muy alteradas. Para evitar el cambio de temperatura hemos cuidado a que ninguna pista pasa debajo de estas dos resistencias. Además, los caminos que las conectan con la salida son anchos y perfectamente simétricos. De ésta forma, las pistas no sólo incorporan poca resistencia en serie sino que además, la incorporan en igual magnitud, cuestión de no perder la simetría a la salida, y que la degeneración de los transistores de salida sea lo mas simétrica posible.
 
-%\begin{figure}[H]
-%\centering
-%\includegraphics[scale=0.8]{img/eschema3.png}
-%\caption{Circuito impreso del amplificador.}
-%\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{img/PCB3.png}
+\caption{Circuito impreso del amplificador.}
+\end{figure}
 
 \subsubsection*{Puntos que se pueden mejorar}
 La disposición de las entradas y salida hacen que la conección no sea tan sencilla. Por ejemplo la conección con la salida se hace en el medio del circuito. También resultó ser después de la implementación que un disipador dificultaba el acceso a una de los bornes de las alimentaciones. 
 Hemos visto también que faltaba una pista por un error en el dibujo del esquemático al principio. Para arreglar eso no hubo más remedio que hacer un puente más.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{img/PCB4.png}
+\caption{Circuito impreso del amplificador.}
+\end{figure}
 
 \subsubsection{Disipadores}
 \bigskip
