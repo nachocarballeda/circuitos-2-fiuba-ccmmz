@@ -1,160 +1,158 @@
-# EESchema Netlist Version 1.1 created  29/6/2012-23:45:36
+# EESchema Netlist Version 1.1 created  mié 04 jul 2012 22:06:14 ART
 (
- ( /4FEE29F7 $noname  RV1 POT {Lib=POT}
-  (    1 N-000012 )
-  (    2 N-000001 )
-  (    3 N-000011 )
+ ( /4FEE2A7D C2 C1 C
+  ( 1 N-000030 )
+  ( 2 N-000020 )
  )
- ( /4FEE392A $noname  P3 CONNECTOR {Lib=CONNECTOR}
-  (    1 /alim- )
+ ( /4FEE3035 C2 C2 C
+  ( 1 N-000021 )
+  ( 2 N-000025 )
  )
- ( /4FEE391F $noname  P2 CONNECTOR {Lib=CONNECTOR}
-  (    1 /alim+ )
+ ( /4FEE2A8C C2 C3 C
+  ( 1 N-000028 )
+  ( 2 N-000019 )
  )
- ( /4FEE390F $noname  P4 CONNECTOR {Lib=CONNECTOR}
-  (    1 N-000005 )
+ ( /4FEE3326 C2 C4 C
+  ( 1 N-000009 )
+  ( 2 N-000023 )
  )
- ( /4FEE38E3 $noname  P1 CONNECTOR {Lib=CONNECTOR}
-  (    1 N-000017 )
+ ( /4FEE2D0F C2 C5 C
+  ( 1 N-000026 )
+  ( 2 N-000015 )
  )
- ( /4FEE37CB $noname  R14 R {Lib=R}
-  (    1 N-000023 )
-  (    2 GND )
+ ( /4FEE334C C2 C6 C
+  ( 1 N-000022 )
+  ( 2 N-000023 )
  )
- ( /4FEE37C1 $noname  C8 C {Lib=C}
-  (    1 N-000023 )
-  (    2 N-000024 )
+ ( /4FEE2A94 C2 C7 C
+  ( 1 N-000017 )
+  ( 2 N-000018 )
  )
- ( /4FEE334C $noname  C6 C {Lib=C}
-  (    1 N-000024 )
-  (    2 N-000002 )
+ ( /4FEE37C1 C2 C8 C
+  ( 1 N-000004 )
+  ( 2 N-000022 )
  )
- ( /4FEE3326 $noname  C4 C {Lib=C}
-  (    1 N-000019 )
-  (    2 N-000002 )
+ ( /4FEE38E3 1pin P1 CONNECTOR
+  ( 1 N-000024 )
  )
- ( /4FEE3247 $noname  U1 TL082 {Lib=TL082}
-  (    1 N-000018 )
-  (    2 N-000018 )
-  (    3 N-000004 )
-  (    4 /alim- )
-  (    5 GND )
-  (    6 N-000019 )
-  (    7 N-000002 )
-  (    8 /alim+ )
+ ( /4FEE391F 1pin P2 CONNECTOR
+  ( 1 /alim+ )
  )
- ( /4FEE3035 $noname  C2 C {Lib=C}
-  (    1 N-000003 )
-  (    2 N-000004 )
+ ( /4FEE392A 1pin P3 CONNECTOR
+  ( 1 /alim- )
  )
- ( /4FEE3027 $noname  R15 R {Lib=R}
-  (    1 /1 )
-  (    2 N-000023 )
+ ( /4FEE390F 1pin P4 CONNECTOR
+  ( 1 N-000007 )
  )
- ( /4FEE301E $noname  R10 R {Lib=R}
-  (    1 N-000002 )
-  (    2 N-000019 )
+ ( /4FF4DBDD 1pin P5 CONNECTOR
+  ( 1 GND )
  )
- ( /4FEE2FF9 $noname  R13 R {Lib=R}
-  (    1 N-000024 )
-  (    2 GND )
+ ( /4FEE2FB6 R3 R1 R
+  ( 1 N-000021 )
+  ( 2 N-000024 )
  )
- ( /4FEE2FEC $noname  R7 R {Lib=R}
-  (    1 N-000019 )
-  (    2 N-000018 )
+ ( /4FEE298C R3 R2 R
+  ( 1 N-000027 )
+  ( 2 N-000030 )
  )
- ( /4FEE2FC6 $noname  R6 R {Lib=R}
-  (    1 N-000002 )
-  (    2 N-000003 )
+ ( /4FEE29A8 R3 R3 R
+  ( 1 N-000020 )
+  ( 2 /1 )
  )
- ( /4FEE2FB6 $noname  R1 R {Lib=R}
-  (    1 N-000003 )
-  (    2 N-000017 )
+ ( /4FEE2F84 R3 R4 R
+  ( 1 N-000025 )
+  ( 2 GND )
  )
- ( /4FEE2F84 $noname  R4 R {Lib=R}
-  (    1 N-000004 )
-  (    2 GND )
+ ( /4FEE2B6E R3 R5 R
+  ( 1 N-000015 )
+  ( 2 N-000002 )
  )
- ( /4FEE2DD4 $noname  U2 TL082 {Lib=TL082}
-  (    1 N-000005 )
-  (    2 N-000007 )
-  (    3 GND )
-  (    4 /alim- )
-  (    8 /alim+ )
+ ( /4FEE2FC6 R3 R6 R
+  ( 1 N-000023 )
+  ( 2 N-000021 )
  )
- ( /4FEE2D0F $noname  C5 C {Lib=C}
-  (    1 N-000016 )
-  (    2 N-000007 )
+ ( /4FEE2FEC R3 R7 R
+  ( 1 N-000009 )
+  ( 2 N-000013 )
  )
- ( /4FEE2C2D $noname  RV3 POT {Lib=POT}
-  (    1 /1 )
-  (    2 N-000022 )
-  (    3 N-000014 )
+ ( /4FEE29B5 R3 R8 R
+  ( 1 N-000027 )
+  ( 2 N-000028 )
  )
- ( /4FEE2B6E $noname  R5 R {Lib=R}
-  (    1 N-000007 )
-  (    2 N-000001 )
+ ( /4FEE29BD R3 R9 R
+  ( 1 N-000019 )
+  ( 2 /1 )
  )
- ( /4FEE2B64 $noname  R11 R {Lib=R}
-  (    1 N-000016 )
-  (    2 N-000015 )
+ ( /4FEE301E R3 R10 R
+  ( 1 N-000023 )
+  ( 2 N-000009 )
  )
- ( /4FEE2AEF $noname  R12 R {Lib=R}
-  (    1 N-000008 )
-  (    2 N-000016 )
+ ( /4FEE2B64 R3 R11 R
+  ( 1 N-000026 )
+  ( 2 N-000016 )
  )
- ( /4FEE2A94 $noname  C7 C {Lib=C}
-  (    1 N-000022 )
-  (    2 N-000008 )
+ ( /4FEE2AEF R3 R12 R
+  ( 1 N-000018 )
+  ( 2 N-000026 )
  )
- ( /4FEE2A8C $noname  C3 C {Lib=C}
-  (    1 N-000013 )
-  (    2 N-000010 )
+ ( /4FEE2FF9 R3 R13 R
+  ( 1 N-000022 )
+  ( 2 GND )
  )
- ( /4FEE2A7D $noname  C1 C {Lib=C}
-  (    1 N-000012 )
-  (    2 N-000011 )
+ ( /4FEE37CB R3 R14 R
+  ( 1 N-000004 )
+  ( 2 GND )
  )
- ( /4FEE2A32 $noname  RV2 POT {Lib=POT}
-  (    1 N-000013 )
-  (    2 N-000015 )
-  (    3 N-000010 )
+ ( /4FEE3027 R3 R15 R
+  ( 1 /1 )
+  ( 2 N-000004 )
  )
- ( /4FEE29BD $noname  R9 R {Lib=R}
-  (    1 N-000010 )
-  (    2 /1 )
+ ( /4FEE29F7 bornier3 RV1 POT
+  ( 1 N-000030 )
+  ( 2 N-000002 )
+  ( 3 N-000020 )
  )
- ( /4FEE29B5 $noname  R8 R {Lib=R}
-  (    1 N-000014 )
-  (    2 N-000013 )
+ ( /4FEE2A32 bornier3 RV2 POT
+  ( 1 N-000028 )
+  ( 2 N-000016 )
+  ( 3 N-000019 )
  )
- ( /4FEE29A8 $noname  R3 R {Lib=R}
-  (    1 N-000011 )
-  (    2 /1 )
+ ( /4FEE2C2D bornier3 RV3 POT
+  ( 1 /1 )
+  ( 2 N-000017 )
+  ( 3 N-000027 )
  )
- ( /4FEE298C $noname  R2 R {Lib=R}
-  (    1 N-000014 )
-  (    2 N-000012 )
+ ( /4FF4DEC0 DIP-8__300 U1 LM741
+  ( 1 ? )
+  ( 2 N-000025 )
+  ( 3 N-000013 )
+  ( 4 /alim+ )
+  ( 5 ? )
+  ( 6 N-000013 )
+  ( 7 /alim- )
+ )
+ ( /4FF4E3A9 DIP-8__300 U2 LM741
+  ( 1 ? )
+  ( 2 GND )
+  ( 3 N-000009 )
+  ( 4 /alim+ )
+  ( 5 ? )
+  ( 6 N-000023 )
+  ( 7 /alim- )
+ )
+ ( /4FF4E3AB DIP-8__300 U3 LM741
+  ( 1 ? )
+  ( 2 N-000015 )
+  ( 3 GND )
+  ( 4 /alim- )
+  ( 5 ? )
+  ( 6 N-000007 )
+  ( 7 /alim+ )
  )
 )
 *
 { Allowed footprints by component:
-$component R14
- R?
- SM0603
- SM0805
-$endlist
-$component C8
- SM*
- C?
- C1-1
-$endlist
-$component C6
- SM*
- C?
- C1-1
-$endlist
-$component C4
+$component C1
  SM*
  C?
  C1-1
@@ -164,196 +162,140 @@ $component C2
  C?
  C1-1
 $endlist
-$component R15
- R?
- SM0603
- SM0805
+$component C3
+ SM*
+ C?
+ C1-1
 $endlist
-$component R10
- R?
- SM0603
- SM0805
-$endlist
-$component R13
- R?
- SM0603
- SM0805
-$endlist
-$component R7
- R?
- SM0603
- SM0805
-$endlist
-$component R6
- R?
- SM0603
- SM0805
-$endlist
-$component R1
- R?
- SM0603
- SM0805
-$endlist
-$component R4
- R?
- SM0603
- SM0805
+$component C4
+ SM*
+ C?
+ C1-1
 $endlist
 $component C5
  SM*
  C?
  C1-1
 $endlist
-$component R5
- R?
- SM0603
- SM0805
-$endlist
-$component R11
- R?
- SM0603
- SM0805
-$endlist
-$component R12
- R?
- SM0603
- SM0805
+$component C6
+ SM*
+ C?
+ C1-1
 $endlist
 $component C7
  SM*
  C?
  C1-1
 $endlist
-$component C3
+$component C8
  SM*
  C?
  C1-1
 $endlist
-$component C1
- SM*
- C?
- C1-1
-$endlist
-$component R9
+$component R1
  R?
  SM0603
  SM0805
-$endlist
-$component R8
- R?
- SM0603
- SM0805
-$endlist
-$component R3
- R?
- SM0603
- SM0805
+ R?-*
+ SM1206
 $endlist
 $component R2
  R?
  SM0603
  SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R9
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R10
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R11
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R12
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R13
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R14
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R15
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
 $endlist
 $endfootprintlist
 }
-{ Pin List by Nets
-Net 1 ""
- R5 2
- RV1 2
-Net 2 ""
- C4 2
- U1 7
- R10 1
- C6 2
- R6 1
-Net 3 ""
- R6 2
- R1 1
- C2 1
-Net 4 ""
- C2 2
- U1 3
- R4 1
-Net 5 ""
- U2 1
- P4 1
-/Net 6 "alim+"
- U1 8
- P2 1
- U2 8
- U1 8
-Net 7 ""
- U2 2
- R5 1
- C5 2
-Net 8 ""
- R12 1
- C7 2
-/Net 9 "1"
- RV3 1
- R9 2
- R15 1
- R3 2
-Net 10 ""
- C3 2
- R9 1
- RV2 3
-Net 11 ""
- RV1 3
- C1 2
- R3 1
-Net 12 ""
- C1 1
- R2 2
- RV1 1
-Net 13 ""
- C3 1
- R8 2
- RV2 1
-Net 14 ""
- R2 1
- R8 1
- RV3 3
-Net 15 ""
- RV2 2
- R11 2
-Net 16 ""
- C5 1
- R11 1
- R12 2
-Net 17 ""
- P1 1
- R1 2
-Net 18 ""
- U1 2
- R7 2
- U1 1
-Net 19 ""
- U1 6
- C4 1
- R10 2
- R7 1
-Net 20 "GND"
- R13 2
- U1 5
- R4 2
- U2 3
- R14 2
-/Net 21 "alim-"
- U1 4
- U2 4
- U1 4
- P3 1
-Net 22 ""
- C7 1
- RV3 2
-Net 23 ""
- R14 1
- C8 1
- R15 2
-Net 24 ""
- C6 1
- C8 2
- R13 1
-}
-#End

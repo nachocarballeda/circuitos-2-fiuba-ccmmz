@@ -1,4 +1,4 @@
-update=jue 28 jun 2012 03:18:49 ART
+update=mié 04 jul 2012 22:40:25 ART
 version=1
 last_client=pcbnew
 [general]
@@ -91,17 +91,16 @@ MSegLar=150
 LastNetListRead=
 [pcbnew/libraries]
 LibDir=
-LibName1=fiuba
-LibName2=sockets
-LibName3=connect
-LibName4=discret
-LibName5=pin_array
-LibName6=divers
-LibName7=libcms
-LibName8=display
-LibName9=valves
-LibName10=led
-LibName11=dip_sockets
-LibName12=nucleo
-LibName13=modelos/w_capacitors
-LibName14=modelos/w_to
+LibName1=sockets
+LibName2=connect
+LibName3=discret
+LibName4=pin_array
+LibName5=divers
+LibName6=libcms
+LibName7=display
+LibName8=valves
+LibName9=led
+LibName10=dip_sockets
+LibName11=nucleo
+LibName12=modelos/w_capacitors
+LibName13=modelos/w_to
