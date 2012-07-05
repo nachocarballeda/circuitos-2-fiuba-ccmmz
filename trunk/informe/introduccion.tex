@@ -84,6 +84,27 @@ No se utiliza en sonido, por su gran nivel de distorsión y por que su operació
 
 Esta clase de amplificadores usa señales de pulso (digitales). El uso de técnicas digitales hace posible obtener una señal que varía a lo largo del ciclo completo para producir la salida a partir de muchas partes de la señal de entrada. La principal ventaja de la operación en clase D es que los transistores MOSFET de salida trabajan solo en corte y saturación por lo que teóricamente no se disipa potencia en forma de calor y la eficiencia general puede ser muy alta, de entre 90\% a 99\%. En la practica los MOSFETS solo disipan potencia cuando se encuentran conduciendo (saturación) debido a la pequeña resistencia de encendido que poseen, llamada $R_dson$, de todas maneras esta potencia es despreciable ya que $R_dson$ es del orden de las milésimas de ohm. Se utilizan transistores MOSFET ya que son los únicos capaces de conmutar a las elevadas frecuencias de trabajo, del orden de las centenas de KHz llegando a los MHz en algunos casos.
 
+\medskip 
+\subsubsection*{Amplificadores clase G}
+
+
+Un amplificador clase G funciona conmutando fuentes de alimentación. Para analizar su funcionamiento tendremos en cuenta un circuito básico como se muestra en la Figura~\ref{ampliG}. Mientras el nivel de la señal de entrada sea pequeño (dentro del margen de +/- V1), el amplificador toma la potencia de la fuente V1. Si la señal de entrada excede el nivel de tensión dado por V1, el circuito automáticamente corta el suministro dado por V1 y conmuta a la fuente de alimentación V2 como puede verse en la Figura~\ref{ampliG_salida}. De esta forma la disipación de potencia es compartida por los transistores de salida, logrando así una menor disipación de potencia y una mayor eficiencia.
+En la práctica, la clase G se considera linealmente pobre, comparada con la clase B, dado que la conmutación de las fuentes de alimentación se realiza mediante unos diodos, dando de esta manera un resultado alineal, ya que los mismos deben almacenar y desalojar cargas.
+ 
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.35]{img/ampliG.png}
+ \caption{Ejemplo, amplificador clase G.}
+ \label{ampliG} 
+ \end{figure}
+  
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.35]{img/ampliG_salida.png}
+ \caption{Encendido de fuentes V2 en salidas clase G.}
+ \label{ampliG_salida} 
+ \end{figure}
+
 
 %El desarrollo del trabajo fue encarado como un caso real de la vida profesional, en el cual se nos han dado las especificaciones y basamos en ellas nuestro diseño, tratando de ser lo mas eficientes al menor costo posible y con los productos que se pudieron encontrar en el mercado.
 %	
