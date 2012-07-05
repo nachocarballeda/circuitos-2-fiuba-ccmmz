@@ -23,12 +23,16 @@ Alguno de los controles que pueden tener los preamplificadores son:
 	\item Amplificación
 	\end{itemize}	
 	
+	
+\subsection{Amplificadores de potencia}
+	
 Un amplificador debe satisfacer ciertos requerimientos especiales. Uno de los más importantes es el de entregar una señal con una cantidad específica de potencia a una carga con niveles aceptablemente bajos de distorsión. Otro objetivo común en el diseño es minimizar la impedancia de salida, de tal forma que la ganancia de voltaje quede relativamente poco afectada por el valor de la impedancia de carga. Una etapa de salida bien diseñada debe cumplir con estas características de funcionamiento, consumiendo poca potencia en estado de reposo, sin que esto represente una limitación importante en la respuesta en frecuencia del amplificador. 
  
-
 Los amplificadores de potencia  se clasifican generalmente en seis tipos: A, B, AB , C y G para diseños analógicos y clases D y E para los diseños de conmutación. 
 \medskip 
-\subsubsection*{Amplificadores clase A.}
+
+
+\subsubsection{Amplificadores clase A}
 
 
 En esta clase de amplificadores se usa un solo transistor. El emisor seguidor es la etapa de salida clase A mas utilizada. La corriente de salida circula durante todo el ciclo de la señal de entrada, ya que el transistor esta polarizado con una corriente continua. Esta es una de las grandes desventajas de este tipo de amplificador ya que consume potencia en ausencia de señal y por lo tanto es lógico esperar un rendimiento pobre que en general no supera el 25\%. Como ventaja la distorsión introducida suele ser baja. En la Figura~\ref{ampliA} se muestra un ejemplo de este tipo de amplificador.
@@ -41,7 +45,7 @@ En esta clase de amplificadores se usa un solo transistor. El emisor seguidor es
 \end{figure}
 
 \medskip 
-\subsubsection*{Amplificador clase B}
+\subsubsection{Amplificador clase B}
 
 Esta clase de amplificadores se compone de un par de transistores (uno pnp y otro npn) conectados de forma tal que no se encuentren ambos en la zona de modo activo directo en el mismo instante de tiempo. Es decir, si suponemos tener una entrada senoidal, durante un semiciclo uno de los transistores se encuentra en la región activa, conduciendo corriente, mientras que el otro se encuentra en corte y durante el otro semiciclo viceversa.
  Una ventaja de esta amplificador sobre la clase A, es que los transistores no disipan potencia en ausencia de señal, lo cual mejora la vida util de los transistores y el rendimiento notablemente, alcanzando un máximo del 78\%.
@@ -58,14 +62,14 @@ Esta clase de amplificadores se compone de un par de transistores (uno pnp y otr
 Se observa que hay un intervalo de tensiones en el cual los transistores no conducen, ese rango generalmente esta dado por $\pm$0.7 V y esta dado por las curvas características de transferencia.
 
 \medskip 
-\subsubsection*{Amplificador clase “AB”}
+\subsubsection{Amplificador clase “AB”}
 
 
  Este tipo de amplificadores recurre a la misma topología utilizada en la etapa de salida de los amplificadores clase B, con la salvedad de que aquí en los transistores circulan una corriente de polarización a modo de reducir notablemente la “distorsión por cruce”.
  Existen diferentes formas de logra dicho tipo de polarización. Las mas sencillas implican agregar un resistor o diodos, por los que circula una corriente fija dada por el circuito de polarización o fuente de corriente. La otra forma es utilizar los circuitos conocidos como multiplicadores de VBE , que resulta ser la forma empleada en este trabajo práctico.
 
 \medskip 
-\subsubsection*{Amplificador clase C}
+\subsubsection{Amplificador clase C}
 
 
 La corriente de salida solo circula durante menos de medio ciclo de la señal de entrada. Y luego se complementa la salida con un circuito compuesto de capacitores e inductores.
@@ -80,12 +84,12 @@ No se utiliza en sonido, por su gran nivel de distorsión y por que su operació
 \end{figure}
 
 \medskip 
-\subsubsection*{Amplificador clase D}
+\subsubsection{Amplificador clase D}
 
 Esta clase de amplificadores usa señales de pulso (digitales). El uso de técnicas digitales hace posible obtener una señal que varía a lo largo del ciclo completo para producir la salida a partir de muchas partes de la señal de entrada. La principal ventaja de la operación en clase D es que los transistores MOSFET de salida trabajan solo en corte y saturación por lo que teóricamente no se disipa potencia en forma de calor y la eficiencia general puede ser muy alta, de entre 90\% a 99\%. En la practica los MOSFETS solo disipan potencia cuando se encuentran conduciendo (saturación) debido a la pequeña resistencia de encendido que poseen, llamada $R_dson$, de todas maneras esta potencia es despreciable ya que $R_dson$ es del orden de las milésimas de ohm. Se utilizan transistores MOSFET ya que son los únicos capaces de conmutar a las elevadas frecuencias de trabajo, del orden de las centenas de KHz llegando a los MHz en algunos casos.
 
 \medskip 
-\subsubsection*{Amplificadores clase G}
+\subsubsection{Amplificadores clase G}
 
 
 Un amplificador clase G funciona conmutando fuentes de alimentación. Para analizar su funcionamiento tendremos en cuenta un circuito básico como se muestra en la Figura~\ref{ampliG}. Mientras el nivel de la señal de entrada sea pequeño (dentro del margen de +/- V1), el amplificador toma la potencia de la fuente V1. Si la señal de entrada excede el nivel de tensión dado por V1, el circuito automáticamente corta el suministro dado por V1 y conmuta a la fuente de alimentación V2 como puede verse en la Figura~\ref{ampliG_salida}. De esta forma la disipación de potencia es compartida por los transistores de salida, logrando así una menor disipación de potencia y una mayor eficiencia.
@@ -104,6 +108,42 @@ En la práctica, la clase G se considera linealmente pobre, comparada con la cla
  \caption{Encendido de fuentes V2 en salidas clase G.}
  \label{ampliG_salida} 
  \end{figure}
+
+\subsection{Principales especificaciones de un amplificador}
+
+\subsubsection{Potencia máxima}
+
+Potencia máxima eficaz, o potencia media a régimen continuo es la potencia eléctrica real verificable con instrumentos que puede proporcionar la etapa de salida  a una frecuencia de 1 kHz (frecuencias medias) sobre la impedancia nominal especificada por el fabricante (normalmente 4$\ohm$, 6$\ohm$ u $8\ohm$) y viene dada por la expresión $P_O=  \frac{V_{O(rms)}^2}{Z_O}$. Donde:
+\begin{description}
+\item $P_O$ es la potencia de salida
+\item $V_{O(rms)}$ es la tensión eficaz de salida
+\item $Z_O$ es la impedancia de salida
+\end{description}
+
+Se especifica la potencia máxima del amplificador en función de una determinada impedancia, generalmente $8\ohm$. Por ejemplo: 100 WRMS sobre 8$\ohm$.
+Cabe destacar que si el amplificador es estéreo hay que tener en cuenta si la potencia se refiere a      ambos o a cada uno de los canales.
+
+\subsubsection{Respuesta en frecuencia}
+
+Es un rango de frecuencias dentro del cual el amplificador responde de igual forma (respuesta plana). Este rango se espera que como mínimo incluya las audiofrecuencias ( 20 a 20.000Hz)
+Pueden especificarse las frecuencias de corte, en donde la potencia cae a la mitad o la tensión de salida cae en 3db o sino un rango de frecuencias en donde se cumple que la variación en la tensión de salida no supera una cota dado por el fabricante.
+
+\subsubsection{Rango dinámico}
+
+El rango dinámico(DR) es el conjunto de valores entre los niveles de mayor y menor salida, en donde el amplificador reproduce fielmente. En general viene especificado en decibeles y en donde el límite superior esta acotado por la distorsión mientras que el menor esta restringido por el ruido de salida. El rango dinámico se calcula con la relación entre ambos limites, de la siguiente forma:
+
+\begin{equation}\label{rango_dinamico_eq}
+DR= \frac{S+N}{N}
+\end{equation}
+
+donde:
+\begin{description}
+\item S es la señal máxima permitida
+\item N es la señal de ruido
+\item DR es el rango dinámico
+\end{description}
+
+\subsubsection{Distorsión armónica total}
 
 
 %El desarrollo del trabajo fue encarado como un caso real de la vida profesional, en el cual se nos han dado las especificaciones y basamos en ellas nuestro diseño, tratando de ser lo mas eficientes al menor costo posible y con los productos que se pudieron encontrar en el mercado.
