@@ -1,13 +1,13 @@
-EESchema-DOCLIB  Version 2.0  29/6/2012-23:50:33
+EESchema-DOCLIB  Version 2.0  4/7/2012-23:26:01
 #
 $CMP C
 D Condensateur non polarise
 $ENDCMP
 #
-$CMP LM358
-D Dual Op amp (low power)
-K ampliop
-F ns/lm158.pdf
+$CMP LM741
+D Op amp
+K Ampliop
+F AmpliOp.sch
 $ENDCMP
 #
 $CMP POT
