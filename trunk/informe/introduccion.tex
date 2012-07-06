@@ -24,7 +24,7 @@ Alguno de los controles que pueden tener los preamplificadores son:
 	\end{itemize}	
 	
 	
-\subsection{Amplificadores de potencia}
+\subsection{Amplificadores de Potencia}
 	
 Un amplificador debe satisfacer ciertos requerimientos especiales. Uno de los más importantes es el de entregar una señal con una cantidad específica de potencia a una carga con niveles aceptablemente bajos de distorsión. Otro objetivo común en el diseño es minimizar la impedancia de salida, de tal forma que la ganancia de voltaje quede relativamente poco afectada por el valor de la impedancia de carga. Una etapa de salida bien diseñada debe cumplir con estas características de funcionamiento, consumiendo poca potencia en estado de reposo, sin que esto represente una limitación importante en la respuesta en frecuencia del amplificador. 
  
@@ -32,7 +32,7 @@ Los amplificadores de potencia  se clasifican generalmente en seis tipos: A, B, 
 \medskip 
 
 
-\subsubsection{Amplificadores clase A}
+\subsubsection*{Amplificadores clase A}
 
 
 En esta clase de amplificadores se usa un solo transistor. El emisor seguidor es la etapa de salida clase A mas utilizada. La corriente de salida circula durante todo el ciclo de la señal de entrada, ya que el transistor esta polarizado con una corriente continua. Esta es una de las grandes desventajas de este tipo de amplificador ya que consume potencia en ausencia de señal y por lo tanto es lógico esperar un rendimiento pobre que en general no supera el 25\%. Como ventaja la distorsión introducida suele ser baja. En la Figura~\ref{ampliA} se muestra un ejemplo de este tipo de amplificador.
@@ -45,7 +45,7 @@ En esta clase de amplificadores se usa un solo transistor. El emisor seguidor es
 \end{figure}
 
 \medskip 
-\subsubsection{Amplificador clase B}
+\subsubsection*{Amplificador clase B}
 
 Esta clase de amplificadores se compone de un par de transistores (uno pnp y otro npn) conectados de forma tal que no se encuentren ambos en la zona de modo activo directo en el mismo instante de tiempo. Es decir, si suponemos tener una entrada senoidal, durante un semiciclo uno de los transistores se encuentra en la región activa, conduciendo corriente, mientras que el otro se encuentra en corte y durante el otro semiciclo viceversa.
  Una ventaja de esta amplificador sobre la clase A, es que los transistores no disipan potencia en ausencia de señal, lo cual mejora la vida util de los transistores y el rendimiento notablemente, alcanzando un máximo del 78\%.
@@ -62,14 +62,14 @@ Esta clase de amplificadores se compone de un par de transistores (uno pnp y otr
 Se observa que hay un intervalo de tensiones en el cual los transistores no conducen, ese rango generalmente esta dado por $\pm$0.7 V y esta dado por las curvas características de transferencia.
 
 \medskip 
-\subsubsection{Amplificador clase “AB”}
+\subsubsection*{Amplificador clase “AB”}
 
 
  Este tipo de amplificadores recurre a la misma topología utilizada en la etapa de salida de los amplificadores clase B, con la salvedad de que aquí en los transistores circulan una corriente de polarización a modo de reducir notablemente la “distorsión por cruce”.
  Existen diferentes formas de logra dicho tipo de polarización. Las mas sencillas implican agregar un resistor o diodos, por los que circula una corriente fija dada por el circuito de polarización o fuente de corriente. La otra forma es utilizar los circuitos conocidos como multiplicadores de VBE , que resulta ser la forma empleada en este trabajo práctico.
 
 \medskip 
-\subsubsection{Amplificador clase C}
+\subsubsection*{Amplificador clase C}
 
 
 La corriente de salida solo circula durante menos de medio ciclo de la señal de entrada. Y luego se complementa la salida con un circuito compuesto de capacitores e inductores.
@@ -84,12 +84,12 @@ No se utiliza en sonido, por su gran nivel de distorsión y por que su operació
 \end{figure}
 
 \medskip 
-\subsubsection{Amplificador clase D}
+\subsubsection*{Amplificador clase D}
 
 Esta clase de amplificadores usa señales de pulso (digitales). El uso de técnicas digitales hace posible obtener una señal que varía a lo largo del ciclo completo para producir la salida a partir de muchas partes de la señal de entrada. La principal ventaja de la operación en clase D es que los transistores MOSFET de salida trabajan solo en corte y saturación por lo que teóricamente no se disipa potencia en forma de calor y la eficiencia general puede ser muy alta, de entre 90\% a 99\%. En la practica los MOSFETS solo disipan potencia cuando se encuentran conduciendo (saturación) debido a la pequeña resistencia de encendido que poseen, llamada $R_dson$, de todas maneras esta potencia es despreciable ya que $R_dson$ es del orden de las milésimas de ohm. Se utilizan transistores MOSFET ya que son los únicos capaces de conmutar a las elevadas frecuencias de trabajo, del orden de las centenas de KHz llegando a los MHz en algunos casos.
 
 \medskip 
-\subsubsection{Amplificadores clase G}
+\subsubsection*{Amplificadores clase G}
 
 
 Un amplificador clase G funciona conmutando fuentes de alimentación. Para analizar su funcionamiento tendremos en cuenta un circuito básico como se muestra en la Figura~\ref{ampliG}. Mientras el nivel de la señal de entrada sea pequeño (dentro del margen de +/- V1), el amplificador toma la potencia de la fuente V1. Si la señal de entrada excede el nivel de tensión dado por V1, el circuito automáticamente corta el suministro dado por V1 y conmuta a la fuente de alimentación V2 como puede verse en la Figura~\ref{ampliG_salida}. De esta forma la disipación de potencia es compartida por los transistores de salida, logrando así una menor disipación de potencia y una mayor eficiencia.
@@ -109,9 +109,9 @@ En la práctica, la clase G se considera linealmente pobre, comparada con la cla
  \label{ampliG_salida} 
  \end{figure}
 
-\subsection{Principales especificaciones de un amplificador}
+\subsection{Principales Especificaciones de un Amplificador}
 \medskip 
-\subsubsection{Potencia máxima}
+\subsubsection*{Potencia máxima}
 
 Potencia máxima eficaz, o potencia media a régimen continuo es la potencia eléctrica real verificable con instrumentos que puede proporcionar la etapa de salida  a una frecuencia de 1 kHz (frecuencias medias) sobre la impedancia nominal especificada por el fabricante (normalmente 4$\ohm$, 6$\ohm$ u $8\ohm$) y viene dada por la expresión $P_O=  \frac{V_{O(rms)}^2}{Z_O}$. Donde:
 \begin{description}
@@ -123,12 +123,12 @@ Potencia máxima eficaz, o potencia media a régimen continuo es la potencia el�
 Se especifica la potencia máxima del amplificador en función de una determinada impedancia, generalmente $8\ohm$. Por ejemplo: 100 WRMS sobre 8$\ohm$.
 Cabe destacar que si el amplificador es estéreo hay que tener en cuenta si la potencia se refiere a      ambos o a cada uno de los canales.
 \medskip 
-\subsubsection{Respuesta en frecuencia}
+\subsubsection*{Respuesta en frecuencia}
 
-Es un rango de frecuencias dentro del cual el amplificador responde de igual forma (respuesta plana). Este rango se espera que como mínimo incluya las audiofrecuencias ( 20 a 20.000Hz)
+Es un rango de frecuencias dentro del cual el amplificador responde de igual forma (respuesta plana). Este rango se espera que como mínimo incluya las audiofrecuencias ( 20 a 20kHz)
 Pueden especificarse las frecuencias de corte, en donde la potencia cae a la mitad o la tensión de salida cae en 3db o sino un rango de frecuencias en donde se cumple que la variación en la tensión de salida no supera una cota dado por el fabricante.
 \medskip 
-\subsubsection{Rango dinámico}
+\subsubsection*{Rango dinámico}
 
 El rango dinámico(DR) es el conjunto de valores entre los niveles de mayor y menor salida, en donde el amplificador reproduce fielmente. En general viene especificado en decibeles y en donde el límite superior esta acotado por la distorsión mientras que el menor esta restringido por el ruido de salida. El rango dinámico se calcula con la relación entre ambos limites, de la siguiente forma:
 
@@ -143,7 +143,7 @@ donde:
 \item DR es el rango dinámico
 \end{description}
 \medskip 
-\subsubsection{Distorsión armónica total}
+\subsubsection*{Distorsión armónica total}
 
 Si en un sistema no lineal introducimos un tono de frecuencia $f_0$, en la salida tendremos ese mismo tono (con una amplitud y fase posiblemente diferentes) y, sumado a el, otros tonos de frecuencia $2f_0, 3f_0, ...$ llamados armónicos del tono fundamental . Por lo tanto la THD se calcula de la siguiente forma:
 
@@ -154,17 +154,17 @@ THD= \frac{\sum Potencia~de ~los ~armonicos}{Potencia~ de ~la ~frecuencia fundam
 Es decir, la distorsión armónica es el valor rms de componentes armónicos de la señal de salida, expresadas como un porcentaje rms del fundamental.
 Visto de otra forma, la distorsión describe la variación de la forma de onda de la salida del equipo, con respecto a la señal esperada, si el sistema fuese lineal, con respecto a una determinada entrada y se debe básicamente a la alinealidad de los mismos.
 \medskip 
-\subsubsection{Distorsión por intermodulación}
+\subsubsection*{Distorsión por intermodulación}
 
 
 Es la distorsión que se produce cuando dos o mas señales atraviesan simultáneamente un sistema no lineal. Si dos tonos son reproducidos a la vez, pueden interactuar entre sí en el equipo y producir, asimismo, otros nuevos tonos, que son ni más ni menos que la suma y la diferencia de los dos tonos originales (es lo que se conoce como la frecuencia de batido o pulsaciones). Generalmente, los nuevos tonos no son armónicos entre sí ni con los anteriores debido a que la señal salida no es una combinación lineal de la entrada.
 \medskip 
-\subsubsection{Distorsión por intermodulación transitoria}
+\subsubsection*{Distorsión por intermodulación transitoria}
 
 
-Este tipo de distorsión se da principalmente por el retardo que sufre la señal al ser realimentada negativamente. Todo amplificador demora un tiempo entre que la señal de entrada es aplicada y se obtiene la salida correspodiente, llamado tiempo de tránsito. Es decir, cuando utilizamos una realimentación negativa es esperable que al colocar una entrada inmediatamente obtengamos un efecto de la realimentación que afecte a la misma, pero debido a este tiempo de tránsito aparece un efecto no deseado y por lo tanto este tipo de distorsión. Esta altamente relacionada con el slew rate y con el ancho de banda a lazo abierto del sistema. 
+Este tipo de distorsión se da principalmente por el retardo que sufre la señal al ser realimentada negativamente. Todo amplificador demora un tiempo entre que la señal de entrada es aplicada y se obtiene la salida correspondiente, llamado tiempo de tránsito. Es decir, cuando utilizamos una realimentación negativa es esperable que al colocar una entrada inmediatamente obtengamos un efecto de la realimentación que afecte a la misma, pero debido a este tiempo de tránsito aparece un efecto no deseado y por lo tanto este tipo de distorsión. Esta altamente relacionada con el slew rate y con el ancho de banda a lazo abierto del sistema. 
 \medskip 
-\subsubsection{Slew rate}
+\subsubsection*{Slew rate}
 	
 Es la máxima pendiente que puede tener la tensión de entrada sin sufrir deformaciones se mide generalmente en $\frac{V}{\usec}$ y se calcula como:
 \begin{equation}
@@ -175,32 +175,35 @@ SR = F(max) \times 2\pi \times V_p
 \item  $V_p$= Tensión pico de onda
 \end{description}
 \medskip 
-\subsubsection{Sensibilidad}
+\subsubsection*{Sensibilidad}
 
 Este parámetro es una relación entre el valor de tensión de entrada que es necesario para producir la máxima potencia de salida y dicha señal de salida.Por lo general se especifica en decibeles a una determinada impedancia. Si la señal de entrada supera el valor especificado por la sensibilidad no existe ninguna garantía que la señal de salida no sufra un recorte que termine dañando algún componente.
 \medskip 
-\subsubsection{Relación señal a ruido}
+\subsubsection*{Relación señal a ruido}
 
-La relación señal/ruido se define como el cociente que existe entre la potencia de la señal que se transmite y la potencia del ruido que la corrompe. Este margen es medido en decibeles. A su vez también es importante definir la figura de ruido. La magnitud del ruido generado por un dispositivo electrónico, por ejemplo un amplificador, se puede expresar mediante la denominada figura de ruido (F), que es el resultado de dividir la relación señal/ruido en la entrada (S/R)ent por la relación señal/ruido en la salida (S/R)sal, cuando los valores de señal y ruido se expresan en números simples :
+La relación señal/ruido se define como el cociente que existe entre la potencia de la señal que se transmite y la potencia del ruido que la corrompe. Este margen es medido en decibeles. A su vez también es importante definir la figura de ruido. La magnitud del ruido generado por un dispositivo electrónico, por ejemplo un amplificador, se puede expresar mediante la denominada figura de ruido (F), que es el resultado de dividir la relación señal/ruido en la entrada $(S/R)_{entrada}$ por la relación señal/ruido en la salida $(S/R)_{salida}$, cuando los valores de señal y ruido se expresan en números simples :
 
 \begin{equation}
 F=\frac{(S/R)_{salida}}{(S/R)_{entrada}}
 \end{equation}
 \medskip 
-\subsubsection{Impedancia de entrada}
+\subsubsection*{Impedancia de entrada}
 
 
- Es la impedancia equivalente que vería un generador aplicado a la entrada del amplificador. Para el caso particular de este tipo de amplificador (de tensión) buscamos que sea relativamente alta y no carge a la etapa anterior. Claramente depende de la frecuencia de operación pero un valor tipico para el rango de audiofrecuencias es de 10K $\ohm$.
+ Es la impedancia equivalente que vería un generador aplicado a la entrada del amplificador. Para el caso particular de este tipo de amplificador (de tensión) buscamos que sea relativamente alta y no cargue a la etapa anterior. Claramente depende de la frecuencia de operación pero un valor típico para el rango de audiofrecuencias es de 10K $\ohm$.
 \medskip 
-\subsubsection{Impedancia de salida}
+\subsubsection*{Impedancia de salida}
 
 
 Es la impedancia equivalente que vería un generador aplicado a la salida del amplificador. En el caso particular del amplificador de audio buscamos que sea muy baja dado que las cargas son relativamente bajas y de lo contrario nos acortarían la amplitud de la señal de salida. Claramente depende de la frecuencia de operación pero un valor típico para el rango de audiofrecuencias es de décimas o centésimas de $\ohm$.
 \medskip 
-\subsubsection{Factor de amortiguamiento}
+\subsubsection*{Factor de amortiguamiento}
 
 Indica la relación entre la impedancia nominal del parlante a conectar y la impedancia de salida del amplificador. Un factor de amortiguamiento alto permite mayor control del movimiento de los 
 altavoces (evita oscilaciones) y por tanto reduce la distorsión, especialmente en graves. 
+
+\subsection{Fuentes de Alimentación}
+
 
 %El desarrollo del trabajo fue encarado como un caso real de la vida profesional, en el cual se nos han dado las especificaciones y basamos en ellas nuestro diseño, tratando de ser lo mas eficientes al menor costo posible y con los productos que se pudieron encontrar en el mercado.
 %	
