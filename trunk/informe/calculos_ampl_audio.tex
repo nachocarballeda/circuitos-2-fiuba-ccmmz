@@ -50,8 +50,28 @@ Al tener una alta ganancia a lazo abierto la ganancia de lazo cerrado queda comp
 $$ V_{out}= V_{in} \times \left(  1+\frac{R_8}{R_{10}} \right) ~ \Rightarrow ~ A_V= \left( 1+\frac{R_8}{R_{10}}\right) $$
 
 
+Utilizando la sensibilidad requerida en las especificaciones,se estipula que al tener 1V rms en la entrada debemos tener máxima potencia de la señal de salida, asignamos a $R_8 = 22\kohm$ y a $R_{10} = 1\kohm$. De esta manera se obtiene una ganancia de 23 veces con una potencia máxima de 66 Wrms sobre una carga de $8 \ohm$ cumpliendo con los requisitos. Asignando una tensión de alimentación de $V_{cc}=35V$, simulamos el circuito:
 
+\begin{center}
+\parbox{0.5\textwidth}{
+--- Operating Point ---
+\begin{tabbing}
+\hspace{3cm}\=\hspace{4cm}\=\hspace{5cm}\=\kill
+I(Rl): \>	 -0.000492201 \>	 device$\_$current \\ 
+Ie(Q1):	\> 0.000392712	\> device$\_$current \\ 
+Ie(Q2):	\> 0.00116932	\> device$\_$current \\ 
+I(R8):	\> -4.57521e-007\>	 device$\_$current \\ 
+I(R6):	\> 0.000730688	\> device$\_$current \\ 
+I(R5):	\> 0.000731219	\> device$\_$current \\ 
+I(R3):	\> -0.00116632	\> device$\_$current \\ 
+I(R2):	\> -1.36041e-006\>	 device$\_$current \\ 
+I(R4):	\> 0.00156204	\> device$\_$current \\ 
+\end{tabbing}
+}
+\end{center}
 
+Los valores asignados fueron elegidos con el criterio de lograr una corriente de alrededor de 1mA para la etapa de entrada y de una relación entre $\frac{R5}{R6}$  de 0.001 veces. Obteniendo el resultado de que el circuito amplifica 22.85 veces y posee una alta inestabilidad.
+Notar que el circuito simulado posee una resistencia de carga de 100 $\ohm$. Realizando una simulación habiendo compensado el circuito para que no se produzcan oscilaciones obtuvimos
 
 \subsubsection{Etapa de Entrada}
 Debido a que se piensa utilizar realimentación para mejorar las características del circuito, se implementa una entrada diferencial, cuya implementación más simple es un par diferencial. En parte porque se puede mejorar fácilmente utilizando:
