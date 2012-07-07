@@ -1,5 +1,5 @@
-update=jue 05 jul 2012 16:27:11 ART
-last_client=pcbnew
+update=sáb 07 jul 2012 14:48:02 ART
+last_client=cvpcb
 [general]
 version=1
 RootSch=preamp.sch
@@ -22,7 +22,6 @@ TxtLar=120
 MSegLar=150
 LastNetListRead=preamp.net
 [pcbnew/libraries]
-LibDir=
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -33,3 +32,10 @@ LibName7=display
 LibName8=valves
 LibName9=led
 LibName10=dip_sockets
+LibName11=jack
+LibDir=
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
