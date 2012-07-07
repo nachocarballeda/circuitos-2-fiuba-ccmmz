@@ -1,5 +1,58 @@
-\subsection{Cálculos del Amplificador de Audio}
+\subsection{Diseño del Amplificador de Audio}
 \bigskip
+
+
+\subsubsection{Primer Análisis}
+ 
+El planteo comenzó focalizandose en un circuito mucho mas sencillo para el análisis. Por ende nos planteamos comprender el funcionamiento de un amplificador elemental con salida clase B como el de la Figura~\ref{idea_basica}.
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{img/idea_basica.png}
+\caption{Amplificador simplificado.}
+\label{idea_basica} 
+\end{figure}
+
+El primer desafío constó en plantear una correcta polarización. Al encontrarse el circuito realimentado negativamente es esperable que la tensión de continua en el nodo de salida $V_{out}$ sea muy cercana a cero. Este resultado puede comprenderse analizando el par diferencial y el efecto de la realimentación. Cuando el transistor Q2 se encuentre polarizado su tensión de base sea muy pequeña dado que circula una corriente baja. Por lo tanto, si la tensión $V_{out}$ no fuese un valor cercano a cero ya sea un valor negativo o positivo, produciría una tensión sobre el terminal de la base de Q1 distinto del correspondiente a Q2. Esto produciría que la corriente de Q2 se incremente o baje con respecto a la de Q1 y la salida también se vea afectada. Planteando que  $V_{out}$ aumentara:
+$$
+V_{out} \nearrow  ~ \Rightarrow V_{EB1} \searrow ~\Rightarrow I_{C1} \searrow ~\Rightarrow I_{C2} \nearrow ~\Rightarrow V_{B3} \nearrow ~\Rightarrow I_{C3} \nearrow \Rightarrow V_{B4} \searrow ~\Rightarrow V_{out} \searrow
+$$
+
+Siguiendo con este razonamiento si asumimos que $V_{out}$ es cercano a 0 volts. Entonces analizando el circuito llegamos a las siguientes ecuaciones:
+
+\[
+\frac{V_{CC}}{R6} = \frac{(V_{E3} - (-V_{cc})}{R5}
+\]
+
+$$
+V_{E3} = V_B{3} - 0.7V
+$$
+
+Donde:
+\begin{description}
+
+
+\item $V_{B3} = (IC1 \times R_3 - V_{CC}) $
+\item $I_{C1}=\frac{(V_{CC}-0.7V)}{2R_4}$
+\item $V_{E3}= (V_{CC}-0.7) \frac{R3}{2R4} - V_{CC} - 0.7V$
+\item $V_{CC} R5/R6 = \left[  (V_{CC}-0.7V) \times \frac{R_3}{2R_4} - 0.7V\right] $
+\end{description}
+
+Aproximando obtuvimos la siguiente relación:
+
+$$ V_{CC} \times \frac{R_5}{R_6} + 0.7 =V_{CC} \times \frac{R_3}{2R_4} $$
+
+Notando que el termino $\frac{R_5}{R_6}$ debía ser menor que la unidad debido a que $R_5$ es una resistencia de realimentación para la estabilidad de la polarización y $R_6$ es la que define la ganancia de esa etapa, y suele ser bastante alta para tener una alta ganancia de lazo abierto. 
+Al tener una alta ganancia a lazo abierto la ganancia de lazo cerrado queda completamente definida por el realimentador. Observando el circuito:
+
+$$ V_{out}= V_{in} \times \left(  1+\frac{R_8}{R_{10}} \right) ~ \Rightarrow ~ A_V= \left( 1+\frac{R_8}{R_{10}}\right) $$
+
+
+
+
+
 \subsubsection{Etapa de Entrada}
 Debido a que se piensa utilizar realimentación para mejorar las características del circuito, se implementa una entrada diferencial, cuya implementación más simple es un par diferencial. En parte porque se puede mejorar fácilmente utilizando:
 
