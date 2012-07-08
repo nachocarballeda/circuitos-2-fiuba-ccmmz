@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = jue 28 jun 2012 01:01:01 ART
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = sáb 07 jul 2012 20:07:05 ART
 
 BeginCmp
 TimeStamp = /4FE60B02;
@@ -36,6 +36,13 @@ IdModule  = cnp_13x4mm;
 EndCmp
 
 BeginCmp
+TimeStamp = /4FF8B96D;
+Reference = C6;
+ValeurCmp = C;
+IdModule  = CP_16x25mm;
+EndCmp
+
+BeginCmp
 TimeStamp = /4FE5EDC2;
 Reference = D1;
 ValeurCmp = DIODE;
@@ -47,6 +54,13 @@ TimeStamp = /4FE5EDC6;
 Reference = D2;
 ValeurCmp = DIODE;
 IdModule  = D6;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FF8B8D0;
+Reference = F1;
+ValeurCmp = RELE;
+IdModule  = rele;
 EndCmp
 
 BeginCmp
@@ -103,6 +117,13 @@ TimeStamp = /4FE5EFEB;
 Reference = Q1;
 ValeurCmp = MOS_N;
 IdModule  = to247;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FF8B8D8;
+Reference = Q2;
+ValeurCmp = NPN;
+IdModule  = TO92;
 EndCmp
 
 BeginCmp
@@ -173,6 +194,27 @@ TimeStamp = /4FE60C75;
 Reference = R10;
 ValeurCmp = R;
 IdModule  = R7;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FF8B964;
+Reference = R11;
+ValeurCmp = R;
+IdModule  = R3-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FF8B968;
+Reference = R12;
+ValeurCmp = R;
+IdModule  = R3-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FF8B8FF;
+Reference = R13;
+ValeurCmp = R;
+IdModule  = R3-5;
 EndCmp
 
 EndListe

@@ -1,8 +1,13 @@
-update=mié 04 jul 2012 22:40:25 ART
+update=sáb 07 jul 2012 20:06:47 ART
 version=1
 last_client=pcbnew
 [general]
 version=1
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [eeschema]
 version=1
 LibDir=modelos
@@ -67,11 +72,7 @@ LibName29=contrib
 LibName30=valves
 LibName31=nucleo
 LibName32=lm494
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+LibName33=rele
 [pcbnew]
 version=1
 PadDrlX=320
@@ -104,3 +105,4 @@ LibName10=dip_sockets
 LibName11=nucleo
 LibName12=modelos/w_capacitors
 LibName13=modelos/w_to
+LibName14=rele
