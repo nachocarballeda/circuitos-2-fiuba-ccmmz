@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.3  Date: sáb 07 jul 2012 19:30:10 ART
+#encoding utf-8
+#
+# RELE
+#
+DEF RELE F 0 40 Y Y 1 F N
+F0 "F" 0 50 60 H V C CNN
+F1 "RELE" 0 50 60 H V C CNN
+DRAW
+S -400 -450 -400 -450 0 1 0 N
+S 400 400 -400 -450 0 1 0 N
+X bobina1 1 700 300 300 L 50 50 1 1 I
+X bobina2 2 700 -350 300 L 50 50 1 1 I
+X cm 3 700 0 300 L 50 50 1 1 I
+X nc 4 -700 250 300 R 50 50 1 1 I
+X na 5 -700 -300 300 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
