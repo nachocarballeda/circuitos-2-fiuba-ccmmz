@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  sáb 07 jul 2012 22:58:27 ART
+# EESchema Netlist Version 1.1 created  sáb 07 jul 2012 23:21:39 ART
 (
  ( /4FE60B02 C1V5 C1 C
   ( 1 /Vref )
@@ -16,7 +16,7 @@
   ( 1 GND )
   ( 2 N-000021 )
  )
- ( /4FE60C5A cnp_13x4mm C5 C
+ ( /4FE60C5A CP10 C5 C
   ( 1 GND )
   ( 2 N-000005 )
  )
