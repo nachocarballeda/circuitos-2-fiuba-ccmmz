@@ -206,7 +206,7 @@ altavoces (evita oscilaciones) y por tanto reduce la distorsión, especialmente 
 \bigskip
 \subsection{Fuentes de Alimentación}
 
-\subsubsection{Fuentes Lineales}
+\subsubsection*{Fuentes Lineales}
 
 Este tipo de fuentes tienen un diseño relativamente simple, que puede llegar a ser más complejo cuanto mayor es la corriente que deben suministrar, en lineas generales siguen el esquema de la Figura~\ref{fuente_lineal_tipo}.
 
@@ -221,7 +221,7 @@ En primer lugar el transformador adapta los niveles de tensión y proporciona ai
 
 Las ventajas de las fuentes lineales son una mejor regulación, velocidad y buenas características EMC. Y sus principales desventajas son el bajo rendimiento del rectificador y el tamaño del transformador utilizado. 
 
-\subsubsection{Fuentes Conmutadas}
+\subsubsection*{Fuentes Conmutadas}
 
 Una fuente conmutada es un dispositivo electrónico que transforma energía eléctrica mediante transistores en conmutación. Mientras que un regulador de tensión utiliza transistores polarizados en su región activa de amplificación, las fuentes conmutadas utilizan los mismos conmutándolos activamente a altas frecuencias (20-100 kHz típicamente) entre corte y saturación. La forma de onda cuadrada resultante es aplicada a transformadores con núcleo de ferrita (Los núcleos de hierro no son adecuados para estas altas frecuencias) para obtener uno o varios voltajes de salida de corriente alterna que luego son rectificados (Con diodos rápidos) y filtrados para obtener los voltajes de salida de corriente continua. Las ventajas de este método incluyen menor tamaño y peso del núcleo, mayor eficiencia y por lo tanto menor calentamiento. Las desventajas comparándolas con fuentes lineales es que son mas complejas y generan ruido eléctrico de alta frecuencia que debe ser cuidadosamente minimizado para no causar interferencias a equipos próximos a estas fuentes. La Figura~\ref{fuente_conmutada_esquema_bloq} muestra un esquema en bloques de este tipo de fuente.
 
@@ -234,6 +234,53 @@ Una fuente conmutada es un dispositivo electrónico que transforma energía elé
 
 
 La regulación se obtiene con el conmutador, normalmente un circuito PWM (Pulse Width Modulation) que cambia el ciclo de trabajo. Aquí las funciones del transformador son las mismas que para fuentes lineales pero su posición es diferente. El segundo rectificador convierte la señal alterna pulsante que llega del transformador en un valor continuo. La salida puede ser también un filtro de condensador o uno del tipo LC. Las fuentes conmutadas obtienen un mejor rendimiento, menor coste y tamaño comparadas con las lineales.
+
+Existen diversas topologías para este tipo de fuente, aquí solo se mencionarán algunas.
+
+\paragraph*{Topología Flyback: }
+Dada su sencillez y bajo costo, es la topología preferida en la mayoría de los convertidores de baja potencia (hasta 100 w). En la Figura~\ref{topo_flyback} se muestran los principios de esta topología de fuente conmutada. Cuando T conduce, la corriente crece linealmente en el primario del transformador. Cuando T se bloquea, el flujo en el transformador cesa generando una corriente inversa en el secundario que carga el condensador a través del diodo alimentando la carga. El condensador mantiene la tensión en la carga durante el período en que T conduce.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.25\textwidth]{img/topo_flyback.png}
+\caption{Topología Flyback.}
+\label{topo_flyback} 
+\end{figure}
+
+La regulación de tensión en la salida se obtiene mediante comparación con una referencia fija, actuando sobre el tiempo de encendido del transistor, por tanto la energía transferida a la salida mantiene la tensión constante independientemente del valor de la carga o del valor de la tensión de entrada. Los estados del transistor se controlan por modulación de ancho de pulso (PWM) a frecuencia fija. Como se observa en la Figura~\ref{topo_flyback_mul}, esta topología puede implementarse con múltiples bobinados secundarios de manera tal de proveer de manera independiente varias tensiones.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.32\textwidth]{img/topo_flyback_mul.png}
+\caption{Topología flyback con salidas multiples.}
+\label{topo_flyback_mul} 
+\end{figure}
+
+\paragraph*{Topología Forward: }
+Como se ve en la Figura~\ref{topo_forward} es algo más complejo que el sistema Flyback pero rentable en cuanto a costes para potencias de 100 a 250w.Cuando el transistor está conduciendo, la corriente crece en el primario del transformador transfiriendo energía al secundario. La corriente pasa a través de la inductancia L a la carga, acumulándose energía magnética en L.Cuando T se apaga, la corriente en el primario cesa invirtiendo la tensión en el secundario. En este momento D2 queda polarizado inversamente bloqueando la corriente de secundario, pero D3 conduce permitiendo que la energía almacenada en L se descargue alimentando a la carga. El tercer devanado permite aprovechar la energía que queda en el transformador devolviéndola a la entrada, vía D1.
+
+Contrariamente al método Flyback, la inductancia cede energía a la carga todo el tiempo, esto hace que los diodos soporten la mitad de la corriente y los niveles de rizado de salida sean más bajos.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.35\textwidth]{img/topo_forward.png}
+\caption{Topología Forward.}
+\label{topo_forward} 
+\end{figure}
+
+
+\paragraph*{Topología Push-Pull: }
+
+Esta topología mostrada en la Figura~\ref{topo_pull-push},  se desarrolló para aprovechar mejor los núcleos magnéticos. En esencia consisten en dos convertidores Forward controlados por dos entradas en contrafase. Los diodos D1 y D2 en el secundario, actúan como dos diodos de recuperación. Idealmente los períodos de conducción de los transistores deben ser iguales, el transformador se excita simétricamente y al contrario de la topología Forward no es preciso prever entrehierro en el circuito magnético, ya que no existe asimetría en el flujo magnético y por tanto componente continua. Ello se traduce en una reducción del volumen del núcleo del orden del 50\% para una misma potencia.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.35\textwidth]{img/topo_pull-push.png}
+\caption{Topología Push-Pull.}
+\label{topo_pull-push} 
+\end{figure}
+
+
 
 % El desarrollo del trabajo fue encarado como un caso real de la vida profesional, en el cual se nos han dado las especificaciones y basamos en ellas nuestro diseño, tratando de ser lo mas eficientes al menor costo posible y con los productos que se pudieron encontrar en el mercado.
 %	
