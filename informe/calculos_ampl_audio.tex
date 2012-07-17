@@ -86,7 +86,7 @@ Debido a que se piensa utilizar realimentación para mejorar las característica
 \bigskip
 \subsubsection{Slew Rate}
 
-El capacitor de compensación C conectado alrededor del par Darlinghton hace que esta etapa actúe como un integrador, y la corriente que carga el punto de compensación es justamente $I_x$. 
+El capacitor de compensación C conectado alrededor del par Darlington hace que esta etapa actúe como un integrador, y la corriente que carga el punto de compensación es justamente $I_x$. 
 Se puede observar que la corriente máxima disponible para cargar C es 2$I_1$, donde $I_1$ es la corriente en reposo por cada dispositivo en la etapa de entrada. Es decir, a grandes valores de Vi las corrientes del par diferencial se desequilibran, $I_1$ crece hasta su valor máximo 2$I_1$ y la corriente por la otra rama del par se anula, por ende es fácil ver que por la carga activa deja de circular corriente y toda la corriente de la primer rama del par se transforma en $I_x$.
 El circuito por lo tanto opera en forma no lineal. Si la etapa de entrada actuara de forma lineal produciría una corriente $I_x$ muy grande y el slew rate no produciría ninguna limitación.
 
@@ -106,3 +106,6 @@ $$ SR=36\dfrac{V}{\usec} $$
 
 \bigskip
 \subsubsection{Protección Contra Cortocircuitos}\label{contra_cortos} 
+
+A modo de reducir las consecuencias de los accidentes, se agregaron además, circuitos de protección contra cortocircuitos. El funcionamiento básico es que usa los resistores de la salida para sensar la corriente que pasa por ellos. Cuando la corriente excede el valor máximo permitido, el cual se elige para una sobrecarga determinada (esto incluye el caso extremo de cortocircuito), la tensión que cae en esta resistencia enciende en transistor, el cual comienza a drenar corriente de la entrada de la etapa de salida, a fin de limitar la corriente de salida.
+Un problema que se podría tener es el de tener un corto interno pero no notarlo, en cuyo caso las protecciones estarían constantemente en funcionamiento. Entonces, para notarlo, se reemplazo un diodo de las protecciones por un LED, a fin de que cuando las protecciones esten funcionando, el LED se polarice y su señal luminosa nos informe del problema.
