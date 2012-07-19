@@ -1,8 +1,6 @@
-update=sáb 07 jul 2012 20:06:47 ART
+update=18/07/2012 09:53:29 p.m.
 version=1
-last_client=pcbnew
-[general]
-version=1
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
@@ -106,3 +104,5 @@ LibName11=nucleo
 LibName12=modelos/w_capacitors
 LibName13=modelos/w_to
 LibName14=rele
+[general]
+version=1
