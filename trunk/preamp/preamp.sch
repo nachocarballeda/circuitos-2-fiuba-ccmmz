@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date vie 20 jul 2012 00:23:15 ART
+EESchema Schematic File Version 2  date sáb 21 jul 2012 13:38:50 ART
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "20 jul 2012"
+Date "21 jul 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -372,19 +372,19 @@ $EndComp
 $Comp
 L GND #PWR07
 U 1 1 4FF86E92
-P 1750 1550
-F 0 "#PWR07" H 1750 1550 30  0001 C CNN
-F 1 "GND" H 1750 1480 30  0001 C CNN
-	1    1750 1550
+P 7200 6250
+F 0 "#PWR07" H 7200 6250 30  0001 C CNN
+F 1 "GND" H 7200 6180 30  0001 C CNN
+	1    7200 6250
 	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_2 P1
 U 1 1 4FF86010
-P 2100 1450
-F 0 "P1" V 2050 1450 40  0000 C CNN
-F 1 "Plug entrada" V 2150 1450 40  0000 C CNN
-	1    2100 1450
+P 7550 6150
+F 0 "P1" V 7500 6150 40  0000 C CNN
+F 1 "Plug salida" V 7600 6150 40  0000 C CNN
+	1    7550 6150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -482,12 +482,12 @@ F 1 "CONNECTOR" H 7650 700 70  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONNECTOR salida1
+L CONNECTOR entrada1
 U 1 1 4FEE390F
-P 7200 6050
-F 0 "salida1" H 7550 6150 70  0000 C CNN
-F 1 "CONNECTOR" H 7550 5950 70  0000 C CNN
-	1    7200 6050
+P 1750 1350
+F 0 "entrada1" H 2100 1450 70  0000 C CNN
+F 1 "CONNECTOR" H 2100 1250 70  0000 C CNN
+	1    1750 1350
 	1    0    0    -1  
 $EndComp
 $Comp
