@@ -1,174 +1,214 @@
-# EESchema Netlist Version 1.1 created  jue 19 jul 2012 23:12:03 ART
+# EESchema Netlist Version 1.1 created  sáb 21 jul 2012 12:19:43 ART
 (
- ( /5007490C $noname  U2 N35532 {Lib=N35532}
-  (    1 N-000018 )
-  (    2 N-000025 )
-  (    3 GND )
-  (    4 /alim- )
-  (    5 GND )
-  (    6 N-000005 )
-  (    7 N-000005 )
-  (    8 /alim+ )
+ ( /4FEE391F bornier2 20+1 CONNECTOR
+  ( 1 N-000010 )
  )
- ( /50074B78 $noname  C10 C {Lib=C}
-  (    1 GND )
-  (    2 /alim- )
+ ( /4FEE392A bornier2 20-1 CONNECTOR
+  ( 1 N-000009 )
  )
- ( /50074B76 $noname  C9 C {Lib=C}
-  (    1 /alim+ )
-  (    2 GND )
+ ( /4FEE2A7D C2 C1 47n
+  ( 1 N-000015 )
+  ( 2 N-000021 )
  )
- ( /50074B6B $noname  C11 C {Lib=C}
-  (    1 /alim+ )
-  (    2 GND )
+ ( /4FEE3035 C2 C2 22u
+  ( 1 N-000024 )
+  ( 2 N-000002 )
  )
- ( /50074B66 $noname  C12 C {Lib=C}
-  (    1 GND )
-  (    2 /alim- )
+ ( /4FEE2A8C C2 C3 10n
+  ( 1 N-000014 )
+  ( 2 N-000020 )
  )
- ( /50074B63 $noname  R6 R {Lib=R}
-  (    1 N-000008 )
-  (    2 /alim- )
+ ( /4FEE3326 C2 C4 100p
+  ( 1 N-000022 )
+  ( 2 N-000003 )
  )
- ( /50074B60 $noname  R1 R {Lib=R}
-  (    1 N-000009 )
-  (    2 /alim+ )
+ ( /4FEE2D0F C2 C5 10n
+  ( 1 N-000027 )
+  ( 2 N-000025 )
  )
- ( /50074904 $noname  U1 N35532 {Lib=N35532}
-  (    1 N-000026 )
-  (    2 N-000026 )
-  (    3 N-000002 )
-  (    4 /alim- )
-  (    5 GND )
-  (    6 N-000022 )
-  (    7 N-000003 )
-  (    8 /alim+ )
+ ( /4FEE334C C2 C6 220
+  ( 1 N-000019 )
+  ( 2 N-000003 )
  )
- ( /4FF86010 $noname  P1 Plug_entrada {Lib=CONN_2}
-  (    1 N-000023 )
-  (    2 GND )
+ ( /4FEE2A94 C2 C7 2.2n
+  ( 1 N-000012 )
+  ( 2 N-000013 )
  )
- ( /4FF7C4B1 $noname  C8 220u {Lib=C}
-  (    1 N-000023 )
-  (    2 N-000004 )
+ ( /4FF7C4B1 C2 C8 220u
+  ( 1 N-000023 )
+  ( 2 N-000005 )
  )
- ( /4FF7C2C4 $noname  RV4 POT {Lib=POT}
-  (    1 N-000003 )
-  (    2 N-000024 )
-  (    3 N-000004 )
+ ( /50074B76 C2 C9 C
+  ( 1 /alim+ )
+  ( 2 GND )
  )
- ( /4FF4DBDD $noname  ground1 CONNECTOR {Lib=CONNECTOR}
-  (    1 GND )
+ ( /50074B78 C2 C10 C
+  ( 1 GND )
+  ( 2 /alim- )
  )
- ( /4FEE29F7 $noname  RV1 POT {Lib=POT}
-  (    1 N-000014 )
-  (    2 N-000010 )
-  (    3 N-000021 )
+ ( /50074B6B C2V8 C11 C
+  ( 1 /alim+ )
+  ( 2 GND )
  )
- ( /4FEE392A $noname  20-1 CONNECTOR {Lib=CONNECTOR}
-  (    1 N-000008 )
+ ( /50074B66 C2V8 C12 C
+  ( 1 GND )
+  ( 2 /alim- )
  )
- ( /4FEE391F $noname  20+1 CONNECTOR {Lib=CONNECTOR}
-  (    1 N-000009 )
+ ( /4FEE390F 1pin entrada1 CONNECTOR
+  ( 1 N-000023 )
  )
- ( /4FEE390F $noname  salida1 CONNECTOR {Lib=CONNECTOR}
-  (    1 N-000018 )
+ ( /4FF4DBDD bornier2 ground1 CONNECTOR
+  ( 1 GND )
  )
- ( /4FEE334C $noname  C6 220 {Lib=C}
-  (    1 N-000019 )
-  (    2 N-000003 )
+ ( /4FF86010 jack P1 Plug_salida
+  ( 1 N-000004 )
+  ( 2 GND )
  )
- ( /4FEE3326 $noname  C4 100p {Lib=C}
-  (    1 N-000022 )
-  (    2 N-000003 )
+ ( /50074B60 R4 R1 R
+  ( 1 N-000010 )
+  ( 2 /alim+ )
  )
- ( /4FEE3035 $noname  C2 22u {Lib=C}
-  (    1 N-000024 )
-  (    2 N-000002 )
+ ( /4FEE298C R3 R2 6k8
+  ( 1 N-000018 )
+  ( 2 N-000015 )
  )
- ( /4FEE3027 $noname  R15 100 {Lib=R}
-  (    1 N-000016 )
-  (    2 N-000019 )
+ ( /4FEE29A8 R3 R3 6k8
+  ( 1 N-000021 )
+  ( 2 N-000017 )
  )
- ( /4FEE301E $noname  R10 47k {Lib=R}
-  (    1 N-000003 )
-  (    2 N-000022 )
+ ( /4FEE2F84 R3 R4 22k
+  ( 1 N-000002 )
+  ( 2 GND )
  )
- ( /4FEE2FF9 $noname  R13 22k {Lib=R}
-  (    1 N-000019 )
-  (    2 GND )
+ ( /4FEE2B6E R3 R5 68k
+  ( 1 N-000025 )
+  ( 2 N-000011 )
  )
- ( /4FEE2FEC $noname  R7 680 {Lib=R}
-  (    1 N-000022 )
-  (    2 N-000026 )
+ ( /50074B63 R4 R6 R
+  ( 1 N-000009 )
+  ( 2 /alim- )
  )
- ( /4FEE2F84 $noname  R4 22k {Lib=R}
-  (    1 N-000002 )
-  (    2 GND )
+ ( /4FEE2FEC R3 R7 680
+  ( 1 N-000022 )
+  ( 2 N-000026 )
  )
- ( /4FEE2D0F $noname  C5 10n {Lib=C}
-  (    1 N-000027 )
-  (    2 N-000025 )
+ ( /4FEE29B5 R3 R8 2k2
+  ( 1 N-000018 )
+  ( 2 N-000014 )
  )
- ( /4FEE2C2D $noname  RV3 POT {Lib=POT}
-  (    1 N-000016 )
-  (    2 N-000011 )
-  (    3 N-000017 )
+ ( /4FEE29BD R3 R9 2k2
+  ( 1 N-000020 )
+  ( 2 N-000017 )
  )
- ( /4FEE2B6E $noname  R5 68k {Lib=R}
-  (    1 N-000025 )
-  (    2 N-000010 )
+ ( /4FEE301E R3 R10 47k
+  ( 1 N-000003 )
+  ( 2 N-000022 )
  )
- ( /4FEE2B64 $noname  R11 15k {Lib=R}
-  (    1 N-000027 )
-  (    2 N-000015 )
+ ( /4FEE2B64 R3 R11 15k
+  ( 1 N-000027 )
+  ( 2 N-000016 )
  )
- ( /4FEE2AEF $noname  R12 10k {Lib=R}
-  (    1 N-000012 )
-  (    2 N-000027 )
+ ( /4FEE2AEF R3 R12 10k
+  ( 1 N-000013 )
+  ( 2 N-000027 )
  )
- ( /4FEE2A94 $noname  C7 2.2n {Lib=C}
-  (    1 N-000011 )
-  (    2 N-000012 )
+ ( /4FEE2FF9 R3 R13 22k
+  ( 1 N-000019 )
+  ( 2 GND )
  )
- ( /4FEE2A8C $noname  C3 10n {Lib=C}
-  (    1 N-000013 )
-  (    2 N-000020 )
+ ( /4FEE3027 R3 R15 100
+  ( 1 N-000017 )
+  ( 2 N-000019 )
  )
- ( /4FEE2A7D $noname  C1 47n {Lib=C}
-  (    1 N-000014 )
-  (    2 N-000021 )
+ ( /4FEE29F7 bornier3 RV1 POT
+  ( 1 N-000015 )
+  ( 2 N-000011 )
+  ( 3 N-000021 )
  )
- ( /4FEE2A32 $noname  RV2 POT {Lib=POT}
-  (    1 N-000013 )
-  (    2 N-000015 )
-  (    3 N-000020 )
+ ( /4FEE2A32 bornier3 RV2 POT
+  ( 1 N-000014 )
+  ( 2 N-000016 )
+  ( 3 N-000020 )
  )
- ( /4FEE29BD $noname  R9 2k2 {Lib=R}
-  (    1 N-000020 )
-  (    2 N-000016 )
+ ( /4FEE2C2D bornier3 RV3 POT
+  ( 1 N-000018 )
+  ( 2 N-000012 )
+  ( 3 N-000017 )
  )
- ( /4FEE29B5 $noname  R8 2k2 {Lib=R}
-  (    1 N-000017 )
-  (    2 N-000013 )
+ ( /4FF7C2C4 bornier3 RV4 POT
+  ( 1 N-000003 )
+  ( 2 N-000024 )
+  ( 3 N-000005 )
  )
- ( /4FEE29A8 $noname  R3 6k8 {Lib=R}
-  (    1 N-000021 )
-  (    2 N-000016 )
+ ( /50074904 DIP-8__300 U1 N35532
+  ( 1 N-000026 )
+  ( 2 N-000026 )
+  ( 3 N-000002 )
+  ( 4 /alim- )
+  ( 5 GND )
+  ( 6 N-000022 )
+  ( 7 N-000003 )
+  ( 8 /alim+ )
  )
- ( /4FEE298C $noname  R2 6k8 {Lib=R}
-  (    1 N-000017 )
-  (    2 N-000014 )
+ ( /5007490C DIP-8__300 U2 N35532
+  ( 1 N-000004 )
+  ( 2 N-000025 )
+  ( 3 GND )
+  ( 4 /alim- )
+  ( 5 GND )
+  ( 6 N-000006 )
+  ( 7 N-000006 )
+  ( 8 /alim+ )
  )
 )
 *
 { Allowed footprints by component:
-$component C10
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$component C8
  SM*
  C?
  C1-1
 $endlist
 $component C9
+ SM*
+ C?
+ C1-1
+$endlist
+$component C10
  SM*
  C?
  C1-1
@@ -183,13 +223,6 @@ $component C12
  C?
  C1-1
 $endlist
-$component R6
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
 $component R1
  R?
  SM0603
@@ -197,48 +230,14 @@ $component R1
  R?-*
  SM1206
 $endlist
-$component C8
- SM*
- C?
- C1-1
-$endlist
-$component C6
- SM*
- C?
- C1-1
-$endlist
-$component C4
- SM*
- C?
- C1-1
-$endlist
-$component C2
- SM*
- C?
- C1-1
-$endlist
-$component R15
+$component R2
  R?
  SM0603
  SM0805
  R?-*
  SM1206
 $endlist
-$component R10
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R13
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R7
+$component R3
  R?
  SM0603
  SM0805
@@ -252,12 +251,42 @@ $component R4
  R?-*
  SM1206
 $endlist
-$component C5
- SM*
- C?
- C1-1
-$endlist
 $component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R9
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R10
  R?
  SM0603
  SM0805
@@ -278,43 +307,14 @@ $component R12
  R?-*
  SM1206
 $endlist
-$component C7
- SM*
- C?
- C1-1
-$endlist
-$component C3
- SM*
- C?
- C1-1
-$endlist
-$component C1
- SM*
- C?
- C1-1
-$endlist
-$component R9
+$component R13
  R?
  SM0603
  SM0805
  R?-*
  SM1206
 $endlist
-$component R8
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R3
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R2
+$component R15
  R?
  SM0603
  SM0805
@@ -323,119 +323,3 @@ $component R2
 $endlist
 $endfootprintlist
 }
-{ Pin List by Nets
-Net 1 "GND" "GND"
- R4 2
- U2 3
- C10 1
- U2 5
- R13 2
- U1 5
- P1 2
- C12 1
- C11 2
- ground1 1
- C9 2
-Net 2 "" ""
- R4 1
- C2 2
- U1 3
-Net 3 "" ""
- R10 1
- C4 2
- C6 2
- U1 7
- RV4 1
-Net 4 "" ""
- C8 2
- RV4 3
-Net 5 "" ""
- U2 6
- U2 7
-Net 6 "/alim-" "alim-"
- R6 2
- C12 2
- U2 4
- U1 4
- C10 2
-Net 7 "/alim+" "alim+"
- U1 8
- U2 8
- R1 2
- C9 1
- C11 1
-Net 8 "" ""
- 20-1 1
- R6 1
-Net 9 "" ""
- R1 1
- 20+1 1
-Net 10 "" ""
- RV1 2
- R5 2
-Net 11 "" ""
- RV3 2
- C7 1
-Net 12 "" ""
- R12 1
- C7 2
-Net 13 "" ""
- R8 2
- RV2 1
- C3 1
-Net 14 "" ""
- RV1 1
- R2 2
- C1 1
-Net 15 "" ""
- RV2 2
- R11 2
-Net 16 "" ""
- R15 1
- R9 2
- RV3 1
- R3 2
-Net 17 "" ""
- RV3 3
- R2 1
- R8 1
-Net 18 "" ""
- U2 1
- salida1 1
-Net 19 "" ""
- C6 1
- R15 2
- R13 1
-Net 20 "" ""
- R9 1
- RV2 3
- C3 2
-Net 21 "" ""
- C1 2
- RV1 3
- R3 1
-Net 22 "" ""
- U1 6
- R7 1
- R10 2
- C4 1
-Net 23 "" ""
- P1 1
- C8 1
-Net 24 "" ""
- RV4 2
- C2 1
-Net 25 "" ""
- C5 2
- U2 2
- R5 1
-Net 26 "" ""
- R7 2
- U1 2
- U1 1
-Net 27 "" ""
- C5 1
- R12 2
- R11 1
-}
-#End
