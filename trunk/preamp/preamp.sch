@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date sáb 21 jul 2012 13:38:50 ART
+EESchema Schematic File Version 2  date sáb 21 jul 2012 23:24:41 ART
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "21 jul 2012"
+Date "22 jul 2012"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,6 +45,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L CONNECTOR ground2
+U 1 1 500B641C
+P 6300 2400
+F 0 "ground2" H 6650 2500 70  0000 C CNN
+F 1 "CONNECTOR" H 6650 2300 70  0000 C CNN
+	1    6300 2400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	1700 5750 6650 5750
 Wire Wire Line
