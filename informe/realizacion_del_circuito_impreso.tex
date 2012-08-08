@@ -63,16 +63,6 @@ Estas dos resistencias son de baja R y es importante que no se vean muy alterada
 \caption{Circuito impreso del amplificador.}
 \end{figure}
 
-\subsubsection*{Puntos que se pueden mejorar}
-La disposición de las entradas y salida hacen que la conección no sea tan sencilla. Por ejemplo la conección con la salida se hace en el medio del circuito. También resultó ser después de la implementación que un disipador dificultaba el acceso a una de los bornes de las alimentaciones. 
-Hemos visto también que faltaba una pista por un error en el dibujo del esquemático al principio. Para arreglar eso no hubo más remedio que hacer un puente más.
-
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width=0.9\textwidth]{img/PCB4.png}
-%\caption{Circuito impreso del amplificador.}
-%\end{figure}
-
 \subsubsection{Disipadores}
 \bigskip
 Para el calculo de los disipadores se utilizo la ley experimental:
@@ -102,4 +92,16 @@ En la Figura~\ref{circuito_impreso_fuente_lineal} se muestra el circuito impreso
 \centerline{\includegraphics[width=1\textwidth]{img/circuito_impreso_fuente_lineal.png}}
 \caption{Circuito impreso de la fuente lineal.}
 \label{circuito_impreso_fuente_lineal} 
+\end{figure}
+\medskip
+\subsubsection{Preamplificador}
+
+En este impreso se debió tener en cuenta las posiciones y sentido de giro de los potenciometros para lograr un frente coherente y ordenado. Se agrego un conector jack a la salida para facilitar la desconexión con el amplificador de potencia de ser necesario.
+Se utilizaron amplificadores operacionales NE5532, típicos en este tipo de aplicaciones debido a sus buenas prestaciones y bajo ruido.
+
+\begin{figure}[H]
+\centering
+\centerline{\includegraphics[width=1\textwidth]{img/pre_pcb.png}}
+\caption{Circuito impreso del preamplificador.}
+\label{pre_pcb} 
 \end{figure}
