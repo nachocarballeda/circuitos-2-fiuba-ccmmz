@@ -70,8 +70,55 @@ I(R4):	\> 0.00156204	\> device$\_$current \\
 }
 \end{center}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/ganancia_1er_cir.png}
+\caption{Respuesta temporal del $1^{er}$ prototipo.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/cir_basico_oscilante.png}
+\caption{Respuesta en frecuencia del $1^{er}$ prototipo.}
+\end{figure}
+
 Los valores asignados fueron elegidos con el criterio de lograr una corriente de alrededor de 1mA para la etapa de entrada y de una relación entre $\frac{R5}{R6}$  de 0.001 veces. Obteniendo el resultado de que el circuito amplifica 22.85 veces y posee una alta inestabilidad.
-Notar que el circuito simulado posee una resistencia de carga de 100 $\ohm$. Realizando una simulación habiendo compensado el circuito para que no se produzcan oscilaciones obtuvimos
+Notar que el circuito simulado posee una resistencia de carga de 100 $\ohm$. Realizando una simulación habiendo compensado el circuito para que no se produzcan oscilaciones se obtuvo:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/cir_basico_compensado.png}
+\caption{Respuesta temporal luego de compensar.}
+\end{figure}
+
+Como puede observarse otro cambio que deberíamos lograr era bajar la resistencia de salida del circuito para que etapa de salida pudiese entregar mayor potencia sin llegar al recorte. Por ende aplicando una cantidad significativa de cambios pasamos a analizar el siguiente circuito:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/circuito_total_exp.png}
+\caption{Amplificador mejorado.}
+\label{circuito_total_exp}
+\end{figure}
+
+La primer diferencia que podemos apreciar es el reemplazo de la resistencia R4 del circuito anterior por una fuente de corriente. Este cambio logra que la corriente de polarización del par diferencial sea mas estable frente a variaciones tanto por parte de la fuente de alimentación como así también por la temperatura de operación. Esta corriente es vital para definir las propiedades de pequeña señal y las distorsiones que puedan ocurrir en la primer etapa.
+Para calcular dicha corriente recorreremos la malla de control de dicha fuente aplicando la ley de kirchoff obtenemos que:
+$$
+V_{2} - V_{R4} - V_{BE Q12} + V_{BE Q11} + V_{R6} - V_{2} = 0
+$$
+Asumiendo que los dos transistores son exactamente iguales podemos asumir que sus VBE también lo serán. Por ende:
+$$
+- I_{C Q12} * R_{4} + I_{C Q11} * R_{6} = 0
+$$
+Llegando a la siguiente relación:
+$$
+I_{C Q12} = I_{C Q11} \times \frac{R_6}{R_4}
+$$
+\\
+Por ende las corrientes $I_{C Q12}$ e $I_{C Q11}$  quedan determinadas por la relación entre $R_6$ y $R_4$. Para calcular la corriente $ I_{C Q11}$ realizamos la suposición de que el la tensión $V_{BE Q18}= 0,7V$ y en consecuencia $I_{C Q11}= {V_{BE Q18}}/{R_6}$. Los valores de resistencias normalizados adoptados logran que la corriente del par diferencial se mantenga alrededor de 1 mA. Este valor lo establecimos como norma, ya que valores mayores incorporarían más ruido a la primera etapa, y valores menores disminuirían la ganancia.
+
+La segunda gran diferencia es la aplicación de una carga activa en reemplazo de resistores en el par diferencial lo cual nos introduce un aumento en la amplificación sumado a que se logra un lazo de realimentación que estabiliza la polarización, es decir, tiende a igualar las corrientes por ambas ramas del amplificador diferencial, disminuyendo los efectos de los desapareamientos.
+
+La tercer diferencia radica en la modificación de la etapa de ganancia por una etapa darlington para aumentar aun más la ganancia de lazo abierto. Además en esta etapa se ha colocado un capacitor entre la base y el colector, de lo que sería $Q_3$ del circuito anterior, que produce un polo dominante para altas frecuencias. Este tipo de compensación se basa en el hecho de que la ganancia de la etapa es lo suficientemente grande como para que la capacitancia reflejada por efecto Miller también lo sea. La ventaja es que con capacidades pequeñas se logra estabilizar el sistema y estas suelen venir incluidas en el circuito integrado. 
 
 \subsubsection{Etapa de Entrada}
 Debido a que se piensa utilizar realimentación para mejorar las características del circuito, se implementa una entrada diferencial, cuya implementación más simple es un par diferencial. En parte porque se puede mejorar fácilmente utilizando:
