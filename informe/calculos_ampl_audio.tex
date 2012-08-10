@@ -120,6 +120,25 @@ La segunda gran diferencia es la aplicación de una carga activa en reemplazo de
 
 La tercer diferencia radica en la modificación de la etapa de ganancia por una etapa darlington para aumentar aun más la ganancia de lazo abierto. Además en esta etapa se ha colocado un capacitor entre la base y el colector, de lo que sería $Q_3$ del circuito anterior, que produce un polo dominante para altas frecuencias. Este tipo de compensación se basa en el hecho de que la ganancia de la etapa es lo suficientemente grande como para que la capacitancia reflejada por efecto Miller también lo sea. La ventaja es que con capacidades pequeñas se logra estabilizar el sistema y estas suelen venir incluidas en el circuito integrado. 
 
+La cuarta diferencia es la utilización de un circuito adicional entre las bases de $Q_5$ y $Q_4$. Posee dos funciones elementales: la primera es establecer una corriente de polarización en los transistores de salida que produce una notable disminución de la distorsión por cruce por cero. Para entender este efecto analizamos el primer circuito planteado, como observamos cuando un transistor de la etapa de salida clase B se encuentre el conducción el otro se encuentra en corte. Al disminuir la tensión de la salida del emisor común ($2^{da}$ etapa) a niveles cercanos al cero, ninguno de los transistores se encuentra en la región activa y en ese instante se produce una deformación de la señal como se observa en la Figura~\ref{falta_Vbe}. Claramente este tipo de distorsión será mas apreciable a señales de baja amplitud donde los efectos son mas apreciables. Para modificar este comportamiento se agregaría una "fuente" de tensión entre las bases de la etapa de salida clase B. Esta fuente polariza ambos transistores y produce por los mismos una corriente constante dependiendo exponencialmente de su valor. Esta "fuente" es reemplazada por el multiplicador donde como se ha analizado en clase, si el mismo es alimentado con una fuente de corriente constante vale afirmar que:
+
+$$
+V_{CE Q6} = (\frac{R_1}{R_7} + 1 ) \times V_{BE Q6}
+$$
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{img/falta_Vbe.png}
+\caption{Deformación por falta de Multiplicador $V_be$}
+\label{falta_Vbe}
+\end{figure}
+
+Ahora bien la segunda función elemental se observa en esta ecuación. El transistor $Q_6$ del multiplicador se acoplará termicamente con la etapa de salida de forma tal que si estos transisitores se embalan termicamente, es decir, un aumento de la temperatura produce un aumento de corriente que vuelve a producir un aumento de temperatura. Pero si el transistor $Q_6$ esta acoplado terminamente con la etapa de salida, al aumentar la temperatura pruducira una disminución en el valor de la tensión $V_{BE}$ (-2mV/°C), disminuyendo la tensión $V_{CE Q6}$, bajando la corriente de los transistores y produciendo un lazo de realimentación negativa.
+
+La quinta gran diferencia es la utilización de otro tipo de etapa de salida, la llamada clase G. 
+
+
+
 \subsubsection{Etapa de Entrada}
 Debido a que se piensa utilizar realimentación para mejorar las características del circuito, se implementa una entrada diferencial, cuya implementación más simple es un par diferencial. En parte porque se puede mejorar fácilmente utilizando:
 
