@@ -1,11 +1,7 @@
-	\subsection{Diseño de las Fuentes de Alimentación}
+\subsection{Diseño de la Fuente de Alimentación Lineal}
 \bigskip 
 
-En líneas generales, todo el circuitos estará alimentado por cuatro rieles, dos de alta tensión y dos de baja. Los rieles de altas serán suministrados por una fuente lineal mientras que para los de bajas, se reducirá la tensión de los rieles altos con una fuente de switching.
-
-\subsubsection{Fuente Lineal}
-
-Para los rieles altos se opto por una fuente lineal. La misma consiste esencialmente de tres bloques:
+En líneas generales, todo el amplificador estará alimentado por cuatro rieles, dos de alta tensión y dos de baja. Los rieles de altas serán suministrados por una fuente lineal mientras que para los de bajas, se reducirá la tensión de los rieles altos con una fuente conmutada. En esta sección se detallara el diseño de la fuente lineal. La misma consiste esencialmente de tres bloques:
 
 \begin{itemize}
 \item Transformador 220/36+36
@@ -51,3 +47,17 @@ $$	F_r=0.00016
 
 Para el peor caso de carga, es decir con una entrada de $V_i=1V_{rms}$, la carga vista será $R_i=\frac{-50V}{-4A}=12.5\ohm$ y $F_r=0.026$ en el pico del semiciclo negativo. Este caso será sumamente inusual de ver.
 
+\subsection{Fuente Conmutada}
+
+Para este tipo de fuente utilizaremos la topología Flyback con dos salidas, debido a su sencillez y bajo costo, su esquema puede observarse en la Figura~\ref{topo_flyback}. se Utilizaron dos bobinas de salida para generar 20V c/u; aprovechando el aislamiento galvánico generado por las bobinas acopladas se conectaron de forma tal de obtener dos bornes de $\pm 20V$, como se observa en la Figura~\ref{conmutada_basica} . Para controlar el ancho del pulso que activa el mosfet se utilizo un TL494, con un divisor a la salida para reescalar a una tension que el integrado pueda manejar fácilmente.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{img/conmutada_basica.png}
+\caption{Esquema  basico fuente conmutada.}
+\label{conmutada_basica}
+\end{figure}
+
+\subsubsection{Controlador}
+
+Se utilizó el circuito integrado TL494 como circuito de control de la fuente conmutada. El metodo de control es mediante la modulación del ancho de pulso. 
