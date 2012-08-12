@@ -84,13 +84,13 @@ P_{in}= E \times fs = \frac{Lp \times I_{pk}^2}{2} \times fs \label{potencia_ent
 
 Este razonamiento requiere que la inductancia del primario sea definida, pero para ello sería necesario conocer el pico de corriente $I_{pk}$. Este pico de corriente puede ser definido como:
 $$
-I_{pk}=V_{in(min)} \times \frac{t{ON(max)}}{L_P}
+I_{pk}=V_{in(min)} \times \frac{t_{ON(max)}}{L_P}
 $$
 
-donde $V_{in(min)}$ es el mínimo voltaje de entrada y el $t{ON(max)}$ es el máximo tiempo en un nivel alto de tensión. Por lo tanto, para limitar la inductancia del primario para asegurar operación discontinua, la inductancia máxima es determinada por:
+donde $V_{in(min)}$ es el mínimo voltaje de entrada y el $t_{ON(max)}$ es el máximo tiempo en un nivel alto de tensión. Por lo tanto, para limitar la inductancia del primario para asegurar operación discontinua, la inductancia máxima es determinada por:
 
 \begin{equation}
-L_P \leq V_{in(min)} \times \frac{t{ON(max)}}{I_{pk}}= \frac{V{in(min)}}{Ipk} \times \delta_{max} \times T_s \label{L_p}   
+L_P \leq V_{in(min)} \times \frac{t_{ON(max)}}{I_{pk}}= \frac{V{in(min)}}{Ipk} \times \delta_{max} \times T_s \label{L_p}   
 \end{equation}
 
 donde  $\delta_{max}$ es el máximo duty cicle alcanzado por el TL494 (45$\%$), $T_s$ el período de la frecuencia de funcionamiento de la fuente switching($T_s =12.5\E{-6}$ a una frecuencia de operación de 80kHz), una tensión mínima $V_{in(min)}$ =46V y una $I_{pk}$= 4,83A.
