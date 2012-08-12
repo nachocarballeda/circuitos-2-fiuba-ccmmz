@@ -95,27 +95,11 @@ Como puede observarse otro cambio que deberíamos lograr era bajar la resistenci
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{img/circuito_total_exp.png}
-\caption{Amplificador mejorado.}
-\label{circuito_total_exp}
+\includegraphics[width=\textwidth]{img/circuito_beta_mejorado.png}
+\caption{Amplificador básico con algunas mejoras.}
 \end{figure}
 
-Estos cambios mejoran en distintos aspectos al circuito original, por lo tanto, se irán detallando los cambios y sus beneficios etapa por etapa.
-
-\subsubsection{Etapa de entrada}
-
-Debido a que se piensa utilizar realimentación para mejorar las características del circuito, se implementa una entrada diferencial, cuya implementación más simple es un par diferencial. En parte porque se puede mejorar fácilmente utilizando:
-
-\begin{itemize}
-\item Fuente de corriente para su polarización, aumentando su relación de rechazo en modo común.
-\item Realimentacion local en los transistores del par para disminuir distorsiones debido a alinealidades al extender el rango lineal.
-\item Dos transistores en paralelo a cada lado del par para mejorar la relación señal-ruido. Esto se justifica porque el ruido térmico no es el mismo para cada uno y al sumarse tiende a anularse ya que es aleatorio y tiene media nula. Cae 3dB con dos transistores. Aumentar la cantidad de transistores en paralelo lo reduce aun mas.
-\item Una fuente de corriente espejo degenerada en emisor como carga para aumentar la ganancia de corriente a la salida de esta etapa, que impone el balance apropiado en las corrientes del par y previene la aparición de distorsión por $2^{da}$ armónica.
-\end{itemize}
-
-La resistencia de entrada desacoplada por el capacitor C5 provee una resistencia de entrada de $10K\Omega$ para la señal y en continua se ven $22K\Omega$, equiparando con la realimentacion. De esta forma, se equilibra el offset producido por las corrientes de base del par diferencial, minimizando la tensión diferencial de offset.
-
-La primer diferencia que podemos apreciar es el reemplazo de la resistencia R4 del circuito anterior por una fuente de corriente. Este cambio logra que la corriente de polarización del par diferencial sea mas estable frente a variaciones tanto por parte de la fuente de alimentación como así también por la temperatura de operación. Esta corriente es vital para definir las propiedades de pequeña señal y las distorsiones que puedan ocurrir en la primer etapa.
+La primer diferencia que podemos apreciar es el reemplazo de la resistencia $R_4$ del circuito anterior por una fuente de corriente. Este cambio logra que la corriente de polarización del par diferencial sea mas estable frente a variaciones tanto por parte de la fuente de alimentación como así también por la temperatura de operación. Esta corriente es vital para definir las propiedades de pequeña señal y las distorsiones que puedan ocurrir en la primer etapa.Ademas aumenta su relación de rechazo en modo común.
 Para calcular dicha corriente recorreremos la malla de control de dicha fuente aplicando la ley de Kirchhoff obtenemos que:
 $$
 V_{2} - V_{R4} - V_{BE Q12} + V_{BE Q11} + V_{R6} - V_{2} = 0
@@ -131,11 +115,9 @@ $$
 \\
 Por ende las corrientes $I_{C Q12}$ e $I_{C Q11}$  quedan determinadas por la relación entre $R_6$ y $R_4$. Para calcular la corriente $ I_{C Q11}$ realizamos la suposición de que el la tensión $V_{BE Q18}= 0,7V$ y en consecuencia $I_{C Q11}= {V_{BE Q18}}/{R_6}$. Los valores de resistencias normalizados adoptados logran que la corriente del par diferencial se mantenga alrededor de 1 mA. Este valor lo establecimos como norma, ya que valores mayores incorporarían más ruido a la primera etapa, y valores menores disminuirían la ganancia.
 
-La segunda gran diferencia es la aplicación de una carga activa en reemplazo de resistores en el par diferencial lo cual nos introduce un aumento en la amplificación sumado a que se logra un lazo de realimentación que estabiliza la polarización, es decir, tiende a igualar las corrientes por ambas ramas del amplificador diferencial, disminuyendo los efectos de los desapareamientos.
+La segunda gran diferencia es la aplicación de una carga activa en reemplazo de resistores en el par diferencial lo cual nos introduce un aumento en la amplificación sumado a que se logra un lazo de realimentación que estabiliza la polarización, es decir, tiende a igualar las corrientes por ambas ramas del amplificador diferencial, disminuyendo los efectos de los desapareamientos e impidiendo la aparición de distorsión por $2^{da}$ armónica.
 
-\subsubsection{Etapa amplificadora de tensión}
-
-La tercer diferencia radica en la modificación de la etapa de ganancia por una etapa darlington para aumentar aun más la ganancia de lazo abierto. Además en esta etapa se ha colocado un capacitor, C1, entre la base y el colector, de lo que sería $Q_3$ del circuito anterior, que produce un polo dominante para altas frecuencias. Este tipo de compensación se basa en el hecho de que la ganancia de la etapa es lo suficientemente grande como para que la capacitancia reflejada por efecto Miller también lo sea. La ventaja es que con capacidades pequeñas se logra estabilizar el sistema y estas suelen venir incluidas en el circuito integrado. La realimentacion local que linealiza la etapa se ve incrementada tal que a fines prácticos elimina la distorsion por alinealidad totalmente. La carga del colector del VAS, Q9, forma una fuente de corriente.
+La tercer diferencia radica en la modificación de la etapa de ganancia por una etapa darlington para aumentar aun más la ganancia de lazo abierto. Además en esta etapa se ha colocado un capacitor, $C_1$, entre la base y el colector, de lo que sería $Q_3$ del circuito anterior, que produce un polo dominante para altas frecuencias. Este tipo de compensación se basa en el hecho de que la ganancia de la etapa es lo suficientemente grande como para que la capacitancia reflejada por efecto Miller también lo sea. La ventaja es que con capacidades pequeñas se logra estabilizar el sistema y estas suelen venir incluidas en el circuito integrado. La realimentacion local que linealiza la etapa se ve incrementada tal que a fines prácticos elimina la distorsion por alinealidad totalmente. La carga del colector del VAS, $Q_9$, forma una fuente de corriente.
 
 La cuarta diferencia es la utilización de un circuito adicional entre las bases de $Q_5$ y $Q_4$. Posee dos funciones elementales: la primera es establecer una corriente de polarización en los transistores de salida que produce una notable disminución de la distorsión por cruce por cero. Para entender este efecto analizamos el primer circuito planteado, como observamos cuando un transistor de la etapa de salida clase B se encuentre el conducción el otro se encuentra en corte. Al disminuir la tensión de la salida del emisor común ($2^{da}$ etapa) a niveles cercanos al cero, ninguno de los transistores se encuentra en la región activa y en ese instante se produce una deformación de la señal como se observa en la Figura~\ref{falta_Vbe}. Claramente este tipo de distorsión será mas apreciable a señales de baja amplitud donde los efectos son mas apreciables. Para modificar este comportamiento se agregaría una "fuente" de tensión entre las bases de la etapa de salida clase B. Esta fuente polariza ambos transistores y produce por los mismos una corriente constante dependiendo exponencialmente de su valor. Esta "fuente" es reemplazada por el multiplicador donde como se ha analizado en clase, si el mismo es alimentado con una fuente de corriente constante vale afirmar que:
 
@@ -152,35 +134,45 @@ $$
 
 Ahora bien la segunda función elemental se observa en esta ecuación. El transistor $Q_6$ del multiplicador se acoplará termicamente con la etapa de salida de forma tal que si estos transisitores se embalan termicamente, es decir, un aumento de la temperatura produce un aumento de corriente que vuelve a producir un aumento de temperatura. Pero si el transistor $Q_6$ esta acoplado terminamente con la etapa de salida, al aumentar la temperatura pruducira una disminución en el valor de la tensión $V_{BE}$ (-2mV/$^o$C), disminuyendo la tensión $V_{CE Q6}$, bajando la corriente de los transistores y produciendo un lazo de realimentación negativa.
 
-\subsubsection*{Slew Rate}
+La quinta gran diferencia es la utilización de otro tipo de etapa de salida, la llamada clase G. Esto se relaciona al hecho de que quiere utilizarse para la reproducción de música, la cual, la mayor parte del tiempo se encuentra en niveles bajos y solo tiene picos temporales. Este hecho hace que sea eficiente el uso de una salida clase G.
 
-El capacitor de compensación C1 conectado alrededor del par Darlington hace que esta etapa actúe como un integrador, y la corriente que carga el punto de compensación es justamente $I_x$. 
-Se puede observar que la corriente máxima disponible para cargar C1 es 2$I_1$, donde $I_1$ es la corriente en reposo por cada dispositivo en la etapa de entrada. Es decir, a grandes valores de Vi las corrientes del par diferencial se desequilibran, $I_1$ crece hasta su valor máximo 2$I_1$ y la corriente por la otra rama del par se anula, por ende es fácil ver que por la carga activa deja de circular corriente y toda la corriente de la primer rama del par se transforma en $I_x$.
-El circuito por lo tanto opera en forma no lineal. Si la etapa de entrada actuara de forma lineal produciría una corriente $I_x$ muy grande y el slew rate no produciría ninguna limitación.
+En esta etapa los transistores están en configuración seguidor por emisor, ya que es sabida de ser menos propensa a oscilaciones parásitas o locales. $R_{15}$ y $R_{14}$  son los clásicos resistores de emisor para los drivers de bajas. Los drivers $Q_{12}$ y $Q_{15}$ tienen sus propios resistores de emisor $R_{13}$ y $R_{16}$, que cumplen su rol de establecer una razonable corriente en los drivers cuando se prenden a modo de incrementar su transconductancia y ademas acelerar el apagado de los dispositivos de altas al proveer una salida para los portadores de las bases de los mencionados dispositivos. Los colectores de los drivers están conectados a los rieles de altas para minimizar los saltos de ganancia causados por el cambio abrupto en la tension de colector cuando se produce la conmutación.
 
-\[
-	V_o= \dfrac{1}{C1} \int 2I_1\,\mathrm{d}t    
-\]
+Cuando una tension positiva excede el riel de bajas, $D_3$ pasa a conducción,$Q_{15}$ y $Q_{16}$ se prenden mientras que $D_7$ se apaga y , por lo tanto, la corriente es suministrada  el riel de altas, con la caída de tension y consumo de potencia debidos a $Q_{15}$ y $Q_{16}$. Los picos de tensiones negativas tienen un desarrollo análogo.
+La conmutación en la clase G trae acarreado un problema de alinealidad en los diodos de conmutación. Estos diodos en general deben conducir grandes cantidades de corriente antes de conmutar, y una consiguiente acumulación de cargas. Al conmutar las cargas acumuladan mantienen la corriente durante un corto tiempo mientras son barridas de la juntura. Esta corriente es suministrada por el transistor de altas. Cuando el diodo corta completamente, este exceso de corriente que conducía el transistor de altas pasa directamente hasta el de bajas y a la resistencia de degeneración. Este problema se puede eliminar con un diodo de alta recombinación, como ser el diodo Schottky de potencia, que son mas rápidos y acumulan menos carga.
 
-$$
-	SR=\dfrac{dVo}{dt}=\dfrac{2I_1}{C1}
-$$
+Mientras la señal se mantenga en baja potencia, un amplificador de baja potencia lo hará mas eficiente. La mayor parte del tiempo son los rieles de baja tension los que proveen la potencia de salida, habiendo baja caída de tension entre riel y salida y consecuentemente, menor disipación. Pero, cuando aparecen picos de alta tension, se activan los rieles de alta tension, causando mayor gasto de energía durante esos cortos periodos de tiempo.
 
-Por lo tanto, realizando el calculo para nuestro circuito, siendo $I_1$ =2.2mA y C1=120pF. Obtenemos:
-$$ SR=36\dfrac{V}{\usec} $$
-
-
-\subsubsection{Etapa de salida}
-
-La quinta gran diferencia es la utilización de otro tipo de etapa de salida, la llamada clase G. En esta etapa los transistores están en configuración seguidor por emisor, ya que es sabida de ser menos propensa a oscilaciones parásitas o locales. $R_{15}$ es el clásico resistor del emisor para los drivers de bajas. Los drivers $Q_{16}$ y $Q_{17}$ tienen sus propios resistores de emisor $R_{13}$ y $R_{16}$, que cumplen su rol de establecer una razonable corriente en los drivers cuando se prenden a modo de incrementar su transconductancia y ademas acelerar el apagado de los dispositivos de altas al proveer una salida para los portadores de las bases de los mencionados dispositivos. Los colectores de los drivers están conectados a los rieles de altas para minimizar los saltos de ganancia causados por el cambio abrupto en la tension de colector cuando se produce la conmutación.
-
-$C_{13}$ y $R_{32}$ conforman la red Zobel encargada de hacer ver a la bobina como una carga resistiva. La red conformada por $L_{1}$ y $R_{33}$ aíslan al amplificador de carga capacitiva, aplanando la respuesta en frecuencia.
 
 
 \bigskip
 
+%La resistencia de entrada desacoplada por el capacitor C5 provee una resistencia de entrada de $10K\Omega$ para la señal y en continua se ven $22K\Omega$, equiparando con la realimentacion. De esta forma, se equilibra el offset producido por las corrientes de base del par diferencial, minimizando la tensión diferencial de offset.
+
+
+
+%$C_{13}$ y $R_{32}$ conforman la red Zobel encargada de hacer ver a la bobina como una carga resistiva. La red conformada por $L_{1}$ y $R_{33}$ aíslan al amplificador de carga capacitiva, aplanando la respuesta en frecuencia.
+
 
 %El principal inconveniente al compensar el circuito por polo dominantes es que al agregar un capacitor, este modifica el ancho de banda de potencia. Esto se debe al tiempo que le toma a la etapa anterior cargar el capacitor. Debido a esto la elección del valor de este capacitor debe tener en cuenta ambos efectos y buscar una relación de compromiso entre ambos.
+
+
+%\subsubsection*{Slew Rate}
+%
+%El capacitor de compensación $C_1$ conectado alrededor del par Darlington hace que esta etapa actúe como un integrador, y la corriente que carga el punto de compensación es justamente $I_x$. 
+%Se puede observar que la corriente máxima disponible para cargar C1 es 2$I_1$, donde $I_1$ es la corriente en reposo por cada dispositivo en la etapa de entrada. Es decir, a grandes valores de Vi las corrientes del par diferencial se desequilibran, $I_1$ crece hasta su valor máximo 2$I_1$ y la corriente por la otra rama del par se anula, por ende es fácil ver que por la carga activa deja de circular corriente y toda la corriente de la primer rama del par se transforma en $I_x$.
+%El circuito por lo tanto opera en forma no lineal. Si la etapa de entrada actuara de forma lineal produciría una corriente $I_x$ muy grande y el slew rate no produciría ninguna limitación.
+%
+%\[
+%	V_o= \dfrac{1}{C1} \int 2I_1\,\mathrm{d}t    
+%\]
+%
+%$$
+%	SR=\dfrac{dVo}{dt}=\dfrac{2I_1}{C1}
+%$$
+%
+%Por lo tanto, realizando el calculo para nuestro circuito, siendo $I_1$ =2.2mA y C1=120pF. Obtenemos:
+%$$ SR=36\dfrac{V}{\usec} $$
 
 \bigskip
 \subsubsection{Protección Contra Cortocircuitos}\label{contra_cortos} 
