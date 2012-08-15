@@ -117,7 +117,7 @@ Por ende las corrientes $I_{C Q12}$ e $I_{C Q11}$  quedan determinadas por la re
 
 La segunda gran diferencia es la aplicación de una carga activa en reemplazo de resistores en el par diferencial lo cual nos introduce un aumento en la amplificación sumado a que se logra un lazo de realimentación que estabiliza la polarización, es decir, tiende a igualar las corrientes por ambas ramas del amplificador diferencial, disminuyendo los efectos de los desapareamientos e impidiendo la aparición de distorsión por $2^{da}$ armónica.
 
-La tercer diferencia radica en la modificación de la etapa de ganancia por una etapa darlington para aumentar aun más la ganancia de lazo abierto. Además en esta etapa se ha colocado un capacitor, $C_1$, entre la base y el colector, de lo que sería $Q_3$ del circuito anterior, que produce un polo dominante para altas frecuencias. Este tipo de compensación se basa en el hecho de que la ganancia de la etapa es lo suficientemente grande como para que la capacitancia reflejada por efecto Miller también lo sea. La ventaja es que con capacidades pequeñas se logra estabilizar el sistema y estas suelen venir incluidas en el circuito integrado. La realimentacion local que linealiza la etapa se ve incrementada tal que a fines prácticos elimina la distorsion por alinealidad totalmente. La carga del colector del VAS, $Q_9$, forma una fuente de corriente.
+La tercer diferencia radica en la modificación de la etapa de ganancia por una etapa darlington para aumentar aun más la ganancia de lazo abierto. Además en esta etapa se ha colocado un capacitor, $C_1$, entre la base y el colector, de lo que sería $Q_3$ del circuito anterior, que produce un polo dominante para altas frecuencias. Este tipo de compensación se basa en el hecho de que la ganancia de la etapa es lo suficientemente grande como para que la capacitancia reflejada por efecto Miller también lo sea. La ventaja es que con capacidades pequeñas se logra estabilizar el sistema y estas suelen venir incluidas en el circuito integrado. La realimentacion local que linealiza la etapa se ve incrementada tal que a fines prácticos elimina la distorsion por alinealidad totalmente. La carga del colector del VAS, $Q_9$, forma una fuente de corriente, y se agrega el capacitor $C_3$ para que no haya realimentación en señal, aumentando así la ganancia.
 
 La cuarta diferencia es la utilización de un circuito adicional entre las bases de $Q_5$ y $Q_4$. Posee dos funciones elementales: la primera es establecer una corriente de polarización en los transistores de salida que produce una notable disminución de la distorsión por cruce por cero. Para entender este efecto analizamos el primer circuito planteado, como observamos cuando un transistor de la etapa de salida clase B se encuentre el conducción el otro se encuentra en corte. Al disminuir la tensión de la salida del emisor común ($2^{da}$ etapa) a niveles cercanos al cero, ninguno de los transistores se encuentra en la región activa y en ese instante se produce una deformación de la señal como se observa en la Figura~\ref{falta_Vbe}. Claramente este tipo de distorsión será mas apreciable a señales de baja amplitud donde los efectos son mas apreciables. Para modificar este comportamiento se agregaría una "fuente" de tensión entre las bases de la etapa de salida clase B. Esta fuente polariza ambos transistores y produce por los mismos una corriente constante dependiendo exponencialmente de su valor. Esta "fuente" es reemplazada por el multiplicador donde como se ha analizado en clase, si el mismo es alimentado con una fuente de corriente constante vale afirmar que:
 
@@ -153,11 +153,13 @@ Modificando levemente al circuito anterior para mejorar algunas propiedades y ag
 \end{figure}
 
 
+A modo de reducir las consecuencias de los accidentes, se agregaron, circuitos de protección contra cortocircuitos. El funcionamiento básico es que usa los resistores de la salida para sensar la corriente que pasa por ellos. Cuando la corriente excede el valor máximo permitido, el cual se elige para una sobrecarga determinada (esto incluye el caso extremo de cortocircuito), la tensión que cae en esta resistencia enciende en transistor, el cual comienza a drenar corriente de la entrada de la etapa de salida, a fin de limitar la corriente de salida.
+Un problema que se podría tener es el de tener un corto interno pero no notarlo, en cuyo caso las protecciones estarían constantemente en funcionamiento. Entonces, para notarlo, se reemplazo un diodo de las protecciones por un LED, a fin de que cuando las protecciones esten funcionando, el LED se polarice y su señal luminosa nos informe del problema.
+
+
 \bigskip
 
 %La resistencia de entrada desacoplada por el capacitor C5 provee una resistencia de entrada de $10K\Omega$ para la señal y en continua se ven $22K\Omega$, equiparando con la realimentacion. De esta forma, se equilibra el offset producido por las corrientes de base del par diferencial, minimizando la tensión diferencial de offset.
-
-
 
 %El principal inconveniente al compensar el circuito por polo dominantes es que al agregar un capacitor, este modifica el ancho de banda de potencia. Esto se debe al tiempo que le toma a la etapa anterior cargar el capacitor. Debido a esto la elección del valor de este capacitor debe tener en cuenta ambos efectos y buscar una relación de compromiso entre ambos.
 
@@ -184,7 +186,3 @@ Modificando levemente al circuito anterior para mejorar algunas propiedades y ag
 
 
 \bigskip
-\subsubsection{Protección Contra Cortocircuitos}\label{contra_cortos} 
-
-A modo de reducir las consecuencias de los accidentes, se agregaron además, circuitos de protección contra cortocircuitos. El funcionamiento básico es que usa los resistores de la salida para sensar la corriente que pasa por ellos. Cuando la corriente excede el valor máximo permitido, el cual se elige para una sobrecarga determinada (esto incluye el caso extremo de cortocircuito), la tensión que cae en esta resistencia enciende en transistor, el cual comienza a drenar corriente de la entrada de la etapa de salida, a fin de limitar la corriente de salida.
-Un problema que se podría tener es el de tener un corto interno pero no notarlo, en cuyo caso las protecciones estarían constantemente en funcionamiento. Entonces, para notarlo, se reemplazo un diodo de las protecciones por un LED, a fin de que cuando las protecciones esten funcionando, el LED se polarice y su señal luminosa nos informe del problema.
