@@ -160,12 +160,16 @@ La entrada diferencial también fue modificada, $C_5$ ayuda a fijar la impedanci
 
 Otra pequeña modificación es el agregado de la resistencia $R_{27}$ al multiplicador $V_{BE}$, para independizarlo de la corriente que circula por el mismo.
 
-A la salida se agrego un bloque que mejora la relación entre el amplificador y su carga. $C_{13}$ y $R_{32}$ conforman la red Zobel encargada de prevenir inestabilidades en altas frecuencias debido a cargas demasiado inductivas. La red conformada por $L_{1}$ y $R_{33}$ aíslan al amplificador de carga capacitiva, aplanando la respuesta en frecuencia.
-
 Un componente fundamental agregado en este último circuito es el capacitor $C_4$ en la realimentación, esta puede usarse para compensar por adelanto de fase y así no depender exclusivamente de $C_1$ para definir la respuesta en altas frecuencias.
 
+%AQUI!!!!!!!!!!!!!!!
 
-\bigskip
+A la salida se agrego un bloque que mejora la relación entre el amplificador y su carga. $C_{13}$ y $R_{32}$ conforman la red Zobel encargada de prevenir inestabilidades en altas frecuencias debido a cargas demasiado inductivas. La red conformada por $L_{1}$ y $R_{33}$ aíslan al amplificador de carga capacitiva, aplanando la respuesta en frecuencia.
+
+Con la topologia actual se procederá a seleccionar los valores de los componentes utilizados. 
+\medskip
+
+
 %La resistencia de entrada desacoplada por el capacitor C5 provee una resistencia de entrada de $10K\Omega$ para la señal y en continua se ven $22K\Omega$, equiparando con la realimentacion. De esta forma, se equilibra el offset producido por las corrientes de base del par diferencial, minimizando la tensión diferencial de offset.
 
 %El principal inconveniente al compensar el circuito por polo dominantes es que al agregar un capacitor, este modifica el ancho de banda de potencia. Esto se debe al tiempo que le toma a la etapa anterior cargar el capacitor. Debido a esto la elección del valor de este capacitor debe tener en cuenta ambos efectos y buscar una relación de compromiso entre ambos.
