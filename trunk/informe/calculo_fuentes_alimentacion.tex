@@ -60,7 +60,13 @@ Para este tipo de fuente utilizaremos la topología Flyback con dos salidas, deb
 \medskip
 \subsubsection{Controlador}
 
-Se utilizó el circuito integrado TL494 como circuito de control de la fuente conmutada. El método de control es mediante la modulación del ancho de pulso, las características y funcionalidades de este integrado se explican en la Sección~\ref{TL494}. Para facilitar la comparación de tensiones se utilizo la referencia de 5V integrada en el TL494, por lo tanto se definieron: R1=$33\kohm $ y R2=$8.2\kohm$ para que la salida se estabilice en 20V.
+Se utilizó el circuito integrado TL494 como circuito de control de la fuente conmutada. El método de control es mediante la modulación del ancho de pulso, las características y funcionalidades de este integrado se explican en la Sección~\ref{TL494}. Para facilitar la comparación de tensiones se utilizo la referencia de 5V integrada en el TL494, por lo tanto se definieron: R1=$33\kohm $ y R2=$8.2\kohm$ para que la salida se estabilice en 20V. Este sensado de tension se aplico a ambos comparadores del integrado, para poder utilizar ambas salidas simultáneamente y exigir menor corriente a cada una.
+\medskip
+\subsubsection{llave conmutadora}
+
+Esta se implemento con un mosfet que pudiera soportar las corrientes que circularían por el devanado primario. Para controlar la tension de gate del transistor se utilizo una resistencia de $3.3\kohm$ en el colector de los transistores de salida del TL494, por los que pueden circular 400mA, siendo la resistencia utilizada más que suficiente para saturarlos. Por lo tanto, el gate del mosfet puede ir desde los 50V de alimentación hasta los 1.3V, debido al $V_{CE}$ de los transistores del TL494. Teniendo en cuenta los picos de tension que se generan en las conmutaciones, se protegió el transistor con un snub.
+
+
 
 \medskip
 \subsubsection{Determinación de la inductancia del primario}
