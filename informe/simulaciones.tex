@@ -75,6 +75,8 @@ Los resultados de la simulación se observan en la Figura~\ref{simul_estab}.
 
 \subsubsection{Impedancia de entrada}
 
+Para simular la impedancia de entrada simplemente se puso una fuente de señal a la entrada y se dividió por la corriente que pasaba por ella. Mostramos ahora los resultados de esa simulación.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{img/Rin.png}
@@ -84,12 +86,16 @@ Los resultados de la simulación se observan en la Figura~\ref{simul_estab}.
 
 \subsubsection{Impedancia de salida}
 
+La impedacia de salida se la simuló de dos formas. Una aplicando Thévenin y pasivando la entrada, poniendo una fuente de señal a la salida desacoplada por un capacitor, como se ve en la figura.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{img/Rout_circ_1.png}
 \caption{Circuito para la simulación de la impedancia de salida.}
 \label{Rout_sim_circ}
 \end{figure}
+
+Luego se dividió la corriente que pasaba por ella por la tensión y tenemos la impedancia vista por la entrada en función de la frecuencia.
 
 \begin{figure}[H]
 \centering
@@ -98,12 +104,16 @@ Los resultados de la simulación se observan en la Figura~\ref{simul_estab}.
 \label{Rout_sim}
 \end{figure}
 
+La otra simulación que se hizo fue la de la misma medición. Poniendo carga infinita y de $8\ohm$, luego aproximando con $R_{out}=8\ohm(\frac{V_\inf}{V_{8\ohm}-1)$.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{img/Rout_circ_2.png}
 \caption{Circuito para la medición de la impedancia de salida.}
 \label{Rout_med_circ}
 \end{figure}
+
+El resultado obtenido a $1kHz$ que fue la frecuencia a la que se lo midió, se puede ver en la figura. El resultado de la aproximación es de $18m\ohm$.
 
 \begin{figure}[H]
 \centering
