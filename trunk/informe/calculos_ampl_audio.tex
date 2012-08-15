@@ -162,7 +162,7 @@ Otra pequeña modificación es el agregado de la resistencia $R_{27}$ al multipl
 
 Un componente fundamental agregado en este último circuito es el capacitor $C_4$ en la realimentación, esta puede usarse para compensar por adelanto de fase y así no depender exclusivamente de $C_1$ para definir la respuesta en altas frecuencias.
 
-%AQUI!!!!!!!!!!!!!!!
+Para alimentar todo el circuito se han utilizado el par positivo y negativo de rieles de alta tensión. Sin embargo hay un pequeño circuito RC que filtra los rieles que van a las etapa VAS y de entrada. Esto las provee de una fuente de tensión mucho mas limpia que la porción de alta corriente de ese mismo riel, que alimenta a la etapa de salida. Esta porción de riel siempre tiene mucho ripple y ruido que contaminaría las etapas mas sensibles de no ser filtrada.
 
 A la salida se agrego un bloque que mejora la relación entre el amplificador y su carga. $C_{13}$ y $R_{32}$ conforman la red Zobel encargada de prevenir inestabilidades en altas frecuencias debido a cargas demasiado inductivas. La red conformada por $L_{1}$ y $R_{33}$ aíslan al amplificador de carga capacitiva, aplanando la respuesta en frecuencia.
 
