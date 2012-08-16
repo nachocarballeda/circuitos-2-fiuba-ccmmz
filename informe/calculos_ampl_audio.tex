@@ -179,9 +179,23 @@ Se opto por una potencia de salida mayor a 50W y una ganancia tal, que tanto el 
 
 \medskip
 \subsubsection*{Etapa de Amplificación de Tensión}
-Para polarizar esta etapa se utilizó una corriente cercana a los 15mA debido a que esta dentro del rango de valores óptimos de funcionamiento debido a que no es tan alta como para disipar demasiada potencia y suficientemente alta como para tener una ganancia alta. Para setear esta corriente de polarización se debe utilizar un valor de $R_9 = 47\ohm$ en la fuente, dando una corriente de polarización de 13.8mA. 
+Para polarizar esta etapa se utilizó una corriente cercana a los 15mA debido a que esta dentro del rango de valores óptimos de funcionamiento debido a que no es tan alta como para disipar demasiada potencia y suficientemente alta como para tener una ganancia alta. Para establecer esta corriente de polarización se debe utilizar un valor de $R_9 = 47\ohm$ en la fuente, dando una corriente de polarización de 13.8mA. 
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/circ_barrido.png}
+\caption{Circuito usado para simular el $V_{be}$.}
+\label{cric_barrido} 
+\end{figure}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/barrido.png}
+\caption{$V_{CE}$ en función de varios valores comerciales de resistencias $R_1$.}
+\label{barrido} 
+\end{figure}
+
+Como se puede ver, $R_1=82\ohm$ es el valor que mas linealiza $V_{CE}$ y de esta manera le quitamos dependencia sobre la corriente a la multiplicación de $V_{BE}$ y por ende adoptaremos este valor.
 
 %\subsubsection*{Slew Rate}
 
