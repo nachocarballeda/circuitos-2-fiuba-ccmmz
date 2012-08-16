@@ -33,27 +33,56 @@ También se realizó un plano de masa en forma de estrella, para no concatenar r
 
 \subsubsection*{Resistencias emisor de salida}
 Estas dos resistencias son de baja R y es importante que no se vean muy alteradas. Para evitar el cambio de temperatura hemos cuidado a que ninguna pista pasa debajo de estas dos resistencias. Además, los caminos que las conectan con la salida son anchos y perfectamente simétricos. De ésta forma, las pistas no sólo incorporan poca resistencia en serie sino que además, la incorporan en igual magnitud, cuestión de no perder la simetría a la salida, y que la degeneración de los transistores de salida sea lo mas simétrica posible.
+\bigskip
 
 \subsubsection{Disipadores}
-\bigskip
-Sabiendo que:
+
+Para cada transistor que maneje altas corrientes se calcula el valor del disipador requerido teniendo en cuenta la potencia disipada y su resistencia térmica. En el caso del transistor del multiplicador $V_{be}$, que requiere estar a la misma temperatura que los de la salida clase B, se ubicará en el mismo disipador para así mantener a todos a la misma temperatura. Los otros dos transistores que deben disipar demasiada potencia se pondrán en sus disipadores propios.Sabiendo que:
+
 $$
    \theta_{ja}=\dfrac{T_{jm}-T_a}{P_D}
 $$
 $$
-	\theta_{ja}=\theta_{jc}+\theta_{cs}+\theta_{sa}
+	\theta_{ja}=\theta_{jc}+\theta_{cd}+\theta_{da}
 $$
 
-En la cual $\theta_{ja}$ es la resistencia térmica juntura-ambiente. Para cada transistor que maneje altas corrientes se calcula el valor del disipador requerido teniendo en cuenta la potencia disipada y su resistencia térmica. En el caso del transistor del multiplicador $V_{be}$, que requiere estar a la misma temperatura que los de la salida clase B, se ubicará en el mismo disipador para evitar el embalamiento térmico.
+En la cual:
+\begin{list}{ }
+\item $P_D$  es la potencia que debe disipar el transistor.
+\item $T_{jm}$ es la temperatura máxima en la juntura.
+\item  $T_a$ es la temperatura ambiente.
+\item  $\theta_{ja}$ es la resistencia térmica juntura-ambiente.
+\item  $\theta_{da}$ es la resistencia térmica disipador-ambiente.
+\item  $\theta_{jc}$ es la resistencia térmica juntura-encapsulado.
+\item  $\theta_{cd}$ es la resistencia térmica encapsulado-disipador.
+\end{list}
+ %USE POTENCIA PROMEDIO EN TODOS LADOS!!!
+En todos los transistores se utilizo mica y silicona termoconductora, por lo tanto en todos los casos se tiene una $\theta_{cd}=1.5^oC/W$.
+Por otro lado en los cuatro transistores se tiene de su hoja de datos: $T_{jm}=150^oC$ y según sus datasheet los MJE350/MJE340 tienen un $\theta_{jc}$ de $0.63^oC/W$, mientras que en los 2sa1302/2sc2381 es de $0.83^oC/W$; la temperatura en el gabinete se supuso de $40^oC$.
 
-\subsubsection{Circuito Implementado}
+Según las simulaciones la potencia disipada en los transistores $Q_{16}$ y $Q_{19}$ es poco menor a 20W. De las ecuaciones anteriores se tiene:
+$$
+	\theta_{da}=\dfrac{T_{jm}-T_a}{P_D} - \theta_{jc}+\theta_{cd}
+$$
+
+Por lo tanto el $\theta_{da}$ para estos transistores debe ser de $3.17^oC/W$. Se adquirieron dos disipadores ZD-6 de un  $\theta_{da}=2.9^oC/W$ para los mismos.
+
+En el caso de $Q_{18}$(que debe disipar 0.5W), $Q_{13}$(que debe disipar 0.5W),$Q_{17}$(que debe disipar 5.33W),$Q_{21}$(que debe disipar 6.35W) y $Q_{11}$(que debe disipar 30mW), los cuales deben estar en el mismo disipador.
+Llamando a la resistencia termica de los MJE350/MJE340 $\theta_{jc1}=0.63^oC/W$ y $\theta_{jc2}=0.83^oC/W$ a las de los 2sa1302/2sc2381. Se puede armar el siguiente circuito térmico:
+
+\begin{figure}[H]
+\centerline{
+\includegraphics[width=0.8\textwidth]{img/disipador_cir.png}}
+\caption{Circuito térmico del disipador de varios transistores.}
+\end{figure}
+
+\subsubsection{Circuito Impreso Realizado}
 
 En la Figura 26 se puede observar el circuito impreso realizado para el amplificador. Son indicadas las entradas y la salida de señal y los bornes de la alimentación.
 
 \begin{figure}[H]
 \centerline{
-\includegraphics[width=1\textwidth]
-{img/PCB1.png}}
+\includegraphics[width=1\textwidth]{img/PCB1.png}}
 \caption{Circuito impreso del amplificador.}
 \end{figure}
 
