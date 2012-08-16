@@ -177,25 +177,31 @@ Se opto por una potencia de salida mayor a 50W y una ganancia tal, que tanto el 
 \medskip
 \subsubsection*{Par Diferencial}
 
+Lo primero que debe definirse en esta etapa es la corriente de polarización ya que si es demasiado grande se disipa potencia innecesariamente(con el aumento de ruido que esto implica) y si existe una desigualdad en la corriente de cada rama, esto empeoraria el offset. En cambio si la corriente es pequeña, disminuye la transconductancia del par, la cual reduce el slew rate ya que no hay suficiente corriente para cargarlo. Otro beneficio de aumentar la corriente es la disminución de la distorsión, al aumentar la linealidad,ya que se disminuye la resistencia alineal interna de los transistores.
+
+
 \medskip
 \subsubsection*{Etapa de Amplificación de Tensión}
-Para polarizar esta etapa se utilizó una corriente cercana a los 15mA debido a que esta dentro del rango de valores óptimos de funcionamiento debido a que no es tan alta como para disipar demasiada potencia y suficientemente alta como para tener una ganancia alta. Para establecer esta corriente de polarización se debe utilizar un valor de $R_9 = 47\ohm$ en la fuente, dando una corriente de polarización de 13.8mA. 
+Para polarizar esta etapa se utilizó una corriente cercana a los 15mA debido a que esta dentro del rango de valores óptimos de funcionamiento debido a que no es tan alta como para disipar demasiada potencia y suficientemente alta como para tener una ganancia alta. Para establecer esta corriente de polarización se debe utilizar un valor de $R_9 = 47\ohm$ en la fuente, dando una corriente de polarización de $13.8\mamper$. 
+
+Teniendo esta corriente de polarización se puede buscar la resistencia $R_{27}$
+para estabilizar el multiplicador $V_{BE}$, para esto se definieron las resistencias $R_{12}$ y $R_{28}$ para que el multiplicador tuviera una caída de $2V_{BE}$. Para eso se simuló el circuito de la Figura~\ref{vbe_barrido_cir} variando la resistencia en valores normalizados. Como se puede ver en la Figura~\ref{vbe_barrido}, $R_1=82\ohm$ es el valor que mas linealiza $V_{CE}$, de esta manera, minimizamos la dependencia de la corriente a la multiplicación de $V_{BE}$,por ende, se adoptara este valor.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{img/circ_barrido.png}
+\includegraphics[width=0.9\textwidth]{img/circ_barrido.png}
 \caption{Circuito usado para simular el $V_{be}$.}
-\label{cric_barrido} 
+\label{vbe_barrido_cir} 
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{img/barrido.png}
 \caption{$V_{CE}$ en función de varios valores comerciales de resistencias $R_1$.}
-\label{barrido} 
+\label{vbe_barrido} 
 \end{figure}
 
-Como se puede ver, $R_1=82\ohm$ es el valor que mas linealiza $V_{CE}$ y de esta manera le quitamos dependencia sobre la corriente a la multiplicación de $V_{BE}$ y por ende adoptaremos este valor.
+
 
 %\subsubsection*{Slew Rate}
 
