@@ -1,5 +1,5 @@
 \subsection{Diseño del Preamplificador}
-
+\medskip
 Los circuitos propuestos para esta etapa fueron extraídos del libro “Small Signal Audio Design” del autor Douglas Self.
 
 El preamplificador mono se compone de dos etapas, que se detallarán de manera separada a continuación. Las mismas son.
@@ -10,9 +10,9 @@ El preamplificador mono se compone de dos etapas, que se detallarán de manera s
 \end{itemize}
 
 Los niveles de línea en los equipos de audio de consumo son de un valor nominal de 0.3162 Volts eficaces. Debido a esto, los cálculos se realizaron en función de obtener una ganancia total de 10 dB(3 veces), de forma tal que con una entrada de línea de 0.3162 $V_{ef}$ se tenga una salida de 1 $V_{ef}$ a máximo volumen.
-
+\medskip
 \subsubsection{Control de Volumen}
-
+\medskip
 Para el control de Volumen se utilizó un control activo del tipo “Baxandall”, como el que se observa en la Figura~\ref{ctrl_vol}. El mismo consta de dos etapas, alrededor de cada uno de los operacionales que se aprecian en el circuito. El primero presenta una configuración de seguidor, con el objeto de adaptar impedancias entre la entrada y la segunda etapa, y el segundo es un amplificador inversor.
 
 
@@ -47,9 +47,9 @@ Para corroborar lo dicho se procedió a simular el circuito para distintos seteo
 \caption{Resultados de la simulación del control de volumen.}
 \label{ctrl_vol_sim} 
 \end{figure}
-
+\medskip
 \subsubsection{Control de Tonos}
-
+\medskip
 El circuito elegido es un control de tonos del tipo Baxandall Tribanda,  con control de agudos, medios y graves. 
 
 El circuito funciona de la siguiente forma: 
@@ -76,23 +76,25 @@ El esquema utilizado para la simulación se observa en la Figura~\ref{ctrl_tonos
 \begin{figure}[H]
 \centering
 \begin{tabular}{cc}
-\includegraphics[width=0.8\textwidth]{img/tonos_sim_1.png}\\
+\includegraphics[width=0.9\textwidth]{img/tonos_sim_1.png}\\
 \\
-\includegraphics[width=0.8\textwidth]{img/tonos_sim_2.png}\\
 \\
-\includegraphics[width=0.8\textwidth]{img/tonos_sim_3.png}
+\includegraphics[width=0.9\textwidth]{img/tonos_sim_2.png}\\
+\\
+\\
+\includegraphics[width=0.9\textwidth]{img/tonos_sim_3.png}
 \end{tabular}
 \caption{Resultados de la simulación del control de tonos.}
 \label{tonos_sim} 
 \end{figure}
 \medskip
 \subsubsection{Circuito Implementado}
+\medskip
+Como se observa en la Figura~\ref{pre_cir}, el preamplificador implementado es la unión de los dos subcircuitos explicados, se agregaron filtros en las alimentaciones debido al alto ruido que la fuente conmutada agrega a esta delicada etapa.
 
-Como se observa en la Figura~\ref{pre_cir}, el preamplificador implementado es la unión de los subcircuitos explicados, se agregaron filtros en las alimentaciones debido al alto ruido que la fuente conmutada agregaba a esta delicada etapa.
-
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{img/pre_cir.png}
+\includegraphics[width=0.65\textwidth]{img/pre_cir.png}
 \caption{Preamplificador implementado.}
 \label{pre_cir} 
 \end{figure}

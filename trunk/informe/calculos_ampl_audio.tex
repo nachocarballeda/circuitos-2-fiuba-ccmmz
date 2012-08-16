@@ -23,18 +23,18 @@ $$
 Siguiendo con este razonamiento si asumimos que $V_{out}$ es cercano a 0 volts. Entonces analizando el circuito llegamos a las siguientes ecuaciones:
 
 \[
-\frac{V_{CC}}{R6} = \frac{(V_{E3} - (-V_{cc}))}{R5}
+\frac{V_{CC}}{R6} = \frac{(V_{E3} - (-V_{cc})}{R5}
 \]
 
 $$
-V_{E3} = V_{B3} - 0.7V
+V_{E3} = V_B{3} - 0.7V
 $$
 
 Donde:
 \begin{description}
 
 
-\item $V_{B3} = (I{C1} \times R_3 - V_{CC}) $
+\item $V_{B3} = (IC1 \times R_3 - V_{CC}) $
 \item $I_{C1}=\frac{(V_{CC}-0.7V)}{2R_4}$
 \item $V_{E3}= (V_{CC}-0.7) \frac{R3}{2R4} - V_{CC} - 0.7V$
 \item $V_{CC} R5/R6 = \left[  (V_{CC}-0.7V) \times \frac{R_3}{2R_4} - 0.7V\right] $
@@ -169,14 +169,23 @@ A la salida se agrego un bloque que mejora la relación entre el amplificador y 
 Con la topologia actual se procederá a seleccionar los valores de los componentes utilizados. 
 \medskip
 \subsubsection{Elección de valores}
+\medskip
+\subsubsection*{Generalidades}
+\medskip
+Las fuentes de altas tensiones fueron implementadas con una fuente lineal, ya que esta alimenta al par diferencial el cual es muy sensible al ruido. La tension elegidas es de $\pm50V$ debido a la facilidad de obtener un transformador de esta relación con la potencia requerida. Las tensiones de bajas serán de $\pm20V$ ya que esta tension permite
+Se opto por una potencia de salida mayor a 50W y una ganancia tal, que tanto el bloque realimentador como las resistencias en serie de la entrada sean fácilmente obtenidos usando valores normalizados. Debido a esto, se definió una ganancia de 23 veces, dando como resultado: $R_{19}=1\kohm$ y $R_{20}=22\kohm$ para la realimentación y $R_{1}=10\kohm$ y $R_{11}=12\kohm$ para la impedancia de entrada.
+\medskip
+\subsubsection*{Par Diferencial}
 
-Se opto por una potencia de salida mayor a 50W y una ganancia tal, que tanto el bloque realimentador como las resistencias en serie de la entrada sean fácilmente obtenidos usando valores normalizados.
 
-%La resistencia de entrada desacoplada por el capacitor C5 provee una resistencia de entrada de $10K\Omega$ para la señal y en continua se ven $22K\Omega$, equiparando con la realimentacion. De esta forma, se equilibra el offset producido por las corrientes de base del par diferencial, minimizando la tensión diferencial de offset.
+\subsubsection*{Etapa de Amplificación de Tensión}
+\medskip
 
-%El principal inconveniente al compensar el circuito por polo dominantes es que al agregar un capacitor, este modifica el ancho de banda de potencia. Esto se debe al tiempo que le toma a la etapa anterior cargar el capacitor. Debido a esto la elección del valor de este capacitor debe tener en cuenta ambos efectos y buscar una relación de compromiso entre ambos.
+
 
 %\subsubsection*{Slew Rate}
+
+%El principal inconveniente al compensar el circuito por polo dominantes es que al agregar un capacitor, este modifica el ancho de banda de potencia. Esto se debe al tiempo que le toma a la etapa anterior cargar el capacitor. Debido a esto la elección del valor de este capacitor debe tener en cuenta ambos efectos y buscar una relación de compromiso entre ambos.
 %
 %El capacitor de compensación $C_1$ conectado alrededor del par Darlington hace que esta etapa actúe como un integrador, y la corriente que carga el punto de compensación es justamente $I_x$. 
 %Se puede observar que la corriente máxima disponible para cargar C1 es 2$I_1$, donde $I_1$ es la corriente en reposo por cada dispositivo en la etapa de entrada. Es decir, a grandes valores de Vi las corrientes del par diferencial se desequilibran, $I_1$ crece hasta su valor máximo 2$I_1$ y la corriente por la otra rama del par se anula, por ende es fácil ver que por la carga activa deja de circular corriente y toda la corriente de la primer rama del par se transforma en $I_x$.
