@@ -60,12 +60,12 @@ En la cual:
 En todos los transistores se utilizo mica y silicona termoconductora, por lo tanto en todos los casos se tiene una $\theta_{cd}=1.5^oC/W$.
 Por otro lado en los cuatro transistores se tiene de su hoja de datos: $T_{jm}=150^oC$ y según sus datasheet los MJE350/MJE340 tienen un $\theta_{jc}$ de $0.63^oC/W$, mientras que en los 2sa1302/2sc2381 es de $0.83^oC/W$; la temperatura en el gabinete se supuso de $40^oC$.
 
-Según las simulaciones la potencia disipada en los transistores $Q_{16}$ y $Q_{19}$ es poco menor a 20W. De las ecuaciones anteriores se tiene:
+Según las simulaciones la potencia disipada en los transistores $Q_{16}$ y $Q_{19}$ es poco menor a 12W. De las ecuaciones anteriores se tiene:
 $$
 	\theta_{da}=\dfrac{T_{jm}-T_a}{P_D} - \theta_{jc}+\theta_{cd}
 $$
 
-Por lo tanto el $\theta_{da}$ para estos transistores debe ser de $3.17^oC/W$. Se adquirieron dos disipadores ZD-6 de un  $\theta_{da}=2.9^oC/W$ para los mismos.
+Por lo tanto el $\theta_{da}$ para estos transistores debe ser de $6.84^oC/W$. Se adquirieron dos disipadores ZD-6 de un  $\theta_{da}=XX^oC/W$ para los mismos.
 
 En el caso de $Q_{18}$(que debe disipar 0.5W), $Q_{13}$(que debe disipar 0.5W),$Q_{17}$(que debe disipar 5.33W),$Q_{21}$(que debe disipar 6.35W) y $Q_{11}$(que debe disipar 30mW), los cuales deben estar en el mismo disipador.
 Llamando a la resistencia termica de los MJE350/MJE340 $\theta_{jc1}=0.63^oC/W$ y $\theta_{jc2}=0.83^oC/W$ a las de los 2sa1302/2sc2381. Se puede armar el siguiente circuito térmico:
@@ -76,16 +76,16 @@ Llamando a la resistencia termica de los MJE350/MJE340 $\theta_{jc1}=0.63^oC/W$ 
 \caption{Circuito térmico del disipador de varios transistores.}
 \end{figure}
 
-Como las temperaturas de las junturas deben ser iguales, y debido a la igualdad de alguans resistencias térmicas, se puede simplificar el mismo, resultando el siguiente circuito:
+Como las temperaturas de las junturas deben ser iguales, la igualdad de alguans resistencias térmicas y perdiendo la relación de potencias disipadas(luego se supondrá el caso extremo de 7W por transistor), se puede simplificar el circuito, resultando el siguiente circuito:
 
 \begin{figure}[H]
 \centerline{
-\includegraphics[width=0.8\textwidth]{img/disipador_cir2.png}}
+\includegraphics[width=0.5\textwidth]{img/disipador_cir2.png}}
 \caption{Circuito térmico simplificado del disipador de varios transistores.}
 \end{figure}
 
 Siendo la resistencia equivalente resultante de $0.44^oC/W$, por lo tanto el $\theta_{da}$ para estos transistores debe ser de $2.7^oC/W$.
-
+%el parrafo de arriba supone q todos disipan un maximo de 7W
 \subsubsection{Circuito Impreso del Amplificador}
 
 En la Figura 26 se puede observar el circuito impreso realizado para el amplificador. Son indicadas las entradas y la salida de señal y los bornes de la alimentación.
