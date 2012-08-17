@@ -189,38 +189,35 @@ para estabilizar el multiplicador $V_{BE}$, para esto se definieron las resisten
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{img/circ_barrido.png}
+\includegraphics[width=0.4\textwidth]{img/circ_barrido.png}
 \caption{Circuito usado para simular el $V_{be}$.}
 \label{vbe_barrido_cir} 
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth]{img/barrido.png}
+\includegraphics[width=0.8\textwidth]{img/barrido.png}
 \caption{$V_{CE}$ en función de varios valores comerciales de resistencias $R_1$.}
 \label{vbe_barrido} 
 \end{figure}
 
 
 
-%\subsubsection*{Slew Rate}
+\subsubsection*{Slew Rate}
 
-%El principal inconveniente al compensar el circuito por polo dominantes es que al agregar un capacitor, este modifica el ancho de banda de potencia. Esto se debe al tiempo que le toma a la etapa anterior cargar el capacitor. Debido a esto la elección del valor de este capacitor debe tener en cuenta ambos efectos y buscar una relación de compromiso entre ambos.
-%
-%El capacitor de compensación $C_1$ conectado alrededor del par Darlington hace que esta etapa actúe como un integrador, y la corriente que carga el punto de compensación es justamente $I_x$. 
-%Se puede observar que la corriente máxima disponible para cargar C1 es 2$I_1$, donde $I_1$ es la corriente en reposo por cada dispositivo en la etapa de entrada. Es decir, a grandes valores de Vi las corrientes del par diferencial se desequilibran, $I_1$ crece hasta su valor máximo 2$I_1$ y la corriente por la otra rama del par se anula, por ende es fácil ver que por la carga activa deja de circular corriente y toda la corriente de la primer rama del par se transforma en $I_x$.
-%El circuito por lo tanto opera en forma no lineal. Si la etapa de entrada actuara de forma lineal produciría una corriente $I_x$ muy grande y el slew rate no produciría ninguna limitación.
-%
-%\[
-%	V_o= \dfrac{1}{C1} \int 2I_1\,\mathrm{d}t    
-%\]
-%
-%$$
-%	SR=\dfrac{dVo}{dt}=\dfrac{2I_1}{C1}
-%$$
-%
-%Por lo tanto, realizando el calculo para nuestro circuito, siendo $I_1$ =2.2mA y C1=120pF. Obtenemos:
-%$$ SR=36\dfrac{V}{\usec} $$
+El capacitor de compensación $C_1$ conectado alrededor del par Darlington hace que esta etapa actúe como un integrador. Se puede observar que la corriente máxima disponible para cargar $C_1$ es 2$I_1$, donde $I_1$ es la corriente en reposo por cada dispositivo en la etapa de entrada. Es decir, a grandes valores de Vi las corrientes del par diferencial se desequilibran, $I_1$ crece hasta su valor máximo 2$I_1$ y la corriente por la otra rama del par se anula, por ende es fácil ver que por la carga activa deja de circular corriente y toda la corriente de la primer rama del par pasa a cargar a $C_1$. Debido a lo dicho anterior mente el slew rate se puede calcular usando:
+
+\[
+	V_o= \dfrac{1}{C1} \int 2I_1\,\mathrm{d}t    
+\]
+
+$$
+	SR=\dfrac{dVo}{dt}=\dfrac{2I_1}{C1}
+$$
+
+Por lo tanto, realizando el calculo para nuestro circuito, siendo $I_1 \simeq  2.7mA$ y $C_1$=120pF. Obtenemos:
+
+$$ SR=45\dfrac{V}{\usec} $$
 
 
 \bigskip

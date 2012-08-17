@@ -53,23 +53,23 @@ Para este tipo de fuente utilizaremos la topología Flyback con dos salidas, deb
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.90\textwidth]{img/conmutada_basica.png}
+\includegraphics[width=0.85\textwidth]{img/conmutada_basica.png}
 \caption{Esquema  basico fuente conmutada.}
 \label{conmutada_basica}
 \end{figure}
 \medskip
 \subsubsection{Controlador}
-
+\medskip
 Se utilizó el circuito integrado TL494 como circuito de control de la fuente conmutada. El método de control es mediante la modulación del ancho de pulso, las características y funcionalidades de este integrado se explican en la Sección~\ref{TL494}. Para facilitar la comparación de tensiones se utilizo la referencia de 5V integrada en el TL494, por lo tanto se definieron: R1=$33\kohm $ y R2=$8.2\kohm$ para que la salida se estabilice en 20V. Este sensado de tension se aplico a ambos comparadores del integrado, para poder utilizar ambas salidas simultáneamente y exigir menor corriente a cada una.
 \medskip
 \subsubsection{Llave conmutadora}
-
+\medskip
 Esta se implemento con un mosfet que pudiera soportar las corrientes que circularían por el devanado primario. Para controlar la tension de gate del transistor se utilizo una resistencia de $3.3\kohm$ en el colector de los transistores de salida del TL494, por los que pueden circular 400mA, siendo la resistencia utilizada más que suficiente para saturarlos. Por lo tanto, el gate del mosfet puede ir desde los 50V de alimentación hasta los 1.3V, debido al $V_{CE}$ de los transistores del TL494. Teniendo en cuenta los picos de tension que se generan en las conmutaciones, se protegió el transistor con un snub.
 Se implementó un circuito con relé para retrasar el paso de corriente por los inductores, de modo de permitir que el TL494 se encienda primero. De otra forma, el TL494 encendía despues, no funcionaba de PWM en el transitorio inicial y se quemaba el MOSFET. El circuito de retraso se implementó con un capacitor grande y un BC548, cuya juntura base-emisor esté en paralelo con el capacitor. Así el delay viene dado por lo que tarda en cargarse el capacitor, y es de aproximadamente 3 segundos, valor que permite el correcto funcionamiento de la fuente. 
 
 \medskip
 \subsubsection{Determinación de la inductancia del primario}
-
+\medskip
 La fuente flyback se diseño para operar en modo discontinuo. Para asegurar esto, la 
 inductancia del bobinado primario($L_P$) necesita estar limitada a un valor máximo.
 Por lo tanto, debe determinarse este valor a carga máxima, para esto se requiere definir la
@@ -104,9 +104,9 @@ $$
 L_{P(max)} = \frac{V_{in(min)}^2 \times \delta_{max}^2 \times Ts}{2 \times P_{in(max)}} = 54\mu H
 $$
 
-
+\medskip
 \subsubsection{Selección del núcleo}
-
+\medskip
 
 Se utilizara el método de calcular el producto de área para determinar el tamaño del núcleo del inductor, definiendo como:
 $$
@@ -114,7 +114,7 @@ Ap= {\left( \frac{  2 \times E \E{4}}{Bm \times Ku \times Kj} \right) } ^{ 1.14}
 $$
 donde:
 \begin{list}{ }
- \item Kj = coeficiente de densidad de corriente.
+\item Kj = coeficiente de densidad de corriente.
 \item Bm =máxima densidad  de flujo 
 \item Ku = factor de utilización de ventana 
 \item Ap = producto de área 
@@ -184,7 +184,7 @@ $$
 \medskip
 \subsubsection{Circuito Implementado}
 
-Como se observa en la Figura~\ref{conmutada_cir} se agregaron a la configuración explicada del TL494 un rele que otorga un delay entre el encendido de cada tipo de fuente, otorgando a la lineal tiempo más q suficiente de cargar sus capacitores de salida.
+Como se observa en la Figura~\ref{conmutada_cir} se agregaron a la configuración explicada del TL494 un rele que otorga un delay entre el encendido de cada tipo de fuente, otorgando a la lineal tiempo más que suficiente de cargar sus capacitores de salida.
 
 \begin{figure}[H]
 \centering
