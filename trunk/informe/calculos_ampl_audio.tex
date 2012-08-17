@@ -172,7 +172,7 @@ Con la topologia actual se procederá a seleccionar los valores de los component
 \medskip
 \subsubsection*{Generalidades}
 \medskip
-Las fuentes de altas tensiones fueron implementadas con una fuente lineal, ya que esta alimenta al par diferencial el cual es muy sensible al ruido. La tension elegidas es de $\pm50V$ debido a la facilidad de obtener un transformador de esta relación con la potencia requerida. Las tensiones de bajas serán de $\pm20V$ ya que esta tension permite
+Las fuentes de altas tensiones fueron implementadas con una fuente lineal, ya que esta alimenta al par diferencial el cual es muy sensible al ruido. La tension elegidas es de $\pm50V$ debido a la facilidad de obtener un transformador de esta relación con la potencia requerida. Las tensiones de bajas serán de $\pm20V$ ya que esta tension permite alimentar al preamplificador correctamente.
 Se opto por una potencia de salida mayor a 50W y una ganancia tal, que tanto el bloque realimentador como las resistencias en serie de la entrada sean fácilmente obtenidos usando valores normalizados. Debido a esto, se definió una ganancia de 23 veces, dando como resultado: $R_{19}=1\kohm$ y $R_{20}=22\kohm$ para la realimentación y $R_{1}=10\kohm$ y $R_{11}=12\kohm$ para la impedancia de entrada.
 \medskip
 \subsubsection*{Par Diferencial}
@@ -185,7 +185,7 @@ Lo primero que debe definirse en esta etapa es la corriente de polarización ya 
 Para polarizar esta etapa se utilizó una corriente cercana a los 15mA debido a que esta dentro del rango de valores óptimos de funcionamiento debido a que no es tan alta como para disipar demasiada potencia y suficientemente alta como para tener una ganancia alta. Para establecer esta corriente de polarización se debe utilizar un valor de $R_9 = 47\ohm$ en la fuente, dando una corriente de polarización de $13.8\mamper$. 
 
 Teniendo esta corriente de polarización se puede buscar la resistencia $R_{27}$
-para estabilizar el multiplicador $V_{BE}$, para esto se definieron las resistencias $R_{12}$ y $R_{28}$ para que el multiplicador tuviera una caída de $2V_{BE}$. Para eso se simuló el circuito de la Figura~\ref{vbe_barrido_cir} variando la resistencia en valores normalizados. Como se puede ver en la Figura~\ref{vbe_barrido}, $R_1=82\ohm$ es el valor que mas linealiza $V_{CE}$, de esta manera, minimizamos la dependencia de la corriente a la multiplicación de $V_{BE}$,por ende, se adoptara este valor.
+para estabilizar el multiplicador $V_{BE}$, para esto se definieron las resistencias $R_{12}$ y $R_{28}$ para que el multiplicador tuviera una caída de $4V_{BE}$. Para eso se simuló el circuito de la Figura~\ref{vbe_barrido_cir} variando la resistencia en valores normalizados. Como se puede ver en la Figura~\ref{vbe_barrido}, $R_1=82\ohm$ es el valor que mas linealiza $V_{CE}$, de esta manera, minimizamos la dependencia de la corriente a la multiplicación de $V_{BE}$,por ende, se adoptara este valor.
 
 \begin{figure}[H]
 \centering
@@ -205,14 +205,14 @@ para estabilizar el multiplicador $V_{BE}$, para esto se definieron las resisten
 
 \subsubsection*{Slew Rate}
 
-El capacitor de compensación $C_1$ conectado alrededor del par Darlington hace que esta etapa actúe como un integrador. Se puede observar que la corriente máxima disponible para cargar $C_1$ es 2$I_1$, donde $I_1$ es la corriente en reposo por cada dispositivo en la etapa de entrada. Es decir, a grandes valores de Vi las corrientes del par diferencial se desequilibran, $I_1$ crece hasta su valor máximo 2$I_1$ y la corriente por la otra rama del par se anula, por ende es fácil ver que por la carga activa deja de circular corriente y toda la corriente de la primer rama del par pasa a cargar a $C_1$. Debido a lo dicho anterior mente el slew rate se puede calcular usando:
+El capacitor de compensación $C_1$ conectado alrededor del par Darlington hace que esta etapa actúe como un integrador. Se puede observar que la corriente máxima disponible para cargar $C_1$ es 2$I_1$, donde $I_1$ es la corriente en reposo por cada dispositivo en la etapa de entrada. Es decir, a grandes valores de Vi las corrientes del par diferencial se desequilibran, $I_1$ crece hasta su valor máximo 2$I_1$ y la corriente por la otra rama del par se anula, por ende es fácil ver que por la carga activa deja de circular corriente y toda la corriente de la primer rama del par pasa a cargar a $C_1$. Debido a lo dicho anteriormente el slew rate se puede calcular usando:
 
 \[
-	V_o= \dfrac{1}{C1} \int 2I_1\,\mathrm{d}t    
+	V_o= \dfrac{1}{C_1} \int 2I_1\,\mathrm{d}t    
 \]
 
 $$
-	SR=\dfrac{dVo}{dt}=\dfrac{2I_1}{C1}
+	SR=\dfrac{dVo}{dt}=\dfrac{2I_1}{C_1}
 $$
 
 Por lo tanto, realizando el calculo para nuestro circuito, siendo $I_1 \simeq  2.7mA$ y $C_1$=120pF. Obtenemos:
