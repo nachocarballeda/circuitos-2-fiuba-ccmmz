@@ -31,7 +31,7 @@ También se realizó un plano de masa en forma de estrella, para no concatenar r
 \bigskip
 \subsubsection*{Tecnologia de Materiales}
 
-Donde fue posible se utilizó resistencias de metalfilm de potencias superiores a las eso no solo da un rango mayor de funcionamiento en caso de sobrepasar las condiciones limite sino que minimiza el ruido Flicker que estas podrían agregar.
+Donde fue posible se utilizó resistencias de metalfilm de potencias superiores a las calculadas, no solo para tener un rango mayor de funcionamiento en caso de sobrepasar las condiciones limite, sino que de esta forma se minimiza el ruido Flicker que estas podrían agregar.
 En los circuitos donde fue necesario se utilizaron placas fotosensibles de manera que el pcb quedara nítido y no hubiera que corregir ninguna pista.
 
 \bigskip
@@ -117,18 +117,29 @@ En la Figura 26 se puede observar el circuito impreso realizado para el amplific
 \end{figure}
 
 \bigskip
-\subsubsection{Fuente Lineal}
+\subsubsection{Circuito Impreso de la Fuente Lineal}
 \medskip
 Para este circuito se utilizaron pistas de 4mm de ancho. Los diodos utilizados en el puente son 6A10 los cuales pueden soportar las corrientes requeridas por el amplificador, ya que soportan hasta 6A; y poseen una caída de tension en directa menor a 1V.
 En la Figura~\ref{circuito_impreso_fuente_lineal} se muestra el circuito impreso implementado. 
 
+\begin{figure}[H]
+\centering
+\centerline{\includegraphics[width=0.8\textwidth]{img/circuito_impreso_fuente_lineal.png}}
+\caption{Circuito impreso de la fuente lineal.}
+\label{circuito_impreso_fuente_lineal} 
+\end{figure}
+\bigskip
+\subsubsection{Circuito Impreso de la Fuente Conmutada}
+\medskip
+Para la realización de este impreso se tuvo especial cuidado en obtener un transistor que pudiese soportar tanto la corriente que fluye por el devanado como los picos de tension generados por la conmutación(aun teniendo en cuenta el snub utilizado, los picos podrían dañar a otros transistores).
 
+En la Figura~\ref{pcb_conmutada} se muestra el circuito impreso implementado. 
 
 \begin{figure}[H]
 \centering
-\centerline{\includegraphics[width=1\textwidth]{img/circuito_impreso_fuente_lineal.png}}
-\caption{Circuito impreso de la fuente lineal.}
-\label{circuito_impreso_fuente_lineal} 
+\centerline{\includegraphics[width=0.65\textwidth]{img/pcb_conmutada.png}}
+\caption{Circuito impreso de la fuente conmutada.}
+\label{pcb_conmutada} 
 \end{figure}
 \bigskip
 \subsubsection{Preamplificador}
